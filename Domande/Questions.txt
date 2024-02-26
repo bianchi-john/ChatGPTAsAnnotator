@@ -10,7 +10,6 @@ Q1.2: How accurately does the story’s headline describe the content of the sto
 3.  Somewhat accurately
 4.  Extremely accurately
 Please explain: * 
-
 Q1.3: Does the story’s headline contain any of the following elements? Check all that apply.
 1.  A proper noun
 2.  A question
