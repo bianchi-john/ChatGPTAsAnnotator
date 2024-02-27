@@ -1,3 +1,0 @@
-Senza alcun tipo di aiuto, le domande e il testo vengono presentati come 
-sono state presentate agli annotatori. Le domande non vengono ripetute ma 
-solamente sottoposte all'inizio e viene chiesto a ChatGPT di ricordarsele
