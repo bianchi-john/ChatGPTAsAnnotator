@@ -25,10 +25,15 @@ messages = [
 completion = client.chat.completions.create(
   model="ChatGPT4AsAnnotator", # model = "deployment_name"
   messages = messages,
-  temperature=0.7,
+  # La tempertura è zero perché riguarda il grado di creatività dei messaggi ma i nostri output sono numeri quindi non ci serve, anzi aumentarla farebbe rischiare di far produrre un JSON non valido
+  temperature=0, 
+  # Maximum Length nemmeno perché i testi degli articoli variano
+  # Anche questo riguarda la creatività e a noi ci serve bassa quindo la butto al minimo
   top_p=0.01,
+  # frequence e presence servono per evitare le ripetizioni ma a noi non ce ne frega nulla quindi si lasciano in default a 0
   frequency_penalty=0,
   presence_penalty=0,
+  # Stop Sequences non ne abbiamo bisogno perché non abbiamo una sequenza finale oltre la quale non deve generare quindi gli do "None"
   stop=None
 )
 
@@ -38,8 +43,8 @@ json_output = json.dumps(output.__dict__, indent=4)
 
 
 # Create the 'output' directory if it doesn't exist
-os.makedirs('Query/output', exist_ok=True)
+os.makedirs('Query/test/output', exist_ok=True)
 
 # Now you can write the JSON output to a file
-with open('Query/output/TestSceltaMultipla.json', 'w') as file:
+with open('Query/test/output/TestSceltaMultipla.json', 'w') as file:
     file.write(json_output)
