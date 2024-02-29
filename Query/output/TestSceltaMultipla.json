@@ -1,0 +1,6 @@
+{
+    "content": "{\n\"Q1\": [\"2\", \"3\", \"4\"],\n\"Q2\": \"2\"\n}",
+    "role": "assistant",
+    "function_call": null,
+    "tool_calls": null
+}
