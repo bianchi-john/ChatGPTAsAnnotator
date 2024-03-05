@@ -1,0 +1,11 @@
+id,title,label,annotator,Q1.1,Q1.2,Q1.3,Q1.3.1,Q1.4,Q1.5,Q1.6,Q1.7,Q1.7.1,Q1.7.1.2,Q2.8,Q2.9.1,Q2.9.2,Q2.10,Problem
+3d1ae696-3a3f-43ab-a4ce-61d337a59d7e,"Strage nel Mediterraneo: barcone si ribalta, morti 43 migranti",Group 2,GPT_HIGH_TOP_P,1,4,['1'],2,2,4,3,2,['4'],Immigrants,3,2,03/07/2021,2,-1
+7b64542e-11d0-464d-a060-1145a9d0ad3a,"Il premier libico a Roma, dalla ricostruzione del paese alla gestione dei flussi migratori: i dossier sul tavolo",Group 2,GPT_HIGH_TOP_P,3,4,"['1', '3']",2,2,4,3,1,-1,-1,3,2,24/12/2021,2,-1
+d73018e2-5184-43b7-ba01-e82378666dab,"In Fvg trovata la variante Delta in 25 dei 96 campioni analizzati. Riccardi: “Vaccinarsi è fondamentale""",Group 2,GPT_HIGH_TOP_P,1,4,['1'],2,2,4,3,1,-1,-1,3,2,12/06/2021,2,-1
+1d134854-568a-4590-86b1-64912b3c3e4d,Nuove aggressioni omofobe a Milano: calci e pugni in centro a una coppia di giovani,Group 2,GPT_HIGH_TOP_P,3,4,['1'],2,2,4,3,2,['3'],LGBTQ,3,2,29/06/2021,1,-1
+47970d6e-a9e8-4eba-b589-35dc3158d5b3,"Covid, specializzanda del Policlinico di Bari: «Ho vaccinato il mio papà, paziente fragile»",Group 2,GPT_HIGH_TOP_P,3,4,['1'],2,2,4,3,1,-1,-1,3,2,Enter the answer in 'DD/MM/YYYY' format,1,-1
+d4271fe2-7141-4158-88ff-47c78609f774,Il countdown: cosa accadrà tra poco a questi televisori,Group 2,GPT_HIGH_TOP_P,3,4,['1'],2,2,4,3,1,-1,-1,3,2,20/06/2022,2,-1
+48c6fea6-52c1-46e6-b53c-68fbe9d72d4b,Incidente mortale A14 ad Ancona Nord: muore motociclista di 73 anni,Group 1,GPT_HIGH_TOP_P,1,4,['1'],2,2,4,3,1,-1,-1,3,2,01/07/2021,1,-1
+83357b52-7b02-4cf2-8d9d-888dcc85ac0f,IL TAR LAZIO ORDINA AL MINISTERO DELLA SALUTE DI RENDERE PUBBLICI I VERBALI DELLA TASK FORCE SUL COVID,Group 1,GPT_HIGH_TOP_P,3,4,"['1', '4']",2,2,3,3,2,"['10', '11']","Roberto Speranza, Ministero della Salute",3,2,22/01/2020,2,-1
+3069108e-db2e-49cf-a1d8-80b60a702953,"Tra aperitivi digitali e delivery, la pandemia ha fatto impennare il consumo di alcol a casa: +250% nel 2020",Group 1,GPT_HIGH_TOP_P,3,4,['1'],2,2,3,3,1,-1,-1,3,2,14/05/2020,2,-1
+f449f8f5-f4d6-40f6-a573-89e9837cd6af,Il virus rallenta ancora. Tre regioni in zona bianca,Group 2,GPT_HIGH_TOP_P,1,4,['1'],2,2,4,3,1,-1,-1,3,2,18/05/2023,2,-1
