@@ -6,7 +6,7 @@ import datetime
 from dotenv import load_dotenv  # Optional, depending on your key storage method
 
 output_file = 'Query/output/outputChatGPT.csv'
-limite = 10
+limite = 50
 
 # Load environment variables if necessary (replace with your actual values)
 load_dotenv()
