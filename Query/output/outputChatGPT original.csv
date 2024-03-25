@@ -82,11 +82,45 @@ a08bbd16-9b44-41ed-8f63-f7d7752bc841,Spie russe nel cuore d'Europa: l'oscuro gio
 3c5ccd2b-3db0-485d-b089-77c66cef2627,"VICINO ALLA CONDUZIONE DI SANREMO 2022 - PAOLA ANSUINI SOTTO ATTACCO: TUTTI VOGLIONO MARIO DRAGHI IN TV - PIERSILVIO BERLUSCONI DELUSO DA ALESSIA MARCUZZI PER L'ADDIO A MEDIASET (E CASCHETTO SI RITROVA SENZA ARTISTI NEL ""BISCIONE"") - MARIO GIORDANO VITTIMA DI SCHERZI A PARTE - IL NO DELLA ORLANDO AL ""GF VIP"" AGITA ADIANA VOLPE - SONIA BRUGANELLI VA IN TV MA NON C'E' LO ZAMPINO DI PRESTA - CLIMA TESISSIMO TRA UN GIORNALISTA, AMATO A DESTRA, E UN NOTO DIRETTORE.",Group 1,ChatGPT4AsAnnotator,5,4,"['1', '5']",1,2,3,2,1,-1,-1,3,2,,2,-1
 78d95e36-d05a-4cef-8939-85959a4541fc,Controllate 375 persone: 13 multe Centro gremito e autobus deviati,Group 2,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,-1,-1,3,2,,2,-1
 9c7adc2e-c672-4547-806f-b0e5e3325c38,"Green Pass Rimini, ""Così porteremo gli stranieri in spiaggia""",Group 2,ChatGPT4AsAnnotator,3,4,['1'],2,2,4,3,1,-1,-1,3,2,29/05/2021,2,-1
-329408c2-ae02-4f41-89a7-4b2d436c5990,Ultima giravolta sui vaccini. «VietareAstrazeneca a tutti»,Group 2,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+329408c2-ae02-4f41-89a7-4b2d436c5990,Ultima giravolta sui vaccini. «VietareAstrazeneca a tutti»,Group 2,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,"```json
+{
+  ""Q1.1"": ""3"",
+  ""Q1.2"": ""3"",
+  ""Q1.3"": [""1""],
+  ""Q1.3.1"": ""2"",
+  ""Q1.4"": ""2"",
+  ""Q1.5"": ""3"",
+  ""Q1.6"": ""2"",
+  ""Q1.7"": ""1"",
+  ""Q1.7.1"": [],
+  ""Q1.7.1.2"": """",
+  ""Q2.8"": ""3"",
+  ""Q2.9.1"": ""2"",
+  ""Q2.9.2"": """",
+  ""Q2.10"": ""1""
+}
+```"
 184a4635-a693-4ccd-af1a-143455c391e1,Finanziaria: almeno 150 milioni nella variazione di fine giugno,Group 2,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,[],,3,2,31/05/2021,2,-1
 b59b7f92-329c-4002-a7bf-c2ebce4bde2f,"Morta Raffaella Carrà, manifesti funebri all'Argentario, ""Era una di noi""",Group 1,ChatGPT4AsAnnotator,5,4,['1'],2,2,4,3,1,-1,-1,3,2,06/07/2021,2,-1
 f46b51a5-037e-4bed-8460-a4eb2eefc264,"Vaccini anti-Covid in azienda, Figliuolo: “Per tutte le classi di età da giugno”",Group 1,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,-1,-1,3,2,,2,-1
-367975f9-7098-42a2-96e4-1cf4bfa33f6d,"Vaccini, attenzione all'ingorgo Over 40 allo start e tutti di rincorsa",Group 2,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+367975f9-7098-42a2-96e4-1cf4bfa33f6d,"Vaccini, attenzione all'ingorgo Over 40 allo start e tutti di rincorsa",Group 2,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,"```json
+{
+  ""Q1.1"": ""3"",
+  ""Q1.2"": ""4"",
+  ""Q1.3"": [""1""],
+  ""Q1.3.1"": ""1"",
+  ""Q1.4"": ""2"",
+  ""Q1.5"": ""4"",
+  ""Q1.6"": ""3"",
+  ""Q1.7"": ""1"",
+  ""Q1.7.1"": [],
+  ""Q1.7.1.2"": """",
+  ""Q2.8"": ""3"",
+  ""Q2.9.1"": ""2"",
+  ""Q2.9.2"": ""31/05/2020"",
+  ""Q2.10"": ""2""
+}
+```"
 7442ab45-1df3-4cf0-8237-391c079162d4,Sequestra due 13enni e le violenta per una notte: in cella operaio di 45 anni,Group 1,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,2,['11'],45-year-old worker,3,2,11/2022,1,-1
 0159845e-24c7-45ad-848c-a3fbe7b499d8,Focolaio dopo la festa in un locale a Codogno,Group 2,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,[],,3,2,26/06/YYYY,2,-1
 7759caf8-f8af-49e7-b25f-2c5672996939,Tutto sull'operazione “salviamo l'estate”,Group 2,ChatGPT4AsAnnotator,3,4,['1'],2,2,4,3,2,['11'],RegnoUnito,3,2,18/03/2021,2,-1
@@ -98,7 +132,24 @@ f964e254-d60e-4509-9a03-b62d8b5f2568,"Covid, fake news di Montesano: «Il sangue
 50f01f08-8681-4e9f-a6b4-174587ffae2e,"Scandalo concerie, colpo di scena al tavolo di distretto: la sindaca di Santa Croce lascia il ruolo di coordinatrice",Group 2,ChatGPT4AsAnnotator,3,4,"['1', '3']",2,2,4,3,1,-1,-1,3,2,28/05/2021,2,-1
 c0d0d9ca-a727-47d9-ac5b-570f37087310,Il registro elettronico che agita le famiglie: una conquista o no?,Group 2,ChatGPT4AsAnnotator,3,4,['1'],2,2,3,3,1,-1,-1,3,2,25/05/2021,1,-1
 748e746f-5f40-45c4-bc63-3780ee886f3c,"Da lunedì via libera al vaccino per gli over 40, il commissario Figliuolo ha scritto alle Regioni",Group 1,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,-1,-1,3,2,17/05/YYYY,2,-1
-bb289c59-e569-4da3-b2d7-0d6be6c88265,"Covid, 480 contagi e 31 morti. L’allarme di Israele: «Pfizer protegge dalla variante Delta solo al 64%»",Group 1,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+bb289c59-e569-4da3-b2d7-0d6be6c88265,"Covid, 480 contagi e 31 morti. L’allarme di Israele: «Pfizer protegge dalla variante Delta solo al 64%»",Group 1,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,"```json
+{
+  ""Q1.1"": ""1"",
+  ""Q1.2"": ""4"",
+  ""Q1.3"": [""1"", ""9""],
+  ""Q1.3.1"": ""1"",
+  ""Q1.4"": ""2"",
+  ""Q1.5"": ""3"",
+  ""Q1.6"": ""2"",
+  ""Q1.7"": ""1"",
+  ""Q1.7.1"": [],
+  ""Q1.7.1.2"": """",
+  ""Q2.8"": ""3"",
+  ""Q2.9.1"": ""2"",
+  ""Q2.9.2"": """",
+  ""Q2.10"": ""2""
+}
+```"
 e445631e-cae3-4af9-8a4e-49a0141ea731,Quasi 2mila tifosi scozzesi positivi al coronavirus dopo aver partecipato a eventi degli Europei,Group 2,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,[],,3,2,11/06/2021,1,-1
 bbfbfaab-03d8-4fed-bc81-6fbcfb15fcd1,"“Marketing mix”, marketing inclusivo, ciò che il marketing dovrebbe già essere",Group 1,ChatGPT4AsAnnotator,2,4,['1'],2,2,4,3,1,-1,-1,3,1,-1,1,-1
 d9858ad4-8aca-4de0-9a6a-449938e3eaf3,ACCORDO MINISTERO-REGIONI. STOP AL COPRIFUOCO IN ZONA BIANCA. SI RITORNA ALLA VITA NORMALE,Group 2,ChatGPT4AsAnnotator,1,4,"['1', '3']",2,2,4,3,1,-1,-1,3,2,,2,-1
@@ -178,11 +229,49 @@ b5067687-5dd2-4b72-9036-3bed2ab549a1,"Carbonara, 46enne ucciso e abbandonato in 
 a425710b-96e3-4840-87be-75deea62775d,Quanto si preoccupa l'Ue per la Macron fatigue,Group 2,ChatGPT4AsAnnotator,3,4,['1'],2,2,3,3,1,-1,-1,3,2,06/05/2021,2,-1
 47ebb569-b80a-4a6d-9f20-8c1a92f36c48,"Coronavirus, cresce l’allerta in Giappone: stato di emergenza in altre tre prefetture. Australia, nuovi dati sui casi di trombosi",Group 1,ChatGPT4AsAnnotator,1,3,['1'],2,2,4,3,1,-1,-1,3,2,14/05/2021,2,-1
 073a8f69-a5c2-4ec5-ab0b-ae281ef25fbf,Con 120mila euro non dichiarati in valigia: cittadino tedesco fermato a Olbia,Group 2,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,4,1,-1,-1,3,2,,2,-1
-fcc4a05d-d33b-4bdd-8af7-4077cfb2640a,"Lo scetticismo dei forti: i 150 anni di un filosofo dimenticato, Giuseppe Rensi",Group 2,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+fcc4a05d-d33b-4bdd-8af7-4077cfb2640a,"Lo scetticismo dei forti: i 150 anni di un filosofo dimenticato, Giuseppe Rensi",Group 2,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,"```json
+{
+  ""Q1.1"": ""3"",
+  ""Q1.2"": ""4"",
+  ""Q1.3"": [""1""],
+  ""Q1.3.1"": ""2"",
+  ""Q1.4"": ""2"",
+  ""Q1.5"": ""4"",
+  ""Q1.6"": ""3"",
+  ""Q1.7"": ""1"",
+  ""Q1.7.1"": [],
+  ""Q1.7.1.2"": """",
+  ""Q2.8"": ""3"",
+  ""Q2.9.1"": ""2"",
+  ""Q2.9.2"": ""31/05/1871"",
+  ""Q2.10"": ""1""
+}
+```"
 0e47375c-770b-482c-b6db-fe12eb8af782,Mario Della Cioppa nuovo questore di Roma,Group 2,ChatGPT4AsAnnotator,3,4,['1'],2,2,4,4,1,-1,-1,3,2,31/05/2021,2,-1
 247b189a-71b7-4959-8e0d-dbc67bb52f6d,Oms su casi Covid-19 in Europa: “Aumentati del 10% e copertura vaccinale insufficiente”. Sugli Europei: “Migliorare monitoraggio”,Group 2,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,-1,-1,3,2,01/07/2021,2,-1
 55d744cd-36c6-4747-b055-981c9aba3fae,"Catania, ruba macchinari e alcolici da un bar in aeroporto: denunciato",Group 2,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,-1,-1,3,1,-1,2,-1
-df86ebbe-1672-4c99-8895-b0fe742ed00c,CSM ED I VERBALI DI AMARA: I SEGRETI DELLA NUOVA STAGIONE DI VELENI,Group 1,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+df86ebbe-1672-4c99-8895-b0fe742ed00c,CSM ED I VERBALI DI AMARA: I SEGRETI DELLA NUOVA STAGIONE DI VELENI,Group 1,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,"```json
+{
+  ""Q1.1"": ""3"",
+  ""Q1.2"": ""4"",
+  ""Q1.3"": [
+    ""1""
+  ],
+  ""Q1.3.1"": ""2"",
+  ""Q1.4"": ""2"",
+  ""Q1.5"": ""3"",
+  ""Q1.6"": ""3"",
+  ""Q1.7"": ""2"",
+  ""Q1.7.1"": [
+    ""11""
+  ],
+  ""Q1.7.1.2"": ""Piero Amara, Sebastiano Ardita, Paolo Storari, Francesco Greco"",
+  ""Q2.8"": ""3"",
+  ""Q2.9.1"": ""2"",
+  ""Q2.9.2"": ""31/12/2019"",
+  ""Q2.10"": ""2""
+}
+```"
 73a645b8-10b1-44a3-989a-935a37d66497,"Firenze, Palazzo Strozzi svela l'arte americana dalla guerra in Vietnam all’11 settembre",Group 2,ChatGPT4AsAnnotator,3,4,['1'],2,2,4,3,1,-1,-1,3,2,,1,-1
 4cd87a98-b98f-4470-80a7-56d34ea1d993,Addio Raffaella Carrà: funerali e camera ardente. Ecco dove e quando saranno,Group 1,ChatGPT4AsAnnotator,5,4,['1'],2,2,4,3,1,-1,-1,3,2,07/07/2021,1,-1
 c9e49f68-e87e-43ae-ba0d-55ecca379934,"Novara, 52enne si vaccina: ma mezz’ora dopo viene a mancare",Group 2,ChatGPT4AsAnnotator,1,3,['1'],1,2,3,2,1,[],,3,2,30/05/2021,2,-1
@@ -228,7 +317,24 @@ db3e2592-7e10-4200-bfd0-ae05f621fb60,"«Vaccinare entro fine luglio 7 pugliesi s
 1a1abfdb-95b6-4981-9f5c-390955e66afe,"Vanoni, Colapesce e Dimartino, ecco ""Toy Boy"" il tormentone-samba dell'estate 2021",Group 1,ChatGPT4AsAnnotator,5,4,['1'],1,2,4,3,1,-1,-1,3,2,,1,-1
 9b988da9-4ea5-42c0-b596-e997962ae5a6,"""A bordo due scafisti..."". Salvini smonta il teorema dei pm",Group 1,ChatGPT4AsAnnotator,3,4,['1'],2,2,3,3,1,-1,-1,3,2,27/07/2019,1,-1
 b1fb979f-c629-4ccb-9bcd-c5982fbf6b33,"Nuovo record in Russia, oltre 23mila contagi e 672 morti. L’appello di Putin: “Vaccinatevi”",Group 1,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,[],,3,2,,2,-1
-ea76f493-6b73-4938-82ad-1b9ab24be152,"Clint Eastwood, il regista più odiato dalle “fighette” di Hollywood",Group 2,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+ea76f493-6b73-4938-82ad-1b9ab24be152,"Clint Eastwood, il regista più odiato dalle “fighette” di Hollywood",Group 2,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,"```json
+{
+  ""Q1.1"": ""2"",
+  ""Q1.2"": ""4"",
+  ""Q1.3"": [""1"", ""9""],
+  ""Q1.3.1"": ""1"",
+  ""Q1.4"": ""2"",
+  ""Q1.5"": ""2"",
+  ""Q1.6"": ""2"",
+  ""Q1.7"": ""2"",
+  ""Q1.7.1"": [""0"", ""9""],
+  ""Q1.7.1.2"": ""Clint Eastwood, Hollywood, political correctness advocates"",
+  ""Q2.8"": ""3"",
+  ""Q2.9.1"": ""2"",
+  ""Q2.9.2"": """",
+  ""Q2.10"": ""1""
+}
+```"
 3c2e2f67-fdc7-42b9-9562-0bb3c0f37f2f,Covid Italia 6 luglio: 907 nuovi casi e 24 morti,Group 2,ChatGPT4AsAnnotator,1,4,['1'],1,2,4,3,1,[],,3,2,06/07/2021,2,-1
 3ca3093a-5786-4c90-8891-1bba8f8ba160,Il ministro: Vaccini anche in vacanza. In futuro prepariamoci a terza dose dai medici di base,Group 2,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,-1,-1,3,1,-1,1,-1
 ee94ef5e-3fea-4bb5-a2b5-b3de18199d0c,"DAMIANO DEI MANESKIN DEMOLISCE TEMPTATION (PROGRAMMA DI MARIA DE FILIPPI): “QUESTA ROBA È TOSSICA. ANDREBBE BOICOTTATA A BASTA” - NO ALBA, NO PARTY: LA FESTA PER I 60 ANNI CON BALOTELLI MA SENZA TOMMASO ZORZI (GRANDE AMICO DEL FIGLIO FRANCESCO OPPINI) - MA PAOLA DI BENEDETTO, EX DI FEDERICO ROSSI, STA CON STEFANO DE MARTINO? COSA DICE LA RAGAZZA PER “CHIARIRE” LA SITUAZIONE. BELEN NON HA ANCORA PARTORITO MA INTANTO LA FIGLIA CAMBIA NOME...",Group 1,ChatGPT4AsAnnotator,5,4,"['1', '5']",1,2,3,2,1,[],,3,1,,1,-1
@@ -238,7 +344,24 @@ e12996b0-f859-4d54-9541-b94711319455,Liscia o gassata: installato a Borgonovo il
 e0a57435-28cc-489e-ad8b-0b9c94139871,"Liceali sardi a casa fino a febbraio, elementari e medie in aula domani",Group 1,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,-1,-1,3,2,,2,-1
 32a59fa8-9011-4f43-9230-3ec92159029e,Stuprò una donna nel 2006. Condannato a 13 anni,Group 2,ChatGPT4AsAnnotator,3,4,['1'],1,2,4,3,1,[],,3,2,20/08/2006,1,-1
 f9251202-ca0d-498e-a03b-4450350f5508,Biden e Harris minacciano di non fare prigionieri ma un sondaggio li gela: trumpismo più vivo che mai,Group 2,ChatGPT4AsAnnotator,2,3,"['1', '7']",1,2,2,2,2,"['0', '9']","Conservatives, Race/ethnicity",3,2,,1,-1
-e169c4f1-d5d3-45cd-877a-1e59ca4318a4,"""Ha ragione Salvini, ma non si può dire"": Pd nel caos",Group 1,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+e169c4f1-d5d3-45cd-877a-1e59ca4318a4,"""Ha ragione Salvini, ma non si può dire"": Pd nel caos",Group 1,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,"```json
+{
+  ""Q1.1"": ""2"",
+  ""Q1.2"": ""4"",
+  ""Q1.3"": [""1"", ""4""],
+  ""Q1.3.1"": ""2"",
+  ""Q1.4"": ""2"",
+  ""Q1.5"": ""3"",
+  ""Q1.6"": ""3"",
+  ""Q1.7"": ""2"",
+  ""Q1.7.1"": [""3"", ""11""],
+  ""Q1.7.1.2"": ""LGBTQ, Politicians"",
+  ""Q2.8"": ""3"",
+  ""Q2.9.1"": ""2"",
+  ""Q2.9.2"": """",
+  ""Q2.10"": ""2""
+}
+```"
 4acd6999-2234-43dc-ab84-53f021925268,"Appiano Gentile, denunciato per scritte omofobe e naziste su un muro",Group 2,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,2,"['3', '6', '9']","LGBTQ, Religion (Other), Race/ethnicity",3,2,26/06/2021,2,-1
 f35f6598-f230-4d0f-9c53-cb48a278f30a,"Usa, i vaccinati possono tornare alla normale. Stop a distanziamento e mascherina",Group 1,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,-1,-1,3,2,,2,-1
 a6af4a60-7d73-43b4-9be9-3e5cc33b687a,"Firenze, cos'è ""La Ferita"": l'opera che squarcia Palazzo Strozzi",Group 2,ChatGPT4AsAnnotator,3,4,"['1', '3']",2,2,4,3,1,[],,3,2,,2,-1
@@ -262,7 +385,24 @@ f0fe9b95-3229-4107-927c-d616ceeb19e7,Fernando prenota e va a vaccinarsi a 100 an
 7c2985b4-d96e-442e-88a2-00811d796d16,Il privilegio di sedere al tavolo giusto,Group 2,ChatGPT4AsAnnotator,3,4,['1'],2,2,3,3,2,['3'],Aurora Leone,3,2,25/05/2023,2,-1
 1a67cbd3-4924-485c-86db-ac1127de77fb,"Farini, la proposta: “Rimborsi da 400 euro per le famiglie delle vittime da Covid”",Group 2,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,[],,3,2,29/04/2021,1,-1
 6ede1205-d74f-4bb1-8c37-15fc5b4738ac,Il degrado di Milano oltre i limiti di guardia,Group 1,ChatGPT4AsAnnotator,2,4,['1'],2,2,2,2,2,"['1', '9']","Liberals, Race/ethnicity",3,2,,2,-1
-ad89700a-da40-4c91-9f50-4d68d2bc3582,Senza via d’uscita se le correnti restano strumenti di potere,Group 1,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+ad89700a-da40-4c91-9f50-4d68d2bc3582,Senza via d’uscita se le correnti restano strumenti di potere,Group 1,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,"```json
+{
+  ""Q1.1"": ""3"",
+  ""Q1.2"": ""4"",
+  ""Q1.3"": [""1""],
+  ""Q1.3.1"": ""1"",
+  ""Q1.4"": ""2"",
+  ""Q1.5"": ""3"",
+  ""Q1.6"": ""3"",
+  ""Q1.7"": ""1"",
+  ""Q1.7.1"": [],
+  ""Q1.7.1.2"": """",
+  ""Q2.8"": ""3"",
+  ""Q2.9.1"": ""2"",
+  ""Q2.9.2"": """",
+  ""Q2.10"": ""2""
+}
+```"
 587aeff6-91eb-4f0a-af54-572a0344d99b,GIUDICI CHE SBAGLIANO MA NON PAGANO,Group 2,ChatGPT4AsAnnotator,2,4,['1'],2,2,3,3,1,-1,-1,3,1,-1,1,-1
 a8739979-876f-4f17-be81-ed5757b7d9e1,Disastro ambientale Ilva: i Riva condannati a oltre 20 anni. Tre anni e mezzo a Nichi Vendola,Group 2,ChatGPT4AsAnnotator,3,4,['1'],1,2,4,3,2,['11'],Nichi Vendola,3,2,31/05/2021,2,-1
 378b3ae6-a281-429e-a5c7-1ee2f060ff6f,"Da Narcao all'Antartide: ""In viaggio a passo d'uomo con 40 gradi sottozero""",Group 1,ChatGPT4AsAnnotator,3,4,['1'],2,2,4,3,1,[],,3,2,,1,-1
@@ -305,7 +445,24 @@ f9c97907-d32c-4d29-88b4-757395ae3f98,"Coronavirus, la variante Delta (per ora) n
 226a1723-f0e4-432a-849e-413138d469e1,Ci è voluto tanto a riconoscere che il coronavirus si trasmette per via aerea,Group 2,ChatGPT4AsAnnotator,3,4,['1'],2,2,4,3,1,-1,-1,3,2,21/05/2021,2,-1
 7e5edaea-f2a5-46ce-8052-4a14f75b957f,Migrante armato di pietre distrugge vetri supermercato: clienti barricati dentro,Group 1,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,2,['4'],Migranti,1,2,,2,-1
 52c04991-644d-4bdb-bfda-b640cfeeb13d,"Il ddl Zan ha problemi oggettivi"". Fassina (Leu) chiede al Pd di mediare",Group 1,ChatGPT4AsAnnotator,3,4,"['1', '3']",2,2,3,3,2,['11'],"Stefano Fassina, Mino Taricco",3,2,13/07/2021,2,-1
-de51e193-22de-4764-b9e7-83d699957b13,"Ddl Zan, dirigente Pd insulta Scalfarotto con un messaggio omofobo",Group 1,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+de51e193-22de-4764-b9e7-83d699957b13,"Ddl Zan, dirigente Pd insulta Scalfarotto con un messaggio omofobo",Group 1,ChatGPT4AsAnnotator,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,"```json
+{
+  ""Q1.1"": ""3"",
+  ""Q1.2"": ""4"",
+  ""Q1.3"": [""1""],
+  ""Q1.3.1"": ""2"",
+  ""Q1.4"": ""2"",
+  ""Q1.5"": ""3"",
+  ""Q1.6"": ""3"",
+  ""Q1.7"": ""2"",
+  ""Q1.7.1"": [""2"", ""3"", ""11""],
+  ""Q1.7.1.2"": ""Ivan Scalfarotto, Rosamaria Sorge, Teresa Bellanova"",
+  ""Q2.8"": ""3"",
+  ""Q2.9.1"": ""2"",
+  ""Q2.9.2"": ""07/07/2021"",
+  ""Q2.10"": ""2""
+}
+```"
 52f8853b-4602-416b-80b4-a856f7024724,È positivo ma riceve i clienti in ufficio e va a far la spesa: arrestato assicuratore catanese,Group 1,ChatGPT4AsAnnotator,1,4,['1'],2,2,4,3,1,-1,-1,3,2,,2,-1
 14449e38-aa1b-40a3-92e7-a5e8bee33cdf,"Efe Bal boccia il Ddl Zan: “Io, trans, dico che è una legge stupida e inutile”",Group 2,ChatGPT4AsAnnotator,2,4,"['1', '4']",2,2,3,2,1,-1,-1,3,2,,1,-1
 564d249d-d88b-48d4-a3a6-1e31c8ad3f57,"La destra detta l’agenda, in Francia il clima si arroventa",Group 2,ChatGPT4AsAnnotator,3,4,['1'],2,2,3,2,1,[],,3,2,20/06/2021,2,-1
