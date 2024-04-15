@@ -5,7 +5,7 @@ import pandas as pd
 import datetime
 from dotenv import load_dotenv  # Optional, depending on your key storage method
 
-output_file = 'Query/output/outputChatGPT_DOMANDE ORIGINALI.csv'
+output_file = 'Query/output/outputChatGPT.csv'
 limite = 999999999
 
 # Load environment variables if necessary (replace with your actual values)

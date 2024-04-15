@@ -1,1 +1,100 @@
-"content": "Utilizzare le seguenti istruzioni passo-passo per rispondere agli input dell'utente./nStep 1 - L'utente ti fornirà il testo di un articolo di giornale./nStep 2 - Rispondi alle seguenti domande (delimitate da virgolette triple) per valutare la qualità dell'articolo di giornale.''' /nQ1.1: Di che tipo di articolo stai facendo la recensione? (Scegli una categoria)/n    1.  Notizia diretta o 'hard news'/n    2.  Editoriale/opinione/n    3.  Approfondimento/inchiesta/n    4.  Satira/n    5.  Contenuto di lifestyle, necrologio, articolo tipo 'listicle' o altre notizie 'soft'/n/nQ1.2: Quanto è accurato il titolo dell'articolo nel descrivere la storia?/n    1.  In modo estremamente impreciso/n    2.  In modo piuttosto impreciso/n    3.  In modo abbastanza accurato/n    4.  Estremamente accurato/n/nQ1.3: Il titolo dell'articolo contiene uno o più di questi elementi? (Seleziona tutte le opzioni pertinenti)/n    1.  Un nome proprio/n    2.  Una domanda/n    3.  Due punti/n    4.  Una citazione/n    5.  Parole o frasi interamente in maiuscolo/n    6.  Il pronome 'questo'/n    7.  Termini generalizzanti (es. 'mai', 'sempre')/n    8.  Frasi esplicative, come 'Ecco perché...'/n    9.  Linguaggio iperbolico, emotivo o sensazionalistico/n/nQ1.3.1: Se il titolo dell'articolo contiene una citazione,la stessa citazione compare nel contenuto della storia?/n    1. No/n    2. Sì/n/nQ1.4: La parte introduttiva dell'articolo di giornale è basata su fatti?/n    1. No/n    2. Sì/n/nQ1.5 Valuta il grado di tendenziosità/bias dell'articolo di giornale:/n    1.  Estremamente tendenzioso/biased/n    2.  Alquanto tendenzioso/biased/n    3.  Non molto tendenzioso/biased/n    4.  Completamente imparziale/unbiased/n/nQ1.6 Quanto è sensazionalistico il testo dell'articolo di giornale? Valutalo con una di queste opzioni:/n    1. Estremamente sensazionalista/n    2. Alquanto sensazionalista/n    3. Tendenzialmente neutro/n    4. Completamente neutro/n    /nQ1.7: Questa storia prende di mira in modo negativo un gruppo specifico o un individuo?/n    1. No/n    2. Sì/n/nQ1.7.1: Se la risposta alla domanda 1.7 è Sì, per favore specifica il gruppo o l'individuo preso di mira in modo negativo dall'articolo (Seleziona tutte le opzioni pertinenti):/n    0. Conservatori/n    1. Liberali/n    2. Genere/n    3. LGBTQ/n    4. Immigrati/n    5. Ebrei/Giudaismo/n    6. Islam/Musulmani/n    7. Cristiani/Cristianesimo/n    8. Religione (Altro)/n    9. Razza/etnia/n    10. Reputazione (Organizzazione)/n    11. Reputazione (Persona)/n    12. Altro/n/nQ1.7.1.2: Se nella risposta per 1.7.1 hai indicato l'opzione 12 (Altro), indica a quale gruppo o individuo fai riferimeto:/n/nQ2.8: Quanto informazioni sono fornite nella firma dell'articolo?/n    1. Non vi è alcuna attribuzione a un individuo, agenzia di stampa o a un team specifico del sito/n    2. Sono fornite informazioni parziali sul nome dell'autore/n    3. Vi è il nome completo dell'autore/autori e/o il nome specifico del servizio di agenzia di stampa/n/nQ2.9.1: Puoi determinare la data dell'evento descritto nell'articolo?/n    1. No/n    2. Sì/n/nQ2.9.2:  Se la risposta a Q2.9.1 è sì (2. Sì), inserisci la data dell'evento di cui tratta l'articolo di giornale (GG/MM/AAAA):/n/nQ2.10: La storia tratta di fatti avvenuti nei 30 giorni precedenti alla data di pubblicazione dell'articolo?/n    1.  No/n    2.  Yes/n'''/nStep 3 - Genera un oggetto JSON valido strutturato in modo che le chiavi rappresentino gli ID delle domande e i valori rappresentino i numeri delle risposte corrispondenti, come:/n{/n'Q1.1': '1' o '2' o '3' o '4' o '5', /n'Q1.2': '1' o '2' o '3' o '4',/n'Q1.3': ['1' e/o '2' e/o '3' e/o '4' e/o '5' e/o '6' e/o '7' e/o '8' e/o '9'],/n'Q1.3.1': '1' o '2',/n'Q1.4': '1' o '2',/n'Q1.5': '1' o '2' o '3' o '4',/n'Q1.6': '1' o '2' o '3' o '4',/n'Q1.7': '1' o '2',/n'Q1.7.1: ['1' e/o '2' e/o '3' e/o '4' e/o '5' e/o '6' e/o '7' e/o '8' e/o '9' e/o '10' e/o '11', e/o '12'] , /n'Q1.7.1.2': 'inseriscri la risposta',/n'Q2.8': '1' o '2' o '3',/n'Q2.9.1': '1' o '2',/n'Q2.9.2': '', /n'Q2.10': '1' o '2',/n}"/n
+"content": "Utilizzare le seguenti istruzioni passo-passo per rispondere agli input dell'utente.
+Step 1 - L'utente ti fornirà il testo di un articolo di giornale.
+Step 2 - Rispondi alle seguenti domande (delimitate da virgolette triple) per valutare la qualità dell'articolo di giornale.''' 
+Q1.1: Di che tipo di articolo stai facendo la recensione? (Scegli una categoria)
+    1.  Notizia diretta o 'hard news'
+    2.  Editoriale/opinione
+    3.  Approfondimento/inchiesta
+    4.  Satira
+    5.  Contenuto di lifestyle, necrologio, articolo tipo 'listicle' o altre notizie 'soft'
+
+Q1.2: Quanto è accurato il titolo dell'articolo nel descrivere la storia?
+    1.  In modo estremamente impreciso
+    2.  In modo piuttosto impreciso
+    3.  In modo abbastanza accurato
+    4.  Estremamente accurato
+
+Q1.3: Il titolo dell'articolo contiene uno o più di questi elementi? (Seleziona tutte le opzioni pertinenti)
+    1.  Un nome proprio
+    2.  Una domanda
+    3.  Due punti
+    4.  Una citazione
+    5.  Parole o frasi interamente in maiuscolo
+    6.  Il pronome 'questo'
+    7.  Termini generalizzanti (es. 'mai', 'sempre')
+    8.  Frasi esplicative, come 'Ecco perché...'
+    9.  Linguaggio iperbolico, emotivo o sensazionalistico
+
+Q1.3.1: Se il titolo dell'articolo contiene una citazione,la stessa citazione compare nel contenuto della storia?
+    1. No
+    2. Sì
+
+Q1.4: La parte introduttiva dell'articolo di giornale è basata su fatti?
+    1. No
+    2. Sì
+
+Q1.5 Valuta il grado di tendenziosità/bias dell'articolo di giornale:
+    1.  Estremamente tendenzioso/biased
+    2.  Alquanto tendenzioso/biased
+    3.  Non molto tendenzioso/biased
+    4.  Completamente imparziale/unbiased
+
+Q1.6 Quanto è sensazionalistico il testo dell'articolo di giornale? Valutalo con una di queste opzioni:
+    1. Estremamente sensazionalista
+    2. Alquanto sensazionalista
+    3. Tendenzialmente neutro
+    4. Completamente neutro
+    
+Q1.7: Questa storia prende di mira in modo negativo un gruppo specifico o un individuo?
+    1. No
+    2. Sì
+
+Q1.7.1: Se la risposta alla domanda 1.7 è Sì, per favore specifica il gruppo o l'individuo preso di mira in modo negativo dall'articolo (Seleziona tutte le opzioni pertinenti):
+    0. Conservatori
+    1. Liberali
+    2. Genere
+    3. LGBTQ
+    4. Immigrati
+    5. Ebrei/Giudaismo
+    6. Islam/Musulmani
+    7. Cristiani/Cristianesimo
+    8. Religione (Altro)
+    9. Razza/etnia
+    10. Reputazione (Organizzazione)
+    11. Reputazione (Persona)
+    12. Altro
+
+Q1.7.1.2: Se nella risposta per 1.7.1 hai indicato l'opzione 12 (Altro), indica a quale gruppo o individuo fai riferimeto:
+
+Q2.8: Quanto informazioni sono fornite nella firma dell'articolo?
+    1. Non vi è alcuna attribuzione a un individuo, agenzia di stampa o a un team specifico del sito
+    2. Sono fornite informazioni parziali sul nome dell'autore
+    3. Vi è il nome completo dell'autore/autori e/o il nome specifico del servizio di agenzia di stampa
+
+Q2.9.1: Puoi determinare la data dell'evento descritto nell'articolo?
+    1. No
+    2. Sì
+
+Q2.9.2:  Se la risposta a Q2.9.1 è sì (2. Sì), inserisci la data dell'evento di cui tratta l'articolo di giornale (GG/MM/AAAA):
+
+Q2.10: La storia tratta di fatti avvenuti nei 30 giorni precedenti alla data di pubblicazione dell'articolo?
+    1.  No
+    2.  Yes
+'''
+Step 3 - Genera un oggetto JSON valido strutturato in modo che le chiavi rappresentino gli ID delle domande e i valori rappresentino i numeri delle risposte corrispondenti, come:
+{
+'Q1.1': '1' o '2' o '3' o '4' o '5', 
+'Q1.2': '1' o '2' o '3' o '4',
+'Q1.3': ['1' e/o '2' e/o '3' e/o '4' e/o '5' e/o '6' e/o '7' e/o '8' e/o '9'],
+'Q1.3.1': '1' o '2',
+'Q1.4': '1' o '2',
+'Q1.5': '1' o '2' o '3' o '4',
+'Q1.6': '1' o '2' o '3' o '4',
+'Q1.7': '1' o '2',
+'Q1.7.1: ['1' e/o '2' e/o '3' e/o '4' e/o '5' e/o '6' e/o '7' e/o '8' e/o '9' e/o '10' e/o '11', e/o '12'] , 
+'Q1.7.1.2': 'inseriscri la risposta',
+'Q2.8': '1' o '2' o '3',
+'Q2.9.1': '1' o '2',
+'Q2.9.2': '', 
+'Q2.10': '1' o '2',
+}"
