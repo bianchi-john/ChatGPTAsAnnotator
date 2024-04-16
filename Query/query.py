@@ -5,8 +5,24 @@ import pandas as pd
 import datetime
 from dotenv import load_dotenv  # Optional, depending on your key storage method
 
-output_file = 'Query/output/outputChatGPT.csv'
-limite = 999999999
+output_file = 'Query/output/'
+limite = 9999999
+
+# Chiedo all'utente di indicare un nome per il file di output
+name = input(f"Provide a name for output file (remember to include csv extension): ")
+output_file = output_file + name
+
+# Chiedo all'utente se vuole sovrascrivere il file nel caso esista già
+if os.path.isfile(output_file):
+    confirm = input(f"The file '{output_file}' already exists. Do you want to overwrite it? (y/n): ")
+    if confirm.lower() != 'y':
+        quit()
+
+# Chiedo all'utente se vuole stabilire un limite massimo di articoli da annotare
+confirm = input(f"Do you want a maximum file limit?: ")
+if confirm.lower() == 'y':
+    limite = input(f"Set the number: ")
+
 
 # Load environment variables if necessary (replace with your actual values)
 load_dotenv()
@@ -30,20 +46,38 @@ def read_json_file(filepath):
 articles_dir = "Articles/articles"  # Update with your articles directory path
 counter = 0
 
+
+# Leggo il file che contiene i prompt da dara a Chatgpt
+def read_phrases_file(filepath):
+    try:
+        with open(filepath, 'r') as file:
+            phrases = [line.strip() for line in file.readlines()]
+            return phrases
+    except FileNotFoundError as e:
+        print(f"Error reading phrases file '{filepath}': {e}")
+        return []
+
+# Esempio di utilizzo:
+phrases_file_path = 'Query/prompt/prompt.txt'
+phrases_list = read_phrases_file(phrases_file_path)
+
+
 for filename in os.listdir(articles_dir):
     counter = counter + 1
     filepath = os.path.join(articles_dir, filename)
     if os.path.isfile(filepath) and filename.endswith(".json"):
         article_content = read_json_file(filepath)
         if article_content:
+            specific_prompt_index = 0  # Indice della frase desiderata
+            specific_prompt = phrases_list[specific_prompt_index]
             messages = [
                 {
-                "role": "system",
-                "content": "Use the following step-by-step instructions to respond to user inputs./nStep 1 - The user will provide you with a text of a newspaper article. /nStep 2 -  Given the following questions (delimited by triple quotes), answer them to assess the quality of the journal article.''' /nQ1.1: What type of news article are you reviewing? (Check one):/n    1.  Straight news, or 'hard news'/n    2.  Editorial/opinion/n    3.  Feature/investigation/n    4.  Satire/n    5.  Lifestyle content, obituary, 'listicle', or other 'soft news'/n/nQ1.2: How accurately does the story’s headline describe the content of the story?/n    1.  Extremely inaccurately/n    2.  Somewhat inaccurately/n    3.  Somewhat accurately/n    4.  Extremely accurately/n/nQ1.3: Does the story’s headline contain any of the following elements? (Check all that apply):/n    1.  A proper noun/n    2.  A question/n    3.  A colon/n    4.  A quotation/n    5.  Words or phrases that are entirely capitalized (all caps)/n    6.  The pronoun 'this'/n    7.  Generalizing terms (ex: 'never', 'always')/n    8.  Explanation phrases, such as 'Here’s why...'/n    9.  Hyperbolic, emotional or sensationalized language/n/nQ1.3.1: If the headline contains a quotation, does that same quotation appear in the content of the story?/n    1.  No/n    2.  Yes/n/nQ1.4: Does the article begin with a fact-based lead?/n    1.  No/n    2.  Yes/n/nQ1.5 Please rate the degree of bias in the article copy:/n    1.  Extremely biased/n    2.  Mostly biased/n    3.  Somewhat biased/n    4.  Entirely unbiased/n/nQ1.6 Does the article use sensationalised language:/n    1.  Extremely sensationalised/n    2.  Somewhat sensationalised/n    3.  Mainly neutral/n    4.  Entirely neutral/n/nQ1.7: Does this story negatively target a specific group or individual?/n    1.  No/n    2.  Yes/n/nQ1.7.1: If the answer 1.7 is yes, please specify the group or individual negatively target. (Check all that apply):/n	0.  Conservatives/n	1.  Liberals/n	2.  Gender/n	3.  LGBTQ/n	4.  Immigrants/n	5.  Jews/Judaism/n	6.  Islam/Muslims/n	7.  Christians/Christianity/n	8.  Religion (Other)/n	9.  Race/ethnicity/n	10.  Reputation (Organisation)/n	11.  Reputation (Person)/n	12.  Other/n/nQ1.7.1.2: If answer 1.7.1 is yes, please specify who you are referring to:/n/nQ2.8: How much information is provided in the article’s byline?/n    1.  There is no attribution to any individual, newswire, or specific team of the site/n    2.  There is partial information given for the author’s name/n    3.  There is a full name for the author/authors and/or the specific newswire service name/n/nQ2.9.1: Can you determine the date of the event covered by the article?/n    1.  No/n    2.  Yes/n/nQ2.9.2: If the answer to Q2.9.1 is yes (2. Yes), enter the date of the event being reported (DD/MM/YYYY):/n/nQ2.10: Is the story covering a news event or development that occurred within 30 days prior to the article’s publication date?/n    1.  No/n    2.  Yes/n'''/nStep 3 - Output a valid JSON object structured where the keys represent the question Ids and the values represent the corresponding answer numbers, like: /n{/n'Q1.1': '1' or '2' or '3' or '4' or '5', /n'Q1.2': '1' or '2' or '3' or '4',/n'Q1.3': ['1' and or '2' and or '3' and or '4' and or '5' and or '6' and or '7' and or '8' and or '9'],/n'Q1.3.1': '1' or '2',/n'Q1.4': '1' or '2',/n'Q1.5': '1' or '2' or '3' or '4',/n'Q1.6': '1' or '2' or '3' or '4',/n'Q1.7': '1' or '2',/n'Q1.7.1: ['1' and or '2' and or '3' and or '4' and or '5' and or '6' and or '7' and or '8' and or '9' and or '10' and or '11', and or '12'] , /n'Q1.7.1.2': 'Enter the answer',/n'Q2.8': '1' or '2' or '3',/n'Q2.9.1': '1' or '2',/n'Q2.9.2': '', /n'Q2.10': '1' or '2',/n}"
+                    "role": "system",
+                    "content": f"Use the {specific_prompt}"
                 },
                 {
-                "role": "user",
-                "content": str(article_content)
+                    "role": "user",
+                    "content": str(article_content)
                 }
             ]
             completion = client.chat.completions.create(
@@ -108,14 +142,11 @@ for filename in os.listdir(articles_dir):
             # Riorganizzo il DataFrame in base alle colonne personalizzate
             df = df.reindex(columns=custom_header)  
 
-            # Se il file esiste, aggiungi i dati senza l'header
-
-            if os.path.isfile(output_file):                    
-                # Aggiungo i dati senza l'header
+            if os.path.isfile(output_file):
                 df.to_csv(output_file, index=False, header=False, mode='a')
             else:
-                # Se il file non esiste, aggiungi i dati con l'header
                 df.to_csv(output_file, index=False, mode='a', columns=custom_header)
+
 
             # Salvataggio del jsonInEntrata in un file con timestamp
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
