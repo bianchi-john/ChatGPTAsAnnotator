@@ -7,6 +7,9 @@ from dotenv import load_dotenv  # Optional, depending on your key storage method
 
 output_file = 'Query/output/'
 limite = 9999999
+promptNumber = 0
+
+
 
 # Chiedo all'utente di indicare un nome per il file di output
 name = input(f"Provide a name for output file (remember to include csv extension): ")
@@ -19,9 +22,15 @@ if os.path.isfile(output_file):
         quit()
 
 # Chiedo all'utente se vuole stabilire un limite massimo di articoli da annotare
-confirm = input(f"Do you want a maximum file limit?: ")
+confirm = input(f"Do you want a maximum file limit? (y/n): ")
 if confirm.lower() == 'y':
     limite = input(f"Set the number: ")
+    limite = int(limite)
+
+print('Starting conversation ...')
+
+# Chiedo all'utente con quale tipo di prompt vuole fare le domande a chatGPT
+promptNumber  = input(f"Wich prompt do you want to use? (provide a number of the line \"Query/prompt/prompt.txt\"): ")
 
 
 # Load environment variables if necessary (replace with your actual values)
@@ -68,12 +77,12 @@ for filename in os.listdir(articles_dir):
     if os.path.isfile(filepath) and filename.endswith(".json"):
         article_content = read_json_file(filepath)
         if article_content:
-            specific_prompt_index = 0  # Indice della frase desiderata
+            specific_prompt_index = int(promptNumber)  # Indice della frase desiderata
             specific_prompt = phrases_list[specific_prompt_index]
             messages = [
                 {
                     "role": "system",
-                    "content": f"Use the {specific_prompt}"
+                    "content": str(specific_prompt)
                 },
                 {
                     "role": "user",
