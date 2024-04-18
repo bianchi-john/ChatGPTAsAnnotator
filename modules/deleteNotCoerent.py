@@ -26,7 +26,6 @@ def deleteNotCoerent(df):
     removeEmpty = (
         (df['Q1.1'] == -1) &
         (df['Q1.2'] == -1) &
-        (df['Q1.3.1'] == -1) &
         (df['Q1.4'] == -1) &
         (df['Q1.5'] == -1) &
         (df['Q1.6'] == -1) &

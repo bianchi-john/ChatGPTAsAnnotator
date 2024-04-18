@@ -10,7 +10,6 @@ limite = 9999999
 promptNumber = 0
 
 
-
 # Chiedo all'utente di indicare un nome per il file di output
 name = input(f"Provide a name for output file (remember to include csv extension): ")
 output_file = output_file + name
