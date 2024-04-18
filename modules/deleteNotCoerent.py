@@ -24,14 +24,14 @@ import pandas as pd
 def deleteNotCoerent(df):
     # Verifica che tutti i dati obbligatori siano stati inseriti
     removeEmpty = (
-        (df['Q1.1'] == -1) &
-        (df['Q1.2'] == -1) &
-        (df['Q1.4'] == -1) &
-        (df['Q1.5'] == -1) &
-        (df['Q1.6'] == -1) &
-        (df['Q1.7'] == -1) &
-        (df['Q2.8'] == -1) &
-        (df['Q2.9.1'] == -1) &
+        (df['Q1.1'] == -1) |
+        (df['Q1.2'] == -1) |
+        (df['Q1.4'] == -1) |
+        (df['Q1.5'] == -1) |
+        (df['Q1.6'] == -1) |
+        (df['Q1.7'] == -1) |
+        (df['Q2.8'] == -1) |
+        (df['Q2.9.1'] == -1) |
         (df['Q2.10'] == -1)
     )
 
