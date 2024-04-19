@@ -51,8 +51,16 @@ def read_json_file(filepath):
         print(f"Error reading JSON file '{filepath}': {e}")
         return None
 
-articles_dir = "Articles/articles"  # Update with your articles directory path
+
+articles_dir = "Articles/articles" 
+
 counter = 0
+# Chiedo all'utente se vuole utilizzare solamente articoli annotati da un annotatore
+if os.path.isfile(output_file):
+    confirm = input(f"Do you want to use only one annotator articles (Manuel)? (y/n): ")
+    if confirm.lower() != 'y':
+        # Testing with only one annotator (Manuel)
+        articles_dir = "Articles/articles/ManuelOnly"
 
 
 # Leggo il file che contiene i prompt da dara a Chatgpt
