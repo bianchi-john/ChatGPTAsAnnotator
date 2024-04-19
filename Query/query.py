@@ -9,7 +9,6 @@ output_file = 'Query/output/'
 limite = 9999999
 promptNumber = 0
 
-
 # Chiedo all'utente di indicare un nome per il file di output
 name = input(f"Provide a name for output file (remember to include csv extension): ")
 output_file = output_file + name
@@ -26,11 +25,15 @@ if confirm.lower() == 'y':
     limite = input(f"Set the number: ")
     limite = int(limite)
 
-print('Starting conversation ...')
-
 # Chiedo all'utente con quale tipo di prompt vuole fare le domande a chatGPT
 promptNumber  = input(f"Wich prompt do you want to use? (provide a number of the line \"Query/prompt/prompt.txt\"): ")
 
+confirm = input(f"Do you want to use only one annotator articles (Manuel)? (y/n): ")
+if confirm.lower() == 'y':
+    # Testing with only one annotator (Manuel)
+    articles_dir = "Articles/articles/ManuelOnly"
+
+print('Starting conversation ...')
 
 # Load environment variables if necessary (replace with your actual values)
 load_dotenv()
@@ -55,12 +58,6 @@ def read_json_file(filepath):
 articles_dir = "Articles/articles" 
 
 counter = 0
-# Chiedo all'utente se vuole utilizzare solamente articoli annotati da un annotatore
-if os.path.isfile(output_file):
-    confirm = input(f"Do you want to use only one annotator articles (Manuel)? (y/n): ")
-    if confirm.lower() != 'y':
-        # Testing with only one annotator (Manuel)
-        articles_dir = "Articles/articles/ManuelOnly"
 
 
 # Leggo il file che contiene i prompt da dara a Chatgpt
