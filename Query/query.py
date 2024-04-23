@@ -74,9 +74,10 @@ def read_phrases_file(filepath):
 phrases_file_path = 'Query/prompt/prompt.txt'
 phrases_list = read_phrases_file(phrases_file_path)
 
+filenames = os.listdir(articles_dir)
 
-for filename in os.listdir(articles_dir):
-    counter = counter + 1
+while filenames:  # Continua finché ci sono ancora filenames da processare
+    filename = filenames[0]  # Prendi il primo filename della lista
     filepath = os.path.join(articles_dir, filename)
     if os.path.isfile(filepath) and filename.endswith(".json"):
         article_content = read_json_file(filepath)
@@ -114,12 +115,14 @@ for filename in os.listdir(articles_dir):
             except Exception as e:
                 try:
                     # Provo a leggerlo come ho visto che di solito mi da i json formattati male
-                    temp = output.replace("json", "").replace("\n", "").replace("```", "").replace(" ", "").replace("{", "{\"").replace(",", "\", \"").replace(":", "\": \"").replace("}", "\"}").replace("\"[", "[\"").replace("]\"", "\"]").replace("\"\"", "\"")
+                    temp = output.replace("json", "").replace("\n", "").replace("```", "").replace(" ", "").replace("{", "{\"").replace(",", "\", \"").replace(":", "\": \"").replace("}", "\"}").replace("\"[", "[\"").replace("]\"", "\"]").replace("\"\"", "\"").replace("[\"]", "[]")
                     json_in_risposta = json.loads(temp)
                 except Exception as e:
-                    json_in_risposta = {"Problem": str(output)}
-                    print('ChatGPT ha restituito un json non valido per l\' articolo ' + article_content['id'])
+                    continue
             # Extract relevant information from response
+            filenames.pop(0)  # Rimuovi il filename dalla lista dopo il successo
+            counter = counter + 1
+
             id = article_content['id']
             title = article_content['meta_title']
             label = article_content['meta_label']
