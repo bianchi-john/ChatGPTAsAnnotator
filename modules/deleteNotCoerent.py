@@ -42,6 +42,9 @@ def deleteNotCoerent(df, name):
         print(f"Non ci sono righe con almeno un valore mancante nei campi obbligatori per {name}")
 
     # Rimuovi le righe con almeno un valore -1 dal dataframe originale
-    df = df[~has_negative_one]
+    #df = df[~has_negative_one]
+
+    # Rimuovi le righe tutti i valori a -1 dal dataframe originale
     df = df[~all_negative_one]
+
     return df

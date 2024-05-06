@@ -1,121 +1,176 @@
-,id,annotator_x,Q1.1_x,annotator_y,Q1.1_y,title_x
-0,18d71db7-f362-46fa-953e-d8353c7f7232,Manuel,1,ChatGPT4AsAnnotator,1.0,Coronavirus| nuove regole: al tavolo al ristorante in più di 4
-5,184a4635-a693-4ccd-af1a-143455c391e1,Manuel,1,ChatGPT4AsAnnotator,1.0,Finanziaria: almeno 150 milioni nella variazione di fine giugno
-7,1a67cbd3-4924-485c-86db-ac1127de77fb,Manuel,1,ChatGPT4AsAnnotator,1.0,Farini| la proposta: “Rimborsi da 400 euro per le famiglie delle vittime da Covid”
-10,0f9cabe5-0f68-4f60-a7e6-13a5ebee963f,Manuel,1,ChatGPT4AsAnnotator,1.0,Ferrara. Il fondo non autosufficienza torna a crescere dopo i tagli
-11,38bcdcc3-2ab4-4b1e-91be-41294caf0138,Manuel,1,ChatGPT4AsAnnotator,1.0,Colori regioni| nuovi parametri: ridotto il rischio di chiusure in estate
-14,10ee10e9-f467-4a5a-8d39-c2105ab56ef4,Manuel,1,ChatGPT4AsAnnotator,1.0,Ladri in azione a Podenzano e Suzzano| un residente li insegue nei campi
-15,06544b4c-b074-4807-ab37-64bd5dd0ae77,Manuel,3,ChatGPT4AsAnnotator,3.0,LA MELONI CRESCE ANCORA (18|9%).IL PD AD UN PUNTO DALLA LEGA| ED IL M5S ARRETRA
-16,1d90a647-0871-4be6-87f7-61c862d68494,Manuel,1,ChatGPT4AsAnnotator,1.0,Vaccini in Puglia| trasferite a Bari dalla Sicilia 50mila dosi AstraZeneca
-17,21116fc0-1864-4dd8-8799-8bf9c4a56abc,Manuel,1,ChatGPT4AsAnnotator,1.0,Covid Ferrara: ecco il nuovo piano dei controlli
-19,23bae5d9-64ee-46b3-b479-ebd24f5f4a98,Manuel,3,ChatGPT4AsAnnotator,3.0,Natalità. Assegni generosi| congedi e servizi. Così in Europa si sostengono le famiglie
-20,12baea85-b2f4-4537-a180-9201425bfadb,Manuel,1,ChatGPT4AsAnnotator,1.0,Coronavirus| il dato di oggi sui decessi (44) è il più basso da oltre sette mesi
-26,1481deaf-f753-4e49-84e4-b16c57e15031,Manuel,1,ChatGPT4AsAnnotator,1.0,Forlì| guasto al freezer: 800 dosi di vaccino Moderna da buttare
-27,378b3ae6-a281-429e-a5c7-1ee2f060ff6f,Manuel,3,ChatGPT4AsAnnotator,3.0,"Da Narcao all'Antartide: ""In viaggio a passo d'uomo con 40 gradi sottozero"""
-28,3a3eb262-dba1-475f-b524-b9be52ba01e2,Manuel,3,ChatGPT4AsAnnotator,3.0,Tumore al seno: i dubbi sui prodotti per capelli
-30,00c56f5e-e069-43b8-b8e8-1f14e4d188c5,Manuel,3,ChatGPT4AsAnnotator,3.0,Ufo| i rottami nascosti dal Pentagono: la conferma della Dia dopo le rivelazioni di DeLonge| ex Blink-182. I metamateriali
-33,411395c0-692a-4b68-9139-cd62bcadab3a,Manuel,5,ChatGPT4AsAnnotator,5.0,AL VIA L’EDIZIONE 2021 DI “TENNIS &FRIENDS” AL FORO ITALICO DI ROMA
-34,402a487e-9dd6-45e2-a1b3-4819d24f6464,Manuel,2,ChatGPT4AsAnnotator,2.0,Giornalista: “In Francia gente ammazzata tutti i giorni per via dell’immigrazione incontrollata”
-36,3b09cd47-b33c-4b83-a07a-c296a878412f,Manuel,3,ChatGPT4AsAnnotator,3.0,«Conte| la verità è un’altra: l’Inter non lo voleva più. Pirlo? Anno fallimentare»
-37,3d619611-2488-4a31-b48d-11fa954b64b9,Manuel,1,ChatGPT4AsAnnotator,1.0,"Medio Oriente| l'esercito israeliano attacca Gaza con aviazione e carri armati. Netanyahu: ""Andremo avanti per tutto il tempo necessario"""
-43,f56feb77-1618-4608-8f04-da95bfb2bfce,Manuel,1,ChatGPT4AsAnnotator,1.0,Israele bombarda 150 obiettivi di Hamas. Era la rete di tunnel sotterranei
-46,77644ccb-2ba6-46db-abea-6d81e09ed5af,Manuel,1,ChatGPT4AsAnnotator,1.0,Matera| in casa marijuana e piante di canapa: arrestato
-48,489cd5fe-c6c4-46a5-af3c-57bb040756bd,Manuel,1,ChatGPT4AsAnnotator,1.0,Cuneo: rifiutano di vaccinarsi| due operatrici di una Rsa in ferie forzate
-49,663ddce0-6b5b-4372-8408-bafaf89b3642,Manuel,1,ChatGPT4AsAnnotator,1.0,Svuotamento diga di Boschi| schiuma e melma sui fondali. Enel: “Tutto nella norma”
-50,efe3c13b-bb99-4cef-9ea2-0bf394b7549c,Manuel,1,ChatGPT4AsAnnotator,1.0,Covid| prosegue il trend positivo. Le mascherine al ristorante? Bassetti: «Ci copriamo di ridicolo»
-51,47ebb569-b80a-4a6d-9f20-8c1a92f36c48,Manuel,1,ChatGPT4AsAnnotator,1.0,Coronavirus| cresce l’allerta in Giappone: stato di emergenza in altre tre prefetture. Australia| nuovi dati sui casi di trombosi
-52,f72a942d-c56e-427a-a200-43f395291fec,Manuel,1,ChatGPT4AsAnnotator,1.0,"AstraZeneca| in Germania è ""assalto"" al vaccino anglo-svedese: «Dosi non più sufficienti»"
-53,c0093d33-ac00-44c3-9616-286506ce87c0,Manuel,2,ChatGPT4AsAnnotator,2.0,La sanità del futuro parte dal territorio
-54,82adba9a-4c8c-42ca-9be8-73d9521349e1,Manuel,3,ChatGPT4AsAnnotator,3.0,"Variante Delta| primi sintomi diversi: ""Serve molta prudenza"""
-55,a2947153-6e7e-41c4-9b08-2386870661f3,Manuel,1,ChatGPT4AsAnnotator,1.0,Spilamberto| scontro frontale tra due tir: morto uno dei due conducenti. L'altro arrestao per omicidio stradale
-57,aa3f5101-f028-4a4d-8491-407298431a7e,Manuel,1,ChatGPT4AsAnnotator,1.0,Reddito di cittadinanza| in arrivo il pagamento di gennaio ma c'è chi ha già ottenuto l'accredito
-58,bfa90c78-38f5-42d6-9297-6f15649334e9,Manuel,3,ChatGPT4AsAnnotator,3.0,Pandemia Covid| Ilaria Capua: «Ne arriverà un'altra| ma c'è tempo per invertire la rotta»
-60,ab6bf492-cf58-45d2-bdcc-00a9314cec73,Manuel,1,ChatGPT4AsAnnotator,1.0,Variante Delta Bologna: anticipo richiamo AstraZeneca per gli over 60
-61,a404036f-c55b-4fed-a533-4f27ee7b0920,Manuel,3,ChatGPT4AsAnnotator,3.0,I mozziconi di cinquantuno sigarette portano al Dna dei sicari
-62,72fad9da-6848-4622-a4da-b10982d7ed0b,Manuel,3,ChatGPT4AsAnnotator,3.0,Covid-19| il dramma di Fiordaliso: «Morta mia madre| io e papà ce l'abbiamo fatta»
-63,52f8853b-4602-416b-80b4-a856f7024724,Manuel,1,ChatGPT4AsAnnotator,1.0,È positivo ma riceve i clienti in ufficio e va a far la spesa: arrestato assicuratore catanese
-64,9a06e858-2f15-46e8-a769-5e21a9e49992,Manuel,5,ChatGPT4AsAnnotator,5.0,Giulio Berruti all’Isola dei Famosi 2021? “La proposta di matrimonio a Maria Elena Boschi potrebbe arrivare proprio in diretta tv”
-65,e69d9cc0-47ed-49e5-8136-4353468586b3,Manuel,3,ChatGPT4AsAnnotator,3.0,Covid e flirt estivi| il virologo Pregliasco: “Sono pericolosissimi. Ma con il tampone…”
-66,50949429-a643-421e-a7ae-edb78fe8f0ab,Manuel,1,ChatGPT4AsAnnotator,1.0,Cvc conquista la multinazionale della consulenza Bip
-67,7442ab45-1df3-4cf0-8237-391c079162d4,Manuel,1,ChatGPT4AsAnnotator,1.0,Sequestra due 13enni e le violenta per una notte: in cella operaio di 45 anni
-70,f35f6598-f230-4d0f-9c53-cb48a278f30a,Manuel,1,ChatGPT4AsAnnotator,1.0,Usa| i vaccinati possono tornare alla normale. Stop a distanziamento e mascherina
-72,f7e4de19-4f65-4e52-9aab-36afa0b96bdc,Manuel,1,ChatGPT4AsAnnotator,1.0,Vaccini in vacanza: dalla Toscana alla Sardegna| a che punto sono le regioni con più turisti estivi
-73,874d6550-16ab-4ea0-a139-b9bf606622e9,Manuel,3,ChatGPT4AsAnnotator,3.0,Per i catechisti un salto di qualità. La Cei lancia una consultazione in Italia
-74,75c7a384-1cf2-404d-b164-8a4f74d0c16c,Manuel,1,ChatGPT4AsAnnotator,1.0,Vaccini| è l’ora degli over 40. Lombardia| dal 2 giugno tocca agli under 30
-81,bf65ccac-0503-4e2b-838b-5e0ffd211788,Manuel,2,ChatGPT4AsAnnotator,2.0,Un silenzio complice dell’orrore
-85,ae56883f-1033-44e1-8f06-5e2269ecb793,Manuel,3,ChatGPT4AsAnnotator,3.0,«Se sono ubriaca e ci provi| non è un gesto d'amore». «E se sono sbronzo anch'io?»: il sesso dei ventenni all'epoca del caso Ciro Grillo
-87,d9fdc783-561b-4877-9039-8378a076b0f0,Manuel,2,ChatGPT4AsAnnotator,2.0,Post contro la Meloni| il prof fa il martire: “Avete aggredito la ricerca…”. Giorgia risponde per le rime
-89,8555cd97-f488-4963-866f-4b2d51ed2723,Manuel,1,ChatGPT4AsAnnotator,1.0,Monopoli| negozio vendeva centinaia di mascherine FFP2 non conformi: denunce
-92,b3e3d88a-0f40-4046-95a2-3a862e36c789,Manuel,1,ChatGPT4AsAnnotator,1.0,Covid a Napoli| è boom di contagi: la terza ondata travolge la provincia
-99,db26964b-9da7-48fd-8d37-634bedb4155f,Manuel,3,ChatGPT4AsAnnotator,3.0,L'inno alla musica di Dodi| solista a 70 anni
-102,c0d0d9ca-a727-47d9-ac5b-570f37087310,Manuel,3,ChatGPT4AsAnnotator,3.0,Il registro elettronico che agita le famiglie: una conquista o no?
-103,83357b52-7b02-4cf2-8d9d-888dcc85ac0f,Manuel,3,ChatGPT4AsAnnotator,3.0,IL TAR LAZIO ORDINA AL MINISTERO DELLA SALUTE DI RENDERE PUBBLICI I VERBALI DELLA TASK FORCE SUL COVID
-104,d5ec72f4-655d-47ab-93a9-3261a9d8d0d9,Manuel,3,ChatGPT4AsAnnotator,3.0,I CORVI DEL CSM. L’ EX MAGISTRATO DAVIGO ASCOLTATO OGGI COME TESTE DALLA PROCURA DI ROMA
-105,b3ac66c1-ae15-47c4-91fa-741432bedb72,Manuel,3,ChatGPT4AsAnnotator,3.0,L’intelligenza artificiale sospesa fra sogni e incubi
-106,6dfb0d94-1760-4c87-a931-40e58d86ebb6,Manuel,1,ChatGPT4AsAnnotator,1.0,Allerta meteo in Campania| in arrivo gelo e nevicate: pronti i mezzi spargisale
-108,4c19e5e4-e137-407a-b698-096746a3a650,Manuel,3,ChatGPT4AsAnnotator,3.0,Ufo ecco cosa dovete sapere sui filmati dalla Marina americana desecretati dal Pentagono
-109,9162f68d-65b7-4880-b588-d0804ccae090,Manuel,3,ChatGPT4AsAnnotator,3.0,Un anno con poco sesso
-114,7ae76290-b709-4305-a834-1b2da1994400,Manuel,1,ChatGPT4AsAnnotator,1.0,Coronavirus| medico 64enne muore il giorno dopo il vaccino: aveva gravi patologie
-115,8f210aae-5e9f-4783-b47d-ce0bc6171394,Manuel,3,ChatGPT4AsAnnotator,3.0,«Una situazione mai vista»| le voci da Israele e dalla Striscia
-116,c9e49f68-e87e-43ae-ba0d-55ecca379934,Manuel,1,ChatGPT4AsAnnotator,1.0,Novara| 52enne si vaccina: ma mezz’ora dopo viene a mancare
-121,be91c835-0b23-4065-be59-aebc841af31d,Manuel,1,ChatGPT4AsAnnotator,1.0,La svolta militare: le Forze di difesa israeliane di cielo e di terra stanno attaccando la Striscia di Gaza
-123,54904eb1-e7d0-4182-a166-bcaafe2068c2,Manuel,5,ChatGPT4AsAnnotator,5.0,Magalli-Volpe: lui la sbeffeggia per lo share| lei lo attacca. I retroscena di una lite infinita
-124,f449f8f5-f4d6-40f6-a573-89e9837cd6af,Manuel,1,ChatGPT4AsAnnotator,1.0,Il virus rallenta ancora. Tre regioni in zona bianca
-125,78d95e36-d05a-4cef-8939-85959a4541fc,Manuel,1,ChatGPT4AsAnnotator,1.0,Controllate 375 persone: 13 multe Centro gremito e autobus deviati
-126,97ed6bb2-3bb0-4727-91f8-6f09a536a655,Manuel,3,ChatGPT4AsAnnotator,3.0,Autostrade| dall’ipotesi revoca all’offerta da 10 miliardi. Benetton| in tre anni da sconfitti a vincitori
-129,e7c8986b-52f2-4e06-9900-0e5cf12654da,Manuel,2,ChatGPT4AsAnnotator,2.0,Sinagra contro Figliuolo: “Lo aspetto per il vaccino. Vedrà che bell’accoglienza”
-130,cda9be7d-6d49-4681-9dbb-1aee0c254015,Manuel,1,ChatGPT4AsAnnotator,1.0,Galatone| gli insetti invadono la zona industriale: si indaga
-131,4b7f561b-a4bc-4cdb-8722-1450f1ce7c38,Manuel,3,ChatGPT4AsAnnotator,3.0,La Fondazione farà crescere i Giganti di Mont'e Prama
-132,7b64542e-11d0-464d-a060-1145a9d0ad3a,Manuel,3,ChatGPT4AsAnnotator,3.0,Il premier libico a Roma| dalla ricostruzione del paese alla gestione dei flussi migratori: i dossier sul tavolo
-135,db3e2592-7e10-4200-bfd0-ae05f621fb60,Manuel,1,ChatGPT4AsAnnotator,1.0,«Vaccinare entro fine luglio 7 pugliesi su 10»| la scommessa
-136,b760ffb8-4af8-426a-872d-cfce35e0bc38,Manuel,3,ChatGPT4AsAnnotator,3.0,Ora che si è liberata dal fardello Ilva| ArcelorMittal vara la svolta green
-139,8cc31f5a-dbb3-4107-8c4c-06cb7f284947,Manuel,5,ChatGPT4AsAnnotator,5.0,Hamburger a Milano| i migliori da mangiare all'aperto o a domicilio
-140,9a77fd35-2ff1-47f3-9cc4-15bb08eeefee,Manuel,3,ChatGPT4AsAnnotator,3.0,Terrorismo| imam arrestato ad Alessandria: invocava la distruzione del Vaticano durante la preghiera
-141,f46b51a5-037e-4bed-8460-a4eb2eefc264,Manuel,1,ChatGPT4AsAnnotator,1.0,Vaccini anti-Covid in azienda| Figliuolo: “Per tutte le classi di età da giugno”
-144,564d249d-d88b-48d4-a3a6-1e31c8ad3f57,Manuel,3,ChatGPT4AsAnnotator,3.0,La destra detta l’agenda| in Francia il clima si arroventa
-145,b1d2d7da-8eb7-4cef-8651-35929e2bd09e,Manuel,3,ChatGPT4AsAnnotator,3.0,Cosa fa lo spaziotempo quando si strappa?
-146,b291a485-7c6d-400e-ad80-3e07b20af10e,Manuel,1,ChatGPT4AsAnnotator,1.0,Eroina e cocaina da San Severo a Campodipietra pronte per lo spaccio: i dettagli del blitz della Polizia
-147,59f724d8-d6f5-43dd-99d2-c706cd5ff61d,Manuel,1,ChatGPT4AsAnnotator,1.0,Francia| ucciso l’aggressore della poliziotta: era radicalizzato. La rabbia di Marine Le Pen
-148,b79a2e88-0e7d-4f9c-9309-4b5c2a0e837d,Manuel,2,ChatGPT4AsAnnotator,2.0,Giornata della terra? La spariamo grossa? Il cibo secondo il WWF
-149,de5fa1c9-f706-4b97-96e0-fc1838c07622,Manuel,5,ChatGPT4AsAnnotator,5.0,Chiara Ferragni| la sorella Valentina lancia i bracciali dell'estate: fan delusi
-150,584acaaf-fa1c-4ac0-ab29-4862b214ba95,Manuel,3,ChatGPT4AsAnnotator,3.0,ARRESTATO MEDICO ONCOLOGO A BARI : 130MILA EURO ESTORTI AD UN MALATO DI CANCRO PER SOMMINISTARGLI GRATIS DEI MEDICINALI
-151,55d744cd-36c6-4747-b055-981c9aba3fae,Manuel,1,ChatGPT4AsAnnotator,1.0,Catania| ruba macchinari e alcolici da un bar in aeroporto: denunciato
-152,748e746f-5f40-45c4-bc63-3780ee886f3c,Manuel,1,ChatGPT4AsAnnotator,1.0,Da lunedì via libera al vaccino per gli over 40| il commissario Figliuolo ha scritto alle Regioni
-156,a6af4a60-7d73-43b4-9be9-3e5cc33b687a,Manuel,3,ChatGPT4AsAnnotator,3.0,"Firenze| cos'è ""La Ferita"": l'opera che squarcia Palazzo Strozzi"
-161,548a49f8-2622-4308-a4b1-3dcbc2385dea,Manuel,1,ChatGPT4AsAnnotator,1.0,Rave party di Tavolaia| gravissimo un giovane che ha bevuto antigelo
-163,4acd6999-2234-43dc-ab84-53f021925268,Manuel,1,ChatGPT4AsAnnotator,1.0,Appiano Gentile| denunciato per scritte omofobe e naziste su un muro
-168,1e2ab02b-b251-4c6e-96c5-38b346dfecbd,Manuel,3,ChatGPT4AsAnnotator,3.0,Commissione d'indagine su Serinper| il presidente del consiglio comunale è d'accordo
-169,1a1abfdb-95b6-4981-9f5c-390955e66afe,Manuel,5,ChatGPT4AsAnnotator,5.0,"Vanoni| Colapesce e Dimartino| ecco ""Toy Boy"" il tormentone-samba dell'estate 2021"
-173,f620ad74-b7b2-4269-b02e-af033a2f04b2,Manuel,1,ChatGPT4AsAnnotator,1.0,Ora il turismo extra-Unione europea fa paura. E Berlino striglia Cipro e Grecia
-175,63b90921-c98d-48e4-b0a1-a1c9531c4e6a,Manuel,1,ChatGPT4AsAnnotator,1.0,Papa Francesco ricoverato in ospedale: sarà operato al colon
-176,e445631e-cae3-4af9-8a4e-49a0141ea731,Manuel,1,ChatGPT4AsAnnotator,1.0,Quasi 2mila tifosi scozzesi positivi al coronavirus dopo aver partecipato a eventi degli Europei
-177,ef13bfe6-3f64-4aee-9b3f-b64fd7418d5d,Manuel,1,ChatGPT4AsAnnotator,1.0,Vaccinazioni| le nuove prenotazioni slittano a dopo metà agosto
-180,151605d6-e5d5-4d18-b7fa-9e19cbcbf5f3,Manuel,1,ChatGPT4AsAnnotator,1.0,Il rave party va avanti| schierati oltre 100 agenti: identificate 200 persone su seimila
-181,3d1ae696-3a3f-43ab-a4ce-61d337a59d7e,Manuel,1,ChatGPT4AsAnnotator,1.0,Strage nel Mediterraneo: barcone si ribalta| morti 43 migranti
-183,441dedb2-48f0-4e42-85eb-0dd672b61169,Manuel,1,ChatGPT4AsAnnotator,1.0,Ora l’anziano Benedetto XVI prega “fortemente” per la salute del successore Bergoglio
-184,9f87440c-bdbc-4338-a3df-512fe1fc5ae5,Manuel,1,ChatGPT4AsAnnotator,1.0,Covid| la Francia sconsiglia i viaggi in Spagna e Portogallo. Tokyo conferma lo stato di emergenza durante i Giochi
-185,a0fd77d4-a1e6-4881-ad83-4a9c7a3bf32c,Manuel,1,ChatGPT4AsAnnotator,1.0,Inghilterra| dal 19 luglio via tutte le restrizioni: addio mascherine (anche al chiuso) e distanziamenti
-187,89ab0d13-b200-474f-922f-e78cd70f7e40,Manuel,3,ChatGPT4AsAnnotator,3.0,Il ddl Zan serve per contrastare l’omotransfobia? Ecco la verità sui report dell’Il ddl Zan serve per contrastare l’omotransfobia? Ecco la verità sui report dell’Arcigay
-188,297afd6a-8027-441f-ad81-28b6a734d245,Manuel,1,ChatGPT4AsAnnotator,1.0,Chi arriva in Italia dal Regno Unito dovrà trascorrere 5 giorni in quarantena a causa della diffusione della variante “delta”
-189,712b46c0-ea5f-41d3-94fd-f78889ce79c4,Manuel,2,ChatGPT4AsAnnotator,2.0,La svolta sbagliata di Google Maps contro il cambiamento climatico
-190,3c2e2f67-fdc7-42b9-9562-0bb3c0f37f2f,Manuel,1,ChatGPT4AsAnnotator,1.0,Covid Italia 6 luglio: 907 nuovi casi e 24 morti
-191,d73018e2-5184-43b7-ba01-e82378666dab,Manuel,1,ChatGPT4AsAnnotator,1.0,"In Fvg trovata la variante Delta in 25 dei 96 campioni analizzati. Riccardi: “Vaccinarsi è fondamentale"""
-192,22df3f4a-7eb7-4fae-b0d6-ef6ca4fe408f,Manuel,1,ChatGPT4AsAnnotator,1.0,Variante delta: dopo i due a Pisa| casi sospetti anche a Firenze. Le contromisure in Toscana
-193,7a4e548a-0dbe-4d32-9e5c-754ef3520509,Manuel,1,ChatGPT4AsAnnotator,1.0,"Vaccini Covid| Speranza: ""Oggi superiamo quota 55 milioni"""
-195,0c2a7047-28f8-4839-b02c-73c58447c827,Manuel,1,ChatGPT4AsAnnotator,1.0,Coronavirus| il monitoraggio Gimbe: “Nuovi casi in crescita del 5%| ma calano i decessi”
-202,c466d573-c6d3-4665-a103-62ea4de370da,Manuel,2,ChatGPT4AsAnnotator,2.0,"Beppe Grillo| tam tam impazzito tra i Cinque Stelle vicini a Giuseppe Conte: ""E se ci ha fregati?"""
-203,247b189a-71b7-4959-8e0d-dbc67bb52f6d,Manuel,1,ChatGPT4AsAnnotator,1.0,Oms su casi Covid-19 in Europa: “Aumentati del 10% e copertura vaccinale insufficiente”. Sugli Europei: “Migliorare monitoraggio”
-204,132835cc-8943-4601-bbfd-430e306dbd78,Manuel,1,ChatGPT4AsAnnotator,1.0,I timori di Draghi: «Non ripetiamo gli errori dell’estate»
-208,384307de-ed33-426f-8131-76cc518ac9a8,Manuel,1,ChatGPT4AsAnnotator,1.0,Papa Francesco rimarrà in ospedale almeno una settimana dopo un intervento chirurgico al colon| dice il Vaticano
-209,5da2da07-b1ea-4dda-b366-43e7824dde7d,Manuel,2,ChatGPT4AsAnnotator,2.0,Sì alle alternative| ma non vaccinarsi non è un'opzione
-210,3a9f1038-4ce3-477a-a115-3afbc143ece6,Manuel,1,ChatGPT4AsAnnotator,1.0,Covid| 808 casi e 12 morti. Gelmini: troppi sessantenni non vaccinati| andiamoli a trovare a casa
-213,38c347a7-7070-4837-8679-3a6b6e38d987,Manuel,1,ChatGPT4AsAnnotator,1.0,Vaccini| Ema: con due dosi protetti contro variante Delta
-214,cb1f712a-ff8a-417e-994f-2f9e51673dd1,Manuel,1,ChatGPT4AsAnnotator,1.0,Presa a calci e trascinata per i capelli| divieto di avvicinamento per l'ex marito
-215,f3e8082e-a2dd-4f93-9023-efd0a5a8f001,Manuel,1,ChatGPT4AsAnnotator,1.0,"Vaccino| generale Figliuolo durissimo contro le Regioni: ""Le dosi ci sono| 500mila somministrazioni al giorno. Viaggiare spediti"""
-216,29280252-ccea-49c1-8ee1-aa7a5d970be3,Manuel,1,ChatGPT4AsAnnotator,1.0,Uccisa a martellate in casa a Livorno| in carcere per l'omicidio l'ex marito: «Progettava la fuga»
-217,72ab85c4-04fa-44ed-b4ae-5f570db46aab,Manuel,1,ChatGPT4AsAnnotator,1.0,"Papa Francesco operato per ""stenosi diverticolare sintomatica del colon"": ""Il vero rischio è l'anestesia"""
-218,7eb0acca-badf-4f30-bb1c-85308fa7f85f,Manuel,3,ChatGPT4AsAnnotator,3.0,Covid| nuova versione del vaccino di Oxford e Astrazeneca per test sulla variante Beta “che riesce a evadere l’immunità dei vaccini”
-221,63bc8574-66ef-4d3f-8272-c798fc17256d,Manuel,1,ChatGPT4AsAnnotator,1.0,Ripartire con il Green pass
-222,6ede1205-d74f-4bb1-8c37-15fc5b4738ac,Manuel,2,ChatGPT4AsAnnotator,2.0,Il degrado di Milano oltre i limiti di guardia
-223,0dc73a1c-4c03-4b2f-8344-f3c898900c01,Manuel,2,ChatGPT4AsAnnotator,2.0,Habemus Papam
-227,3dba1506-79ad-4986-8e89-8af3ace87096,Manuel,2,ChatGPT4AsAnnotator,2.0,Enrichetto si schianta sulla legge Lgbt e l’alleanza con il M5s
+,id,annotator_x,Q1.3_x,annotator_y,Q1.3_y,title_x
+0,18d71db7-f362-46fa-953e-d8353c7f7232,Manuel,3,ChatGPT4AsAnnotator,1,Coronavirus| nuove regole: al tavolo al ristorante in più di 4
+2,34b92f4c-32db-454c-a369-ca2032443f6c,Manuel,3,ChatGPT4AsAnnotator,1,Le borsette fatte a 3 euro l'ora vendute a 820 euro: e gli industriali in silenzio
+3,1e96c067-412e-4a93-9dc3-2838ef233942,Manuel,1;4,ChatGPT4AsAnnotator,1,Caso Ciro Grillo| i video e quella telefonata rivelatrice: «Dai| mandali anche a me. Solo io non li ho visti»
+4,0c834cb0-392a-4a5e-948f-237a2c8bef31,Manuel,4;9,ChatGPT4AsAnnotator,1,La madre della neonata salvata in mare: «Chiedo solo di essere accolta»
+5,184a4635-a693-4ccd-af1a-143455c391e1,Manuel,3,ChatGPT4AsAnnotator,1,Finanziaria: almeno 150 milioni nella variazione di fine giugno
+7,1a67cbd3-4924-485c-86db-ac1127de77fb,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Farini| la proposta: “Rimborsi da 400 euro per le famiglie delle vittime da Covid”
+11,38bcdcc3-2ab4-4b1e-91be-41294caf0138,Manuel,3,ChatGPT4AsAnnotator,1,Colori regioni| nuovi parametri: ridotto il rischio di chiusure in estate
+13,36b6adb6-b2b3-451b-bb03-4721baa3b1ed,Manuel,1;3;9,ChatGPT4AsAnnotator,1;3;8,Eurispes: c’è chi millanta invasione stranieri. I dati sconfessano chi invoca la paura
+14,10ee10e9-f467-4a5a-8d39-c2105ab56ef4,Manuel,1;9,ChatGPT4AsAnnotator,1,Ladri in azione a Podenzano e Suzzano| un residente li insegue nei campi
+15,06544b4c-b074-4807-ab37-64bd5dd0ae77,Manuel,1;5,ChatGPT4AsAnnotator,1,LA MELONI CRESCE ANCORA (18|9%).IL PD AD UN PUNTO DALLA LEGA| ED IL M5S ARRETRA
+17,21116fc0-1864-4dd8-8799-8bf9c4a56abc,Manuel,1;3,ChatGPT4AsAnnotator,1,Covid Ferrara: ecco il nuovo piano dei controlli
+19,23bae5d9-64ee-46b3-b479-ebd24f5f4a98,Manuel,-1,ChatGPT4AsAnnotator,1,Natalità. Assegni generosi| congedi e servizi. Così in Europa si sostengono le famiglie
+20,12baea85-b2f4-4537-a180-9201425bfadb,Manuel,-1,ChatGPT4AsAnnotator,1,Coronavirus| il dato di oggi sui decessi (44) è il più basso da oltre sette mesi
+21,335df7a1-36af-425a-886f-379c632b4836,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Vaccini| due terzi di fiale AstraZeneca nei frigo. Il viceministro della Salute Sileri contro Aifa: “Un mese fa chiesi di cambiare| zero risposte”
+22,279a8766-5c62-4f9a-954d-6299fcae9702,Manuel,3;9,ChatGPT4AsAnnotator,1,Automobilisti italiani indisciplinati: bella novità
+23,1439c512-874e-42ea-a605-572b9486c163,Manuel,4;9,ChatGPT4AsAnnotator,1,Scuola. «Il decreto Sostegni bis del governo Draghi deve guardare anche alla paritarie»
+25,3c55c68b-f091-435a-98f1-ae6d93a8e939,Manuel,1;8,ChatGPT4AsAnnotator,1,Così i Querdenken possono destabilizzare la Germania
+26,1481deaf-f753-4e49-84e4-b16c57e15031,Manuel,1;3,ChatGPT4AsAnnotator,1,Forlì| guasto al freezer: 800 dosi di vaccino Moderna da buttare
+27,378b3ae6-a281-429e-a5c7-1ee2f060ff6f,Manuel,3,ChatGPT4AsAnnotator,1,"Da Narcao all'Antartide: ""In viaggio a passo d'uomo con 40 gradi sottozero"""
+28,3a3eb262-dba1-475f-b524-b9be52ba01e2,Manuel,3,ChatGPT4AsAnnotator,1,Tumore al seno: i dubbi sui prodotti per capelli
+29,2517c14e-2d23-481c-aa05-5504cad1955c,Manuel,1;3,ChatGPT4AsAnnotator,1;4,James Senese torna con un nuovo disco: «James is back»
+30,00c56f5e-e069-43b8-b8e8-1f14e4d188c5,Manuel,1;3,ChatGPT4AsAnnotator,1,Ufo| i rottami nascosti dal Pentagono: la conferma della Dia dopo le rivelazioni di DeLonge| ex Blink-182. I metamateriali
+31,2c2f3cd4-b034-4189-b8ef-213a66fa4b52,Manuel,3,ChatGPT4AsAnnotator,1,Emergenza covid| sindaca leghista arrestata: aiuti alimentari sottratti alle famiglie bisognose- Corriere.it
+33,411395c0-692a-4b68-9139-cd62bcadab3a,Manuel,1;5,ChatGPT4AsAnnotator,1,AL VIA L’EDIZIONE 2021 DI “TENNIS &FRIENDS” AL FORO ITALICO DI ROMA
+34,402a487e-9dd6-45e2-a1b3-4819d24f6464,Manuel,1;3;9,ChatGPT4AsAnnotator,1;9,Giornalista: “In Francia gente ammazzata tutti i giorni per via dell’immigrazione incontrollata”
+36,3b09cd47-b33c-4b83-a07a-c296a878412f,Manuel,1;3;4,ChatGPT4AsAnnotator,1;4,«Conte| la verità è un’altra: l’Inter non lo voleva più. Pirlo? Anno fallimentare»
+37,3d619611-2488-4a31-b48d-11fa954b64b9,Manuel,1;3;4,ChatGPT4AsAnnotator,1,"Medio Oriente| l'esercito israeliano attacca Gaza con aviazione e carri armati. Netanyahu: ""Andremo avanti per tutto il tempo necessario"""
+38,14449e38-aa1b-40a3-92e7-a5e8bee33cdf,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1;4,Efe Bal boccia il Ddl Zan: “Io| trans| dico che è una legge stupida e inutile”
+39,471a8cca-99c4-41eb-92d8-a077e3a90bee,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1,Settanta somali occupano il ponte a Firenze: “Restiamo qui finché non ci darete la casa”
+40,2b69602b-dd5c-4eb7-b380-7eaf1e1ce3b0,Manuel,-1,ChatGPT4AsAnnotator,1,(L’equivoco del)La biodiversità
+41,47970d6e-a9e8-4eba-b589-35dc3158d5b3,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Covid| specializzanda del Policlinico di Bari: «Ho vaccinato il mio papà| paziente fragile»
+42,579677f8-35e4-4408-8bd7-e0e0f2b3a0cb,Manuel,1;3,ChatGPT4AsAnnotator,1,La Maddalena Covid free: il 5 e 6 giugno seconda dose per 3.847 residenti
+44,f33aa36c-466d-4d2f-991c-f88591963de8,Manuel,-1,ChatGPT4AsAnnotator,1,Il Papa istituisce il ministero del catechista
+45,ecafbf5e-2d47-47aa-ab11-dd5002a2f76d,Manuel,1;3;9,ChatGPT4AsAnnotator,1,Disastro del reddito 5S. Bar e ristoranti rovinati: nessuno vuole lavorare
+46,77644ccb-2ba6-46db-abea-6d81e09ed5af,Manuel,1;3,ChatGPT4AsAnnotator,1,Matera| in casa marijuana e piante di canapa: arrestato
+48,489cd5fe-c6c4-46a5-af3c-57bb040756bd,Manuel,1;3,ChatGPT4AsAnnotator,1,Cuneo: rifiutano di vaccinarsi| due operatrici di una Rsa in ferie forzate
+49,663ddce0-6b5b-4372-8408-bafaf89b3642,Manuel,1;3;9,ChatGPT4AsAnnotator,1,Svuotamento diga di Boschi| schiuma e melma sui fondali. Enel: “Tutto nella norma”
+50,efe3c13b-bb99-4cef-9ea2-0bf394b7549c,Manuel,1;2;3;4;9,ChatGPT4AsAnnotator,1;3;8,Covid| prosegue il trend positivo. Le mascherine al ristorante? Bassetti: «Ci copriamo di ridicolo»
+51,47ebb569-b80a-4a6d-9f20-8c1a92f36c48,Manuel,1;3,ChatGPT4AsAnnotator,1,Coronavirus| cresce l’allerta in Giappone: stato di emergenza in altre tre prefetture. Australia| nuovi dati sui casi di trombosi
+52,f72a942d-c56e-427a-a200-43f395291fec,Manuel,1;3;4,ChatGPT4AsAnnotator,1,"AstraZeneca| in Germania è ""assalto"" al vaccino anglo-svedese: «Dosi non più sufficienti»"
+53,c0093d33-ac00-44c3-9616-286506ce87c0,Manuel,-1,ChatGPT4AsAnnotator,1,La sanità del futuro parte dal territorio
+54,82adba9a-4c8c-42ca-9be8-73d9521349e1,Manuel,3,ChatGPT4AsAnnotator,1,"Variante Delta| primi sintomi diversi: ""Serve molta prudenza"""
+55,a2947153-6e7e-41c4-9b08-2386870661f3,Manuel,1;3,ChatGPT4AsAnnotator,1,Spilamberto| scontro frontale tra due tir: morto uno dei due conducenti. L'altro arrestao per omicidio stradale
+57,aa3f5101-f028-4a4d-8491-407298431a7e,Manuel,9,ChatGPT4AsAnnotator,1,Reddito di cittadinanza| in arrivo il pagamento di gennaio ma c'è chi ha già ottenuto l'accredito
+58,bfa90c78-38f5-42d6-9297-6f15649334e9,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Pandemia Covid| Ilaria Capua: «Ne arriverà un'altra| ma c'è tempo per invertire la rotta»
+59,e12996b0-f859-4d54-9541-b94711319455,Manuel,1;3,ChatGPT4AsAnnotator,1,Liscia o gassata: installato a Borgonovo il distributore gratuito di acqua pubblica
+60,ab6bf492-cf58-45d2-bdcc-00a9314cec73,Manuel,1;3,ChatGPT4AsAnnotator,1,Variante Delta Bologna: anticipo richiamo AstraZeneca per gli over 60
+61,a404036f-c55b-4fed-a533-4f27ee7b0920,Manuel,-1,ChatGPT4AsAnnotator,1,I mozziconi di cinquantuno sigarette portano al Dna dei sicari
+62,72fad9da-6848-4622-a4da-b10982d7ed0b,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Covid-19| il dramma di Fiordaliso: «Morta mia madre| io e papà ce l'abbiamo fatta»
+63,52f8853b-4602-416b-80b4-a856f7024724,Manuel,3;9,ChatGPT4AsAnnotator,1,È positivo ma riceve i clienti in ufficio e va a far la spesa: arrestato assicuratore catanese
+64,9a06e858-2f15-46e8-a769-5e21a9e49992,Manuel,1;2,ChatGPT4AsAnnotator,1;8,Giulio Berruti all’Isola dei Famosi 2021? “La proposta di matrimonio a Maria Elena Boschi potrebbe arrivare proprio in diretta tv”
+65,e69d9cc0-47ed-49e5-8136-4353468586b3,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Covid e flirt estivi| il virologo Pregliasco: “Sono pericolosissimi. Ma con il tampone…”
+66,50949429-a643-421e-a7ae-edb78fe8f0ab,Manuel,-1,ChatGPT4AsAnnotator,1,Cvc conquista la multinazionale della consulenza Bip
+67,7442ab45-1df3-4cf0-8237-391c079162d4,Manuel,3;9,ChatGPT4AsAnnotator,1,Sequestra due 13enni e le violenta per una notte: in cella operaio di 45 anni
+68,5822cef8-98a9-426b-9286-c63f9bdbd890,Manuel,-1,ChatGPT4AsAnnotator,1,Il catcalling dovrebbe essere reato
+69,87671194-edf8-411a-9d28-3c49c4e1471c,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1,Palestina| Letta nella bufera: «Troppo di parte| non ti voto più»
+70,f35f6598-f230-4d0f-9c53-cb48a278f30a,Manuel,-1,ChatGPT4AsAnnotator,1,Usa| i vaccinati possono tornare alla normale. Stop a distanziamento e mascherina
+72,f7e4de19-4f65-4e52-9aab-36afa0b96bdc,Manuel,1;3,ChatGPT4AsAnnotator,1,Vaccini in vacanza: dalla Toscana alla Sardegna| a che punto sono le regioni con più turisti estivi
+75,481b4c62-4531-438b-845c-8844d0fd48c3,Manuel,1;3,ChatGPT4AsAnnotator,1,Emanuele| figlio del cassiere di un clan mafioso| ucciso a Palermo a 26 anni a colpi di pistola al mercato della Vucciria: indagini in corso
+77,7759caf8-f8af-49e7-b25f-2c5672996939,Manuel,-1,ChatGPT4AsAnnotator,1,Tutto sull'operazione “salviamo l'estate”
+78,ad170310-dae8-4616-90fa-8817e32bb699,Manuel,1;3,ChatGPT4AsAnnotator,1;4,"A Cassaro 100% di vaccinati: è il primo Comune siciliano ""covid free"""
+80,5696c6fa-df71-4c4f-9ba6-6b584218f738,Manuel,1;3;4,ChatGPT4AsAnnotator,1,"Direzione Pd| Letta: ""La reazione di Israele oltre la legittima difesa"". D'Alema: ""Lui accanto a Salvini| qualcosa non funziona"""
+81,bf65ccac-0503-4e2b-838b-5e0ffd211788,Manuel,-1,ChatGPT4AsAnnotator,1,Un silenzio complice dell’orrore
+82,7b56363c-24cc-47f7-ac27-efbc2722f81d,Manuel,-1,ChatGPT4AsAnnotator,1,Tutti pazzi per le Atp di tennis| già prenotati oltre 60mila posti | il 20 per cento dall'estero
+83,e8d55156-ccb9-40f1-8940-2acbf8888b3c,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1,Val Trebbia| agricoltori esasperati alla Regione: “Troppi danni dagli animali”
+84,abe99528-6405-4ebb-9b2f-2e76fb08ac53,Manuel,-1,ChatGPT4AsAnnotator,1,Anche le Carresi inseguono la Zona Bianca
+85,ae56883f-1033-44e1-8f06-5e2269ecb793,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1;4,«Se sono ubriaca e ci provi| non è un gesto d'amore». «E se sono sbronzo anch'io?»: il sesso dei ventenni all'epoca del caso Ciro Grillo
+87,d9fdc783-561b-4877-9039-8378a076b0f0,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1;4,Post contro la Meloni| il prof fa il martire: “Avete aggredito la ricerca…”. Giorgia risponde per le rime
+88,6bd7f24d-0415-4c52-8fb2-878bb0b715d5,Manuel,1;3,ChatGPT4AsAnnotator,1,Positivi a spasso o sul bus| troppi siciliani indisciplinati: Musumeci chiede più controlli per evitare il lockdown
+89,8555cd97-f488-4963-866f-4b2d51ed2723,Manuel,1;3,ChatGPT4AsAnnotator,1,Monopoli| negozio vendeva centinaia di mascherine FFP2 non conformi: denunce
+90,d845efed-a52e-4a06-9a0d-c0530f7688f8,Manuel,1;3,ChatGPT4AsAnnotator,1,C'è il green pass| ma non i controlli: viaggio ai confini del Fvg tra frontiere sguarnite e rischio varianti
+91,b1b2f04b-6c03-4345-b9ec-8f5b6ff79845,Manuel,3,ChatGPT4AsAnnotator,1,Zona bianca| domande e risposte: cosa si può fare dal 31 maggio
+92,b3e3d88a-0f40-4046-95a2-3a862e36c789,Manuel,1;3,ChatGPT4AsAnnotator,1,Covid a Napoli| è boom di contagi: la terza ondata travolge la provincia
+93,62cc6f89-b50e-4676-b671-dab1bc39e66d,Manuel,3,ChatGPT4AsAnnotator,1,Il ministro: Vaccini anche in vacanza. In futuro prepariamoci a terza dose dai medici di base
+95,9b988da9-4ea5-42c0-b596-e997962ae5a6,Manuel,1;4,ChatGPT4AsAnnotator,1,"""A bordo due scafisti..."". Salvini smonta il teorema dei pm"
+96,76f82d9f-6993-4e67-9835-68cb6b0bb43d,Manuel,-1,ChatGPT4AsAnnotator,1,Reddito cittadinanza| operazione fiamme gialle-Inps nel vicentino anche in insediamenti nomadi
+98,d749e5ba-7228-4b94-8577-0a8da240ba73,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1,Prof. Gervasoni: “D’ora in poi sarà vietato criticare Mattarella”
+99,db26964b-9da7-48fd-8d37-634bedb4155f,Manuel,1,ChatGPT4AsAnnotator,1;4,L'inno alla musica di Dodi| solista a 70 anni
+102,c0d0d9ca-a727-47d9-ac5b-570f37087310,Manuel,-1,ChatGPT4AsAnnotator,1,Il registro elettronico che agita le famiglie: una conquista o no?
+103,83357b52-7b02-4cf2-8d9d-888dcc85ac0f,Manuel,1;5,ChatGPT4AsAnnotator,1;3,IL TAR LAZIO ORDINA AL MINISTERO DELLA SALUTE DI RENDERE PUBBLICI I VERBALI DELLA TASK FORCE SUL COVID
+104,d5ec72f4-655d-47ab-93a9-3261a9d8d0d9,Manuel,1;5;9,ChatGPT4AsAnnotator,1,I CORVI DEL CSM. L’ EX MAGISTRATO DAVIGO ASCOLTATO OGGI COME TESTE DALLA PROCURA DI ROMA
+105,b3ac66c1-ae15-47c4-91fa-741432bedb72,Manuel,9,ChatGPT4AsAnnotator,1,L’intelligenza artificiale sospesa fra sogni e incubi
+106,6dfb0d94-1760-4c87-a931-40e58d86ebb6,Manuel,1;3,ChatGPT4AsAnnotator,1,Allerta meteo in Campania| in arrivo gelo e nevicate: pronti i mezzi spargisale
+108,4c19e5e4-e137-407a-b698-096746a3a650,Manuel,8,ChatGPT4AsAnnotator,1,Ufo ecco cosa dovete sapere sui filmati dalla Marina americana desecretati dal Pentagono
+109,9162f68d-65b7-4880-b588-d0804ccae090,Manuel,-1,ChatGPT4AsAnnotator,1,Un anno con poco sesso
+110,67e8c429-9199-4a54-961d-0cbe62f62e1d,Manuel,1;3,ChatGPT4AsAnnotator,1,Ex polveriera di Cantone: partiti i lavori per realizzare il percorso naturalistico
+112,cde09ec5-626d-474a-abba-529a593b7ade,Manuel,1;4,ChatGPT4AsAnnotator,1,Olbia| chiude il negozio a causa della pandemia: «Ma non mi arrendo»
+113,7c2985b4-d96e-442e-88a2-00811d796d16,Manuel,9,ChatGPT4AsAnnotator,1,Il privilegio di sedere al tavolo giusto
+114,7ae76290-b709-4305-a834-1b2da1994400,Manuel,1;3,ChatGPT4AsAnnotator,1,Coronavirus| medico 64enne muore il giorno dopo il vaccino: aveva gravi patologie
+115,8f210aae-5e9f-4783-b47d-ce0bc6171394,Manuel,1;4,ChatGPT4AsAnnotator,1;7,«Una situazione mai vista»| le voci da Israele e dalla Striscia
+116,c9e49f68-e87e-43ae-ba0d-55ecca379934,Manuel,1;3,ChatGPT4AsAnnotator,1,Novara| 52enne si vaccina: ma mezz’ora dopo viene a mancare
+117,8bac2063-0de3-462a-bbf6-80c679524ea7,Manuel,1;8,ChatGPT4AsAnnotator,1,Così i neonati sparivano negli ospedali dell’ex Jugoslavia
+120,a0f16e2b-cc17-4526-a990-772e5593cdcd,Manuel,1;3,ChatGPT4AsAnnotator,1,Report su Vaticano: investimento su fondo catastrofi e pandemie
+121,be91c835-0b23-4065-be59-aebc841af31d,Manuel,1;3,ChatGPT4AsAnnotator,1,La svolta militare: le Forze di difesa israeliane di cielo e di terra stanno attaccando la Striscia di Gaza
+122,d4271fe2-7141-4158-88ff-47c78609f774,Manuel,3,ChatGPT4AsAnnotator,1,Il countdown: cosa accadrà tra poco a questi televisori
+123,54904eb1-e7d0-4182-a166-bcaafe2068c2,Manuel,1;3,ChatGPT4AsAnnotator,1,Magalli-Volpe: lui la sbeffeggia per lo share| lei lo attacca. I retroscena di una lite infinita
+124,f449f8f5-f4d6-40f6-a573-89e9837cd6af,Manuel,-1,ChatGPT4AsAnnotator,1,Il virus rallenta ancora. Tre regioni in zona bianca
+125,78d95e36-d05a-4cef-8939-85959a4541fc,Manuel,3,ChatGPT4AsAnnotator,1,Controllate 375 persone: 13 multe Centro gremito e autobus deviati
+126,97ed6bb2-3bb0-4727-91f8-6f09a536a655,Manuel,1;9,ChatGPT4AsAnnotator,1,Autostrade| dall’ipotesi revoca all’offerta da 10 miliardi. Benetton| in tre anni da sconfitti a vincitori
+127,a223ad9c-9cc2-4e23-80fa-cb3bbba183da,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1;4,"D'Alema ""rovinato"". Ma lui reagisce così: ""Vendetta..."""
+128,ad1cb3b0-473a-4718-8ade-64333876aec6,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1;4,"Chiara Gualzetti| l'assassino: ""Lei non moriva mai"""
+129,e7c8986b-52f2-4e06-9900-0e5cf12654da,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1;4,Sinagra contro Figliuolo: “Lo aspetto per il vaccino. Vedrà che bell’accoglienza”
+130,cda9be7d-6d49-4681-9dbb-1aee0c254015,Manuel,1;3,ChatGPT4AsAnnotator,1,Galatone| gli insetti invadono la zona industriale: si indaga
+133,a8739979-876f-4f17-be81-ed5757b7d9e1,Manuel,1;3,ChatGPT4AsAnnotator,1,Disastro ambientale Ilva: i Riva condannati a oltre 20 anni. Tre anni e mezzo a Nichi Vendola
+134,9f722328-c69f-4244-8b1d-aedd04dc3080,Manuel,1;9,ChatGPT4AsAnnotator,1,E poi la sanità calabrese è in rosso… Doppi pagamenti all’asp di Reggio per oltre 4 milioni. Indaga la procura
+135,db3e2592-7e10-4200-bfd0-ae05f621fb60,Manuel,4,ChatGPT4AsAnnotator,1,«Vaccinare entro fine luglio 7 pugliesi su 10»| la scommessa
+137,ccaa6fc6-bb4e-423c-86ef-478c1be49d09,Manuel,1;3;8,ChatGPT4AsAnnotator,1,Covid| la variante «brasiliana» spaventa: cosa sta succedendo a Manaus- Corriere.it
+138,966f95b9-fc3d-4950-bbc4-0ce1e07c6873,Manuel,3;4;9,ChatGPT4AsAnnotator,1,Pestaggi in carcere| ex detenuto sulla sedia a rotelle: «Anche la direttrice con il manganello»
+140,9a77fd35-2ff1-47f3-9cc4-15bb08eeefee,Manuel,1;3,ChatGPT4AsAnnotator,1,Terrorismo| imam arrestato ad Alessandria: invocava la distruzione del Vaticano durante la preghiera
+141,f46b51a5-037e-4bed-8460-a4eb2eefc264,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Vaccini anti-Covid in azienda| Figliuolo: “Per tutte le classi di età da giugno”
+142,5717ce3e-69a2-4e5a-8e70-2f8230c217ad,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Laura Pausini e le Lady Oscar italiane: «Devo tutto a Sofia. Nel mio abito Valentino una bacchetta magica»
+143,dca167f5-de01-44dc-a636-e38c6f27f9e5,Manuel,9,ChatGPT4AsAnnotator,1,Un chirurgo cagliaritano trapianta due mani in Svezia
+145,b1d2d7da-8eb7-4cef-8651-35929e2bd09e,Manuel,2,ChatGPT4AsAnnotator,1,Cosa fa lo spaziotempo quando si strappa?
+146,b291a485-7c6d-400e-ad80-3e07b20af10e,Manuel,1;3,ChatGPT4AsAnnotator,1,Eroina e cocaina da San Severo a Campodipietra pronte per lo spaccio: i dettagli del blitz della Polizia
+147,59f724d8-d6f5-43dd-99d2-c706cd5ff61d,Manuel,1;3,ChatGPT4AsAnnotator,1;7,Francia| ucciso l’aggressore della poliziotta: era radicalizzato. La rabbia di Marine Le Pen
+148,b79a2e88-0e7d-4f9c-9309-4b5c2a0e837d,Manuel,9,ChatGPT4AsAnnotator,1;3;7,Giornata della terra? La spariamo grossa? Il cibo secondo il WWF
+149,de5fa1c9-f706-4b97-96e0-fc1838c07622,Manuel,1;3,ChatGPT4AsAnnotator,1,Chiara Ferragni| la sorella Valentina lancia i bracciali dell'estate: fan delusi
+150,584acaaf-fa1c-4ac0-ab29-4862b214ba95,Manuel,1;3;5,ChatGPT4AsAnnotator,1;9, ESTORTI AD UN MALATO DI CANCRO PER SOMMINISTARGLI GRATIS DEI MEDICINALI
+151,55d744cd-36c6-4747-b055-981c9aba3fae,Manuel,3,ChatGPT4AsAnnotator,1,Catania| ruba macchinari e alcolici da un bar in aeroporto: denunciato
+153,f546164a-0c0a-4153-ab7c-b715c70a2d6d,Manuel,-1,ChatGPT4AsAnnotator,1,Ore 12| il Piemonte si ferma nel ricordo delle 14 vittime della funivia
+154,6449bb25-2d0e-41d2-8640-500fa13c6aa5,Manuel,1;3,ChatGPT4AsAnnotator,1,Sciacca| operatori ecologici senza salario da due mesi: sindacati pronti alla protesta
+156,a6af4a60-7d73-43b4-9be9-3e5cc33b687a,Manuel,1;3;9,ChatGPT4AsAnnotator,1;3,"Firenze| cos'è ""La Ferita"": l'opera che squarcia Palazzo Strozzi"
+158,5a003463-0851-41e8-bd85-5327d86125cd,Manuel,1;3;4,ChatGPT4AsAnnotator,1,"Saman Abbas a Quarto Grado| la denuncia contro il padre prima di sparire: ""I miei documenti chiusi a chiave nell'armadio"""
+160,b70d6d51-ef24-4bec-8d1a-593e9c11bfb5,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1;3,Roma| Casapound contro gli Azzurri in ginocchio: murale in stile fascista|«Resta in piedi| Italia»
+162,127212ca-e3bb-4563-a878-e89052565e05,Manuel,-1,ChatGPT4AsAnnotator,1,In pandemia cresce uso omeopatia| +25%
+165,445120e1-6bf1-4ddf-9177-2b36cfa7e3f9,Manuel,4;9,ChatGPT4AsAnnotator,1,“È mia figlia”| il dolore della madre che ha riconosciuto la giovane tra i morti del naufragio di fine giugno
+166,c0238769-ae38-4575-b9ce-ebc1aa26c30a,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Covid| J&J: “La risposta al vaccino dura almeno 8 mesi e protegge dalla variante Delta”
+168,1e2ab02b-b251-4c6e-96c5-38b346dfecbd,Manuel,-1,ChatGPT4AsAnnotator,1,Commissione d'indagine su Serinper| il presidente del consiglio comunale è d'accordo
+170,267c1505-8db0-4b7b-a46b-315a3236c342,Manuel,3,ChatGPT4AsAnnotator,1,A diciotto anni si mettono in fila: i figli dei no-Vax chiedono il vaccino
+171,af6c349c-3ed8-4afb-b31a-411cfd2f212d,Manuel,1;3;4,ChatGPT4AsAnnotator,1,"Covid Italia| vaccini: ""Affrettarsi prima dell'inizio della scuola"""
+172,304dbbc9-3deb-4452-9b85-bcb40db5e1c5,Manuel,1;3;4,ChatGPT4AsAnnotator,1,"Masini (Forza Italia): ""Pronta a votare il Ddl Zan anche così com’è"""
+173,f620ad74-b7b2-4269-b02e-af033a2f04b2,Manuel,1;9,ChatGPT4AsAnnotator,1,Ora il turismo extra-Unione europea fa paura. E Berlino striglia Cipro e Grecia
+174,45fbdee5-8792-4b2d-b2f3-52d3a8f0a154,Manuel,1;3,ChatGPT4AsAnnotator,1;9,"Canada| quasi 50 gradi sul termometro: un intero Paese distrutto dalle fiamme| ""edifici inghiottiti in poco tempo"""
+175,63b90921-c98d-48e4-b0a1-a1c9531c4e6a,Manuel,1;3,ChatGPT4AsAnnotator,1,Papa Francesco ricoverato in ospedale: sarà operato al colon
+176,e445631e-cae3-4af9-8a4e-49a0141ea731,Manuel,-1,ChatGPT4AsAnnotator,1,Quasi 2mila tifosi scozzesi positivi al coronavirus dopo aver partecipato a eventi degli Europei
+177,ef13bfe6-3f64-4aee-9b3f-b64fd7418d5d,Manuel,-1,ChatGPT4AsAnnotator,1,Vaccinazioni| le nuove prenotazioni slittano a dopo metà agosto
+178,1a40c42d-b4e0-42f6-a380-b26061748e0e,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1;4,"""Ferragnez"" Renzi| lo scontro social: “Che schifo che fate politici”"
+179,d6324f36-a665-4352-ab7a-65ee0c2bd931,Manuel,1;3;4,ChatGPT4AsAnnotator,1;7,Roma Pride| folla in piazza e slogan pro Ddl Zan: «Vogliamo i nostri diritti». Cortei in 6 città italiane
+180,151605d6-e5d5-4d18-b7fa-9e19cbcbf5f3,Manuel,3,ChatGPT4AsAnnotator,1,Il rave party va avanti| schierati oltre 100 agenti: identificate 200 persone su seimila
+181,3d1ae696-3a3f-43ab-a4ce-61d337a59d7e,Manuel,1;3,ChatGPT4AsAnnotator,1,Strage nel Mediterraneo: barcone si ribalta| morti 43 migranti
+185,a0fd77d4-a1e6-4881-ad83-4a9c7a3bf32c,Manuel,1;3,ChatGPT4AsAnnotator,1,Inghilterra| dal 19 luglio via tutte le restrizioni: addio mascherine (anche al chiuso) e distanziamenti
+186,f964e254-d60e-4509-9a03-b62d8b5f2568,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Covid| fake news di Montesano: «Il sangue dei vaccinati viene buttato via». La smentita del Cns: «Grave falsità| donare salva le vite»
+187,89ab0d13-b200-474f-922f-e78cd70f7e40,Manuel,1;2;8;9,ChatGPT4AsAnnotator,1;8,Il ddl Zan serve per contrastare l’omotransfobia? Ecco la verità sui report dell’Il ddl Zan serve per contrastare l’omotransfobia? Ecco la verità sui report dell’Arcigay
+190,3c2e2f67-fdc7-42b9-9562-0bb3c0f37f2f,Manuel,1;3,ChatGPT4AsAnnotator,1,Covid Italia 6 luglio: 907 nuovi casi e 24 morti
+191,d73018e2-5184-43b7-ba01-e82378666dab,Manuel,1;3;4,ChatGPT4AsAnnotator,1,"In Fvg trovata la variante Delta in 25 dei 96 campioni analizzati. Riccardi: “Vaccinarsi è fondamentale"""
+192,22df3f4a-7eb7-4fae-b0d6-ef6ca4fe408f,Manuel,1;3,ChatGPT4AsAnnotator,1,Variante delta: dopo i due a Pisa| casi sospetti anche a Firenze. Le contromisure in Toscana
+193,7a4e548a-0dbe-4d32-9e5c-754ef3520509,Manuel,1;3;4,ChatGPT4AsAnnotator,1,"Vaccini Covid| Speranza: ""Oggi superiamo quota 55 milioni"""
+194,e65f6342-2829-4565-8e90-97c1354ed011,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Vaccini| «Pfizer e Moderna sicuri in gravidanza e proteggono il feto dal virus»: lo studio Usa sui farmaci a mRNA
+195,0c2a7047-28f8-4839-b02c-73c58447c827,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Coronavirus| il monitoraggio Gimbe: “Nuovi casi in crescita del 5%| ma calano i decessi”
+197,90405269-7a8c-4479-a45e-ee097692f8ac,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1;7,Ddl Zan| Letta nella morsa dei “due Matteo”: «Non hai più i numeri. O lo modifichi o lo affossi»
+198,b59b7f92-329c-4002-a7bf-c2ebce4bde2f,Manuel,1;3;4,ChatGPT4AsAnnotator,1,"Morta Raffaella Carrà| manifesti funebri all'Argentario| ""Era una di noi"""
+199,70f25ccb-11ca-458e-8d4c-998264097691,Manuel,3;4,ChatGPT4AsAnnotator,1,"Locali da ballo| la protesta dei titolari: ""Vogliamo riaprire| dateci una data certa"""
+200,1d134854-568a-4590-86b1-64912b3c3e4d,Manuel,1;3,ChatGPT4AsAnnotator,1,Nuove aggressioni omofobe a Milano: calci e pugni in centro a una coppia di giovani
+201,53d150f9-59a8-4ed9-a1ca-b6fceeddcccf,Manuel,1;3,ChatGPT4AsAnnotator,1,Terapie Covid| l'Oms aggiorna le linee guida: aggiunti due farmaci
+202,c466d573-c6d3-4665-a103-62ea4de370da,Manuel,1;2;4;9,ChatGPT4AsAnnotator,1;7,"Beppe Grillo| tam tam impazzito tra i Cinque Stelle vicini a Giuseppe Conte: ""E se ci ha fregati?"""
+203,247b189a-71b7-4959-8e0d-dbc67bb52f6d,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Oms su casi Covid-19 in Europa: “Aumentati del 10% e copertura vaccinale insufficiente”. Sugli Europei: “Migliorare monitoraggio”
+204,132835cc-8943-4601-bbfd-430e306dbd78,Manuel,1;3;4,ChatGPT4AsAnnotator,1,I timori di Draghi: «Non ripetiamo gli errori dell’estate»
+205,a7beb535-abf9-413b-901c-511699ea3b74,Manuel,1;3;4,ChatGPT4AsAnnotator,1,"Malika e la raccolta fondi| GoFundMe: ""Controlli rigorosi. La finalità era chiara"""
+206,1249508d-5fb2-47c1-b931-d9f70070aebb,Manuel,3,ChatGPT4AsAnnotator,1,Istat: l’economia riparte ma l’Italia è più povera| meno longeva e stabilisce il record negativo delle nascite
+207,ba2cea63-3765-4768-9143-6d3587b0ac9e,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1,L’incubo Delta: «Un caso di Covid su quattro è di variante indiana»
+209,5da2da07-b1ea-4dda-b366-43e7824dde7d,Manuel,-1,ChatGPT4AsAnnotator,1,Sì alle alternative| ma non vaccinarsi non è un'opzione
+210,3a9f1038-4ce3-477a-a115-3afbc143ece6,Manuel,1;3,ChatGPT4AsAnnotator,1,Covid| 808 casi e 12 morti. Gelmini: troppi sessantenni non vaccinati| andiamoli a trovare a casa
+211,895a5931-8b45-4bcb-a432-09a37c766b52,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Covid| Gimbe su over 60: “Anticipare la seconda dose e puntare sui vaccini a Rna messaggero per le prime somministrazioni”
+213,38c347a7-7070-4837-8679-3a6b6e38d987,Manuel,1;3,ChatGPT4AsAnnotator,1,Vaccini| Ema: con due dosi protetti contro variante Delta
+214,cb1f712a-ff8a-417e-994f-2f9e51673dd1,Manuel,-1,ChatGPT4AsAnnotator,1,Presa a calci e trascinata per i capelli| divieto di avvicinamento per l'ex marito
+215,f3e8082e-a2dd-4f93-9023-efd0a5a8f001,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1,"Vaccino| generale Figliuolo durissimo contro le Regioni: ""Le dosi ci sono| 500mila somministrazioni al giorno. Viaggiare spediti"""
+216,29280252-ccea-49c1-8ee1-aa7a5d970be3,Manuel,1;3;4,ChatGPT4AsAnnotator,1,Uccisa a martellate in casa a Livorno| in carcere per l'omicidio l'ex marito: «Progettava la fuga»
+217,72ab85c4-04fa-44ed-b4ae-5f570db46aab,Manuel,1;3;4;9,ChatGPT4AsAnnotator,1;4,"Papa Francesco operato per ""stenosi diverticolare sintomatica del colon"": ""Il vero rischio è l'anestesia"""
+218,7eb0acca-badf-4f30-bb1c-85308fa7f85f,Manuel,1;4,ChatGPT4AsAnnotator,1;7,Covid| nuova versione del vaccino di Oxford e Astrazeneca per test sulla variante Beta “che riesce a evadere l’immunità dei vaccini”
+219,ac830c44-746a-4868-adc6-ad99ad208112,Manuel,1;3,ChatGPT4AsAnnotator,1,Covid| il grido dei parenti delle vittime a Bergamo a Roma: “La politica deve pagare”
+220,b75dbb31-f27b-4caf-8a66-b275e1134591,Manuel,1;3;9,ChatGPT4AsAnnotator,1;7,I ragazzi aspiranti neonazisti della Milano bene: giuramenti| armi e il raid già pianificato
+221,63bc8574-66ef-4d3f-8272-c798fc17256d,Manuel,-1,ChatGPT4AsAnnotator,1,Ripartire con il Green pass
+223,0dc73a1c-4c03-4b2f-8344-f3c898900c01,Manuel,9,ChatGPT4AsAnnotator,1,Habemus Papam
+224,cb932977-03e8-46fd-bd91-34e28dba01bd,Manuel,1;3,ChatGPT4AsAnnotator,1;7,Il Cts cambia idea suAstrazeneca.Ormai è chiaro: dipende dai politici
+226,2e46bc4c-a4bb-4d18-ab2b-94dc738db629,Manuel,9,ChatGPT4AsAnnotator,1,I chiusuristi tifano per l’emergenza continua

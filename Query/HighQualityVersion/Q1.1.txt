@@ -1,0 +1,40 @@
+32 QUERY:
+1.0
+	Read the article and answer to all of this questions:
+
+	1 - Is this article a Straight news, or 'hard news'?(if the article reports essential information in a concise, and impartial manner,  the information should be based on facts and there should be no personal opinion of the author)
+
+	2 - Is this article a Editorial/opinion?(if the article communicates the author’s personal point of view about current events and topics, in order to develop an argument about an issue and potentially sway readers’ opinions.​​ Opinion pieces include editorials, op-eds, commentary, analysis and letters to the editor.)
+
+	3 - Is this article a Feature/investigation? (if the article contains at least one of the following elements: in-depth coverage, rich storytelling, and investigative elements)
+
+	4 - Is this article a  Satire?
+
+	5 - Is this article a  Lifestyle content, obituary, 'listicle', or other 'soft news' or gossip? 
+
+
+
+LAST GOOD QUERY:
+
+1.1
+	Classify this article into one of these 5 categories and explain why:
+
+	1 - Straight news, or 'hard news' if the article reports essential information; the information should be based on facts, and there should be no personal opinion of the author.
+
+	2 - Editorial/opinion if the article communicates the author’s personal point of view about current events and topics, in order to develop an argument about an issue and potentially sway readers’ opinions.​​ Opinion pieces include editorials, op-eds, commentary, analysis, and letters to the editor.
+
+	3 - Feature/investigation if the article contains at least one of the following: in-depth coverage, rich narrative, and investigative elements, but must not include the author's personal viewpoint in any way.
+
+	4 - Satire.
+
+	5 - Lifestyle content, obituary, 'listicle,' or other 'soft news' or gossip (often dealing with arts and entertainment topics).
+
+
+1.2 (Per vedere cosa dice lui, cosa ne sa di questi generi dentro di se)
+
+	Classify this article into one of these 5 categories and explain why:
+	1 - Straight news, or 'hard news'
+	2 - Editorial/opinion 
+	3 - Feature/investigation
+	4 - Satire
+	5 - Lifestyle content, obituary, 'listicle,' or other 'soft news' or gossip
