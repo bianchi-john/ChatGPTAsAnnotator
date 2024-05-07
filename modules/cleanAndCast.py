@@ -54,8 +54,8 @@ def cleanAndCast(df):
 
 
     # Label encoder
-    df['Q1.7.1']= label_encoder.fit_transform(df['Q1.7.1']) 
-    df['Q1.3']= label_encoder.fit_transform(df['Q1.3']) 
+    # df['Q1.7.1']= label_encoder.fit_transform(df['Q1.7.1']) 
+    # df['Q1.3']= label_encoder.fit_transform(df['Q1.3']) 
 
 
     # Elimino le colonne ridondanti
