@@ -84,6 +84,13 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
         if article_content:
             specific_prompt_index = int(promptNumber)  # Indice della frase desiderata
             specific_prompt = phrases_list[specific_prompt_index]
+            # Rimuovi i campi 'url' e 'id'
+            article_id = article_content['id']
+            article_url = article_content['url']
+            article_content.pop('url', None)
+            article_content.pop('id', None)
+            # Rinomina la chiave 'meta_title' in 'title'
+            article_content['title'] = article_content.pop('meta_title')
             messages = [
                 {
                     "role": "system",
@@ -122,17 +129,13 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
             # Extract relevant information from response
             filenames.pop(0)  # Rimuovi il filename dalla lista dopo il successo
             counter = counter + 1
-
-            id = article_content['id']
-            title = article_content['meta_title']
-            label = article_content['meta_label']
+            id = article_id
+            title = article_content['title']
             annotator = 'ChatGPT4AsAnnotator'  # Assuming annotator name is constant
-
             # Creazione del dataframe con i dati
             df = pd.DataFrame({
                 'id': [id],
                 'title': [title],
-                'label': [label],
                 'annotator': [annotator]
             })
 
@@ -183,5 +186,5 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
                     print('Limite raggiunto')
                     break
 
-    print('Dati ottenuti per l\'articolo: ' + article_content['id'])
+    print('Dati ottenuti per l\'articolo: ' + article_content['title'] + ' ' + str(article_id))
 
