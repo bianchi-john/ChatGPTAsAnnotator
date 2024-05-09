@@ -5,8 +5,8 @@ import pandas as pd
 import datetime
 from dotenv import load_dotenv  # Optional, depending on your key storage method
 import re
-
-
+import os
+import csv
 
 output_file = 'Query/output/'
 limite = 9999999
@@ -16,11 +16,6 @@ promptNumber = 0
 name = input(f"Provide a name for output file (remember to include csv extension): ")
 output_file = output_file + name
 
-# Chiedo all'utente se vuole sovrascrivere il file nel caso esista già
-if os.path.isfile(output_file):
-    confirm = input(f"The file '{output_file}' already exists. Do you want to overwrite it? (y/n): ")
-    if confirm.lower() != 'y':
-        quit()
 
 # Chiedo all'utente se vuole stabilire un limite massimo di articoli da annotare
 confirm = input(f"Do you want a maximum file limit? (y/n): ")
@@ -194,7 +189,19 @@ def read_phrases_file(filepath):
 phrases_file_path = 'Query/prompt/prompt.txt'
 phrases_list = read_phrases_file(phrases_file_path)
 
+
+# Leggi il file CSV e ottieni gli ID da eliminare
+ids_to_remove = set()
+with open(output_file, 'r', encoding='utf-8') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        ids_to_remove.add(row['id'])
+
+# Ottieni tutti i file nella directory
 filenames = os.listdir(articles_dir)
+
+# Rimuovo i file già presenti nel csv che ho indicato come output, ammesso che ce ne siano (questo serve per le possibili interruzioni)
+filenames = [filename for filename in filenames if filename.split('.')[0] not in ids_to_remove]
 
 while filenames:  # Continua finché ci sono ancora filenames da processare
     filename = filenames[0]  # Prendi il primo filename della lista
@@ -211,6 +218,7 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
             article_content.pop('id', None)
             # Rinomina la chiave 'meta_title' in 'title'
             article_content['title'] = article_content.pop('meta_title')
+            print('Inoltro richiesta per: ' + str(article_id))
             messages = [
                 {
                     "role": "system",
@@ -300,4 +308,4 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
                     break
 
     print('Dati ottenuti per l\'articolo: ' + str(article_id))
-
+    print('-------------------------------------------------')

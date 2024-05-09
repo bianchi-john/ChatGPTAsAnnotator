@@ -6,13 +6,15 @@ import pandas as pd
 import re
 import numpy as np
 
-def noiseDiscovery(df):
+def noiseCleaner(df):
 
     def Q1_1(df, column):
-        df[column] = df[column].astype(str)
-        df[column] = df[column].str.replace('.0', '')
-        valid_values = ['1', '2', '3', '4', '5', '']
-        df[column] = df[column].apply(lambda x: x if x in valid_values else print(str(column) +' \"'+  str(x)+'\"'))
+        condition = df['annotator'] != 'ChatGPT4AsAnnotator'
+        if condition.any():  # Controlla se almeno un valore soddisfa la condizione
+            df[column] = df[column].astype(str)
+            df[column] = df[column].str.replace('.0', '')
+            valid_values = ['1', '2', '3', '4', '5', '']
+            df[column] = df[column].apply(lambda x: x if x in valid_values else print(str(column) +' \"'+  str(x)+'\"'))
 
     def Q1_2(df, column):
         df[column] = df[column].astype(str)
@@ -80,7 +82,10 @@ def noiseDiscovery(df):
     def Q1_71(df, column):
         # Funzione per controllare se un valore è conforme
         def is_conform(value):
-            return (value == '') or (all(0 <= int(x) <= 12 for x in value.split(';') if x.isdigit()))
+            # Converti il valore in una stringa
+            value_str = str(value)
+            # Dividi la stringa solo se è diversa da vuota
+            return (value_str == '') or (all(0 <= int(x) <= 12 for x in value_str.split(';') if x.isdigit()))
 
         # Trova tutti i valori non conformi
         non_conform_values = df[df[column].apply(lambda x: not is_conform(x))][column]
@@ -94,33 +99,7 @@ def noiseDiscovery(df):
                 primavolta = 1
                 print(value)
 
-                
-    def Q2_8(df, column):
-        df[column] = df[column].astype(str)
-        df[column] = df[column].str.replace('.0', '')
-        valid_values = ['1', '2', '3', '0', '']
-        df[column] = df[column].apply(lambda x: x if x in valid_values else print(str(column) +' \"'+  str(x)+'\"'))
-
-    def Q2_91(df, column):
-        df[column] = df[column].astype(str)
-        df[column] = df[column].str.replace('.0', '')
-        valid_values = ['1', '2', '0', '']
-        df[column] = df[column].apply(lambda x: x if x in valid_values else print(str(column) +' \"'+  str(x)+'\"'))
-
-    def Q2_92(df, column):
-        try:
-            df[column] = df[column].astype(str)
-            df[column] = pd.to_datetime(df[column], format='%d-%m-%Y')
-        except Exception as e:
-            print(f"Lista di valori di tipo data non coerenti: \n\n {df[column][df[column].astype(str).apply(lambda x: len(x) != 10)]}")
-
-
-
-    def Q2_10(df, column):
-        df[column] = df[column].astype(str)
-        df[column] = df[column].str.replace('.0', '')
-        valid_values = ['1', '2', '0', '']
-        df[column] = df[column].apply(lambda x: x if x in valid_values else print(str(column) +' \"'+  str(x)+'\"'))
+            
 
     Q1_1(df, 'Q1.1')
 
@@ -140,12 +119,5 @@ def noiseDiscovery(df):
 
     Q1_71(df, 'Q1.7.1')
 
-    Q2_8(df, 'Q2.8')
-
-    Q2_91(df, 'Q2.9.1')
-
-    Q2_92(df, 'Q2.9.2')
-
-    Q2_10(df, 'Q2.10')
 
     return ('')

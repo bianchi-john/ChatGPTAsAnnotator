@@ -21,6 +21,27 @@ def convert_values(value):
     return value
 
 
+# Trasformo in one hot la 1.1 di annotatori
+def oneDotOne(value):
+    # Converti il valore in una stringa
+    value_str = str(value)
+    # Controlla se il valore è una stringa non vuota
+    if value_str:
+        # Controlla se ci sono le occorrenze di '1', '2', '3' nella stringa
+        if '-1' in value_str:
+            return value_str 
+        elif '1' in value_str:
+            value_str = value_str.replace("1", "2;1;1;1;1")
+        elif '2' in value_str:
+            value_str = value_str.replace("2", "1;2;1;1;1")
+        elif '3' in value_str:
+            value_str = value_str.replace("3", "1;1;2;1;1")
+        elif '3' in value_str:
+            value_str = value_str.replace("4", "1;1;1;2;1")
+        elif '3' in value_str:
+            value_str = value_str.replace("5", "1;1;2;1;2")
+
+    return value_str
 
 
 def cleanAndCast(df):
@@ -33,7 +54,7 @@ def cleanAndCast(df):
     ####
     # Converto le colonne numeriche in INT
     ####
-    columns_to_convert = ['Q1.1', 'Q1.2', 'Q1.3.1', 'Q1.4', 'Q1.5', 'Q1.6', 'Q1.7', 'Q2.8', 'Q2.9.1', 'Q2.10']
+    columns_to_convert = ['Q1.2', 'Q1.3.1', 'Q1.4', 'Q1.5', 'Q1.6', 'Q1.7']
     # Sotituisco i NaN in -1
     df[columns_to_convert] = df[columns_to_convert].fillna(-1)
     # Applico il cast
@@ -41,7 +62,7 @@ def cleanAndCast(df):
         df[col] = df[col].astype(int)
 
     ####################################################################################
-    # Faccio label encoder di (Q1.3, 1.7.1)
+    # Faccio label encoder di (Q1.3, 1.7.1) e trasformo in one hot la 1.1 di annotatori
     ####################################################################################
         
     #Pulisco prima di fare label encoder di (Q1.3, 1.7.1)
@@ -52,11 +73,15 @@ def cleanAndCast(df):
     df['Q1.7.1']= df['Q1.7.1'].astype(str) 
     df['Q1.3']= df['Q1.3'].astype(str)
 
+    # Trasformo in one hot la 1.1 di annotatori
+    condition = df['annotator'] != 'ChatGPT4AsAnnotator'
+    if condition.any():  # Controlla se almeno un valore soddisfa la condizione
+        df['Q1.1'] = df['Q1.1'].apply(oneDotOne)
 
     # Label encoder
-    # df['Q1.7.1']= label_encoder.fit_transform(df['Q1.7.1']) 
-    # df['Q1.3']= label_encoder.fit_transform(df['Q1.3']) 
-
+    df['Q1.7.1']= label_encoder.fit_transform(df['Q1.7.1']) 
+    df['Q1.3']= label_encoder.fit_transform(df['Q1.3']) 
+    df['Q1.1']= label_encoder.fit_transform(df['Q1.1'])
 
     # Elimino le colonne ridondanti
     columns_to_drop = ['Q1.7.1_-1', 'Problem', 'Q1.7.1_', 'Q1.3_-1']
@@ -66,21 +91,6 @@ def cleanAndCast(df):
         except KeyError:
             # Ignora se la colonna non esiste nel DataFrame
             pass
-
-    
-    # Trasformo le date in oggetti datetime
-    def convert_to_datetime(value):
-        try:
-            return pd.to_datetime(value, format='%d/%m/%Y')
-        except (TypeError, ValueError):
-            return pd.NaT
-            
-    
-    def convert_column_to_datetime(column):
-        return column.apply(convert_to_datetime)
-    
-    df['Q2.9.2'] = convert_column_to_datetime(df['Q2.9.2'])
-
 
     # I restore the result
     return(df)

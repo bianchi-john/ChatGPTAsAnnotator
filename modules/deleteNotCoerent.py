@@ -1,7 +1,6 @@
 import os
+
 def deleteNotCoerent(df, name):
-
-
     # Definisci il percorso della cartella 'Other'
     folder_path = 'Other'
 
@@ -10,7 +9,7 @@ def deleteNotCoerent(df, name):
         os.makedirs(folder_path)
 
     # Definisci i campi di interesse
-    required_fields = ['Q1.1', 'Q1.2', 'Q1.4', 'Q1.5', 'Q1.6', 'Q1.7', 'Q2.8', 'Q2.9.1', 'Q2.10']
+    required_fields = ['Q1.2', 'Q1.4', 'Q1.5', 'Q1.6', 'Q1.7']
 
     # Verifica se una, due o tre dei valori nei campi di interesse sono -1
     has_negative_one = (df[required_fields] == -1).any(axis=1)
