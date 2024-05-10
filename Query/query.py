@@ -26,11 +26,6 @@ if confirm.lower() == 'y':
 # Chiedo all'utente con quale tipo di prompt vuole fare le domande a chatGPT
 promptNumber  = input(f"Wich prompt do you want to use? (provide a number of the line \"Query/prompt/prompt.txt\"): ")
 
-confirm = input(f"Do you want to use only one annotator articles (Manuel)? (y/n): ")
-if confirm.lower() == 'y':
-    # Testing with only one annotator (Manuel)
-    articles_dir = "Articles/articles/ManuelOnly"
-
 print('Starting conversation ...')
 
 # Load environment variables if necessary (replace with your actual values)
@@ -67,10 +62,13 @@ def parseOutput(output):
 
     # Iterate through each step and extract step number and value
     for step in steps:
-        # Check if ' - ' exists in the step
-        if ' - ' in step:
+        # Check if ' - ' or ':' exists in the step
+        if ' - ' in step or ':' in step:
             # Split the step into step number and value
-            step_number, step_content = step.split(' - ', 1)
+            if ' - ' in step:
+                step_number, step_content = step.split(' - ', 1)
+            else:
+                step_number, step_content = step.split(':', 1)
             # Remove leading and trailing whitespaces
             step_content = step_content.strip()
             # Extracting answer values based on the step number
@@ -218,7 +216,7 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
             article_content.pop('id', None)
             # Rinomina la chiave 'meta_title' in 'title'
             article_content['title'] = article_content.pop('meta_title')
-            print('Inoltro richiesta per: ' + str(article_id))
+            print('Sending request for: ' + str(article_id))
             messages = [
                 {
                     "role": "system",
@@ -291,6 +289,9 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
             # Salvataggio del jsonInEntrata in un file con timestamp
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             json_in_risposta['timestamp'] = timestamp
+            json_in_risposta['id'] = article_id
+            json_in_risposta['titolo'] = title
+            
             json_file = "Query/output/dump/dump.json"
 
             if os.path.isfile(json_file):
@@ -306,6 +307,5 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
                 if (counter >= limite):
                     print('Limite raggiunto')
                     break
-
     print('Dati ottenuti per l\'articolo: ' + str(article_id))
     print('-------------------------------------------------')

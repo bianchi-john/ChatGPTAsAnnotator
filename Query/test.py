@@ -2,6 +2,7 @@ import json
 import re
 
 output = "Step 2 - Yes\n\nStep 3 - No\n\nStep 4 - Yes\n\nStep 5 - No\n\nStep 6 - No\n\nStep 7 - 4. Extremely Accurately\n\nStep 8 - \n1. A proper noun - Yes\n2. A colon (:) - No\n3. A question - No\n4. Presence of quoted text - No\n5. Presence of at least one word written in capital letters - No\n6. The pronoun 'questo' and its derivatives - No\n7. Generalizing terms (such as 'mai', 'sempre') - No\n8. Explanation phrases, such as 'Ecco perché...' - No\n\nStep 9 - Yes\n\nStep 10 - -1. No quotation present\n\nStep 11 - Yes\n\nStep 12 - 4. Unbiased\n\nStep 13 - 4. Neutral\n\nStep 14 - No\n\nStep 15 - \n0. Political - Yes\n1. Religion - No\n2. Race/ethnicity - No\n3. Orientation - No\n4. The article negatively targets other groups or minorities - No"
+#output = 'Step 2: Yes\n\nStep 3: No\n\nStep 4: Yes\n\nStep 5: No\n\nStep 6: No\n\nStep 7: 3\n\nStep 8: \n1. Yes\n2. No\n3. No\n4. No\n5. No\n6. No\n7. No\n8. No\n\nStep 9: No\n\nStep 10: -1\n\nStep 11: No\n\nStep 12: 3\n\nStep 13: 4\n\nStep 14: No\n\nStep 15:\n0. No\n1. No\n2. No\n3. No\n4. No'
 # Split the output by the step delimiter
 steps = output.split('Step ')[1:]
 
@@ -15,10 +16,13 @@ pattern_minus_one = re.compile(r'-1')
 
 # Iterate through each step and extract step number and value
 for step in steps:
-    # Check if ' - ' exists in the step
-    if ' - ' in step:
+    # Check if ' - ' or ':' exists in the step
+    if ' - ' in step or ':' in step:
         # Split the step into step number and value
-        step_number, step_content = step.split(' - ', 1)
+        if ' - ' in step:
+            step_number, step_content = step.split(' - ', 1)
+        else:
+            step_number, step_content = step.split(':', 1)
         # Remove leading and trailing whitespaces
         step_content = step_content.strip()
         # Extracting answer values based on the step number
