@@ -40,8 +40,33 @@ def oneDotOne(value):
             value_str = value_str.replace("4", "1;1;1;2;1")
         elif '3' in value_str:
             value_str = value_str.replace("5", "1;1;2;1;2")
-
     return value_str
+
+
+def oneDotSevenDotOne(data):
+    replaced_row = []
+    data = data.split(";")
+    for value in data:
+        if value in ['0', '1']:
+            replaced_row.append('0')
+        elif value in ['5', '6', '7', '8']:
+            replaced_row.append('1')
+        elif value in ['9', '4']:
+            replaced_row.append('2')
+        elif value in ['2', '3']:
+            replaced_row.append('3')
+        elif value == '12':
+            replaced_row.append('4')
+        elif value in ['10', '11']:
+            if len(data) == 1:
+                replaced_row.append('-1')
+        else:
+            replaced_row.append(value)
+    return ';'.join(list(set(replaced_row)))
+
+    
+
+
 
 
 def cleanAndCast(df):
@@ -73,15 +98,18 @@ def cleanAndCast(df):
     df['Q1.7.1']= df['Q1.7.1'].astype(str) 
     df['Q1.3']= df['Q1.3'].astype(str)
 
+
     # Trasformo in one hot la 1.1 di annotatori
     condition = df['annotator'] != 'ChatGPT4AsAnnotator'
     if condition.any():  # Controlla se almeno un valore soddisfa la condizione
         df['Q1.1'] = df['Q1.1'].apply(oneDotOne)
+        df['Q1.7.1'] = df['Q1.7.1'].apply(oneDotSevenDotOne)
+
 
     # Label encoder
-    df['Q1.7.1']= label_encoder.fit_transform(df['Q1.7.1']) 
-    df['Q1.3']= label_encoder.fit_transform(df['Q1.3']) 
-    df['Q1.1']= label_encoder.fit_transform(df['Q1.1'])
+    # df['Q1.7.1']= label_encoder.fit_transform(df['Q1.7.1']) 
+    # df['Q1.3']= label_encoder.fit_transform(df['Q1.3']) 
+    # df['Q1.1']= label_encoder.fit_transform(df['Q1.1'])
 
     # Elimino le colonne ridondanti
     columns_to_drop = ['Q1.7.1_-1', 'Problem', 'Q1.7.1_', 'Q1.3_-1']
