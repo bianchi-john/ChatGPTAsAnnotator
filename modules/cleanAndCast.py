@@ -1,6 +1,8 @@
 import pandas as pd
 from sklearn import preprocessing 
 label_encoder = preprocessing.LabelEncoder() 
+import numpy as np
+
 
 
 
@@ -104,6 +106,11 @@ def cleanAndCast(df):
     if condition.any():  # Controlla se almeno un valore soddisfa la condizione
         df['Q1.1'] = df['Q1.1'].apply(oneDotOne)
         df['Q1.7.1'] = df['Q1.7.1'].apply(oneDotSevenDotOne)
+        # Sostituire le stringhe vuote con -1
+        df['Q1.7.1'] = df['Q1.7.1'].replace('', np.nan)
+
+        # Sostituire tutti i NaN con -1
+        df['Q1.7.1'] = df['Q1.7.1'].fillna(-1)
 
 
     # Label encoder
