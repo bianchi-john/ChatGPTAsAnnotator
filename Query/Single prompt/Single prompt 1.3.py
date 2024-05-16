@@ -160,12 +160,11 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
             df = pd.DataFrame({
                 'id': [id],
                 'title': [title],
-                'label': -1,
                 'annotator': [annotator]
             })
 
             # Header personalizzato
-            custom_header = ['id', 'title', 'label', 'annotator','Q1.3']
+            custom_header = ['id', 'title', 'annotator','Q1.3']
 
             # Aggiunta delle colonne dal dizionario JSON
             for key, value in json_in_risposta.items():
@@ -186,23 +185,7 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
                 df.to_csv(output_file, index=False, mode='a', columns=custom_header)
 
 
-            # Salvataggio del jsonInEntrata in un file con timestamp
-            timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            json_in_risposta['timestamp'] = timestamp
-            json_in_risposta['id'] = article_id
-            json_in_risposta['titolo'] = title
-            
-            json_file = "Query/output/dump/dump.json"
 
-            if os.path.isfile(json_file):
-                with open(json_file, "r") as f:
-                    existing_data = json.load(f)
-                existing_data.append(json_in_risposta)
-                with open(json_file, "w") as f:
-                    json.dump(existing_data, f)
-            else:
-                with open(json_file, "w") as f:
-                    json.dump([json_in_risposta], f)
             if (limite):               
                 if (counter >= limite):
                     print('Limite raggiunto')
