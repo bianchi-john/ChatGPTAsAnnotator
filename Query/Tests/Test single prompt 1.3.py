@@ -49,124 +49,21 @@ def read_json_file(filepath):
 
 # Funzione per parsare la risposta di chatGPT e farla diventare un JSON
 def parseOutput(output):
-    # Split the output by the step delimiter
-    steps = output.split('Step ')[1:]
+    # Carica la stringa JSON in un dizionario Python
+    data = json.loads(output)
 
-    # Initialize a dictionary to store step number and values
-    step_values = {}
+    # Crea una lista per contenere i numeri degli step con valore "Yes"
+    yes_steps = [step.split()[1] for step, value in data.items() if value == "Yes"]
+    yes_steps = [str(int(x) - 1) for x in yes_steps]
 
-    # Define the regular expressions for "yes" and "no" and -1
-    pattern_yes = re.compile(r'\b(?:yes)\b', re.IGNORECASE)
-    pattern_no = re.compile(r'\b(?:no)\b', re.IGNORECASE)
-    pattern_minus_one = re.compile(r'-1')
+    # Unisci i numeri degli step con il carattere ';'
+    yes_steps_str = ';'.join(yes_steps)
+    result_dict = {"Q1.3": yes_steps_str}
+    # Convertire il risultato in JSON
+    json_result = json.dumps(result_dict)
 
-    # Iterate through each step and extract step number and value
-    for step in steps:
-        # Check if ' - ' or ':' exists in the step
-        if ' - ' in step or ':' in step:
-            # Split the step into step number and value
-            if ' - ' in step:
-                step_number, step_content = step.split(' - ', 1)
-            else:
-                step_number, step_content = step.split(':', 1)
-            # Remove leading and trailing whitespaces
-            step_content = step_content.strip()
-            # Extracting answer values based on the step number
-            if step_number in ['2', '3', '4', '5', '6', '9', '10', '11', '14']:
-                if re.search(pattern_minus_one, step_content):
-                    value = -1
-                elif re.search(pattern_yes, step_content):
-                    value = 2
-                elif re.search(pattern_no, step_content):
-                    value = 1
-                else:
-                    value = -1
-            elif step_number == '8' or step_number == '15':
-                # Extract numbers associated with "Yes" using regular expression
-                value = ';'.join(re.findall(r'\b(\d+)\. Yes\b', step_content))
-            elif step_number == '7' or step_number == '12' or step_number == '13':
-                # Extract numbers using regular expression
-                value = int(''.join(filter(str.isdigit, step_content)))
-            elif step_number == '16':
-                # Preserve the entire text for Step 16
-                value = step_content
-            else:
-                # If the step number doesn't match any special case, assign the step content directly
-                value = step_content
-            
-            # Assign the value to the step number
-            # Extract only numbers from step number
-            step_number = re.findall(r'\d+', step_number)[0]
-            step_values[step_number] = value
-        else:
-            # If there's no ' - ', assume the step number is the whole string
-            # Extract only numbers from step number
-            step_number = re.findall(r'\d+', step.strip())[0]
-            # In this case, assign the value as an empty string
-            step_values[step_number] = ''
+    return(json_result)
 
-    # Convert the dictionary to JSON format
-    output_json = json.dumps(step_values, indent=4)
-    output_json = json.loads(output_json)
-
-    # Verifichiamo se la chiave "16" non è presente nel dizionario
-    if '16' not in output_json:
-        # Se non è presente, la aggiungiamo con una stringa vuota
-        output_json['16'] = ''
-
-    # Definiamo le nuove chiavi
-    new_keys = {
-        "2": "Q1.1.1",
-        "3": "Q1.1.2",
-        "4": "Q1.1.3",
-        "5": "Q1.1.4",
-        "6": "Q1.1.5",
-        "7": "Q1.2",
-        "8": "Q1.3",
-        "9": "Q1.3.9",
-        "10": "Q1.3.1",
-        "11": "Q1.4",
-        "12": "Q1.5",
-        "13": "Q1.6",
-        "14": "Q1.7",
-        "15": "Q1.7.1",
-        "16": "Q1.7.1.2"
-    }
-
-    # Creiamo un nuovo dizionario con le chiavi rinominate
-    renamed_data = {new_keys.get(k, k): v for k, v in output_json.items()}
-
-    # Estrai i valori delle chiavi specificate
-    q1_1_values = [str(renamed_data[key]) for key in renamed_data if key.startswith("Q1.1")]
-
-    # Unisci i valori con punto e virgola
-    q1_1_combined = ";".join(q1_1_values)
-
-    # Rimuovi le chiavi di Q1.1 dal dizionario
-    for key in list(renamed_data.keys()):
-        if key.startswith("Q1.1"):
-            del renamed_data[key]
-
-    # Aggiungi la nuova chiave Q1.1 con i valori concatenati
-    renamed_data["Q1.1"] = q1_1_combined
-
-
-    # Se il valore di Q1.3.9 è '2', aggiungi '9' alla chiave Q1.3 e rimuovi la chiave Q1.3.9
-    if renamed_data.get('Q1.3.9') == 2:
-        # Aggiungi '9' alla chiave Q1.3
-        if renamed_data.get('Q1.3') == '':
-            renamed_data['Q1.3'] = '9'
-        else:
-            renamed_data['Q1.3'] += ';9'
-
-    # Elimina la chiave e il valore di Q1.3.9 indipendentemente dal suo valore
-    del renamed_data['Q1.3.9']
-
-    # Convertiamo il nuovo dizionario in JSON
-    renamed_json = json.dumps(renamed_data, indent=4)
-
-
-    return renamed_json
 
 articles_dir = "Articles/articles" 
 
@@ -189,11 +86,14 @@ phrases_list = read_phrases_file(phrases_file_path)
 
 
 # Leggi il file CSV e ottieni gli ID da eliminare
-ids_to_remove = set()
-with open(output_file, 'r', encoding='utf-8') as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-        ids_to_remove.add(row['id'])
+try:
+    ids_to_remove = set()
+    with open(output_file, 'r', encoding='utf-8') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            ids_to_remove.add(row['id'])
+except:
+    print('No previus csv file has been found')
 
 # Ottieni tutti i file nella directory
 filenames = os.listdir(articles_dir)
@@ -248,7 +148,7 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
             # Se l'output non è un JSON valido allora me lo salvo in una chiave speciale oltre che a fare il dump alla fine
             except Exception as e:
                 print('The output returned is malformed. I Retry with the same item')
-                print(completion.choices[0].message.content)
+                print (completion.choices[0].message.content)
                 continue
             # Extract relevant information from response
             filenames.pop(0)  # Rimuovi il filename dalla lista dopo il successo
@@ -265,7 +165,7 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
             })
 
             # Header personalizzato
-            custom_header = ['id', 'title', 'label', 'annotator', 'Q1.1', 'Q1.2', 'Q1.3', 'Q1.3.1', 'Q1.4', 'Q1.5', 'Q1.6', 'Q1.7', 'Q1.7.1', 'Q1.7.1.2']
+            custom_header = ['id', 'title', 'label', 'annotator','Q1.3']
 
             # Aggiunta delle colonne dal dizionario JSON
             for key, value in json_in_risposta.items():
