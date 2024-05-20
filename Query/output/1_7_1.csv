@@ -204,15 +204,7 @@ c0238769-ae38-4575-b9ce-ebc1aa26c30a,"Covid, J&J: “La risposta al vaccino dura
 f56feb77-1618-4608-8f04-da95bfb2bfce,Israele bombarda 150 obiettivi di Hamas. Era la rete di tunnel sotterranei,ChatGPT4AsAnnotator,6
 de51e193-22de-4764-b9e7-83d699957b13,"Ddl Zan, dirigente Pd insulta Scalfarotto con un messaggio omofobo",ChatGPT4AsAnnotator,4;6
 10f94a5c-6633-4dbc-9447-7a9594f6ec2d,"Affitto non pagato per 12mila euro, la “Bottigelli” salva famiglia dallo sfratto",ChatGPT4AsAnnotator,6
-59f724d8-d6f5-43dd-99d2-c706cd5ff61d,"Francia, ucciso l’aggressore della poliziotta: era radicalizzato. La rabbia di Marine Leopzionale = False
-# inter_annotator_agreement(df, 'Q1.1_corrected', 'Manuel', 'Angelo', opzionale)
-# inter_annotator_agreement(df, 'Q1.1_corrected', 'Manuel', 'Marinella', opzionale)
-# inter_annotator_agreement(df, 'Q1.1_corrected', 'Angelo', 'Marinella', opzionale)
-# print('----------------------------------')
-# inter_annotator_agreement(df, 'Q1.1_corrected', 'Manuel', 'ChatGPT4AsAnnotator', opzionale)
-# inter_annotator_agreement(df, 'Q1.1_corrected', 'Marinella', 'ChatGPT4AsAnnotator', opzionale)
-# inter_annotator_agreement(df, 'Q1.1_corrected', 'Angelo', 'ChatGPT4AsAnnotator', opzionale)
- Pen",ChatGPT4AsAnnotator,2;6
+59f724d8-d6f5-43dd-99d2-c706cd5ff61d,"Francia, ucciso l’aggressore della poliziotta: era radicalizzato. La rabbia di Marine Le Pen",ChatGPT4AsAnnotator,2;6
 2c2f3cd4-b034-4189-b8ef-213a66fa4b52,"Emergenza covid, sindaca leghista arrestata: aiuti alimentari sottratti alle famiglie bisognose- Corriere.it",ChatGPT4AsAnnotator,2;3;5;6
 548a49f8-2622-4308-a4b1-3dcbc2385dea,"Rave party di Tavolaia, gravissimo un giovane che ha bevuto antigelo",ChatGPT4AsAnnotator,6
 3d807c34-696f-4342-aac3-bc311a0adfc2,"Matteo Bassetti sulla 18enne colpita da trombosi a Genova: l'incognita del ""mix di farmaci"", l'ultima pista",ChatGPT4AsAnnotator,6
