@@ -88,6 +88,12 @@ def cleanAndCast(df):
     for col in columns_to_convert:
         df[col] = df[col].astype(int)
 
+
+    ####################################################################################
+    # Faccio diventare la 1.4 binaria perché con gli ulrimi prompr di chatGPT lo deve 
+    # essere anche solo per uniformarsi al nuovo output di chatGPT
+    ####################################################################################
+    df['Q1.4'] = df['Q1.4'].replace({3: 4, 2: 1})
     ####################################################################################
     # Faccio label encoder di (Q1.3, 1.7.1) e trasformo in one hot la 1.1 di annotatori
     ####################################################################################
