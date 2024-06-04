@@ -8,7 +8,7 @@ import re
 import os
 import csv
 
-output_file = 'Query/output/'
+output_file = 'Query/QueryCaller/RawOutput'
 limite = 9999999
 promptNumber = 0
 
@@ -50,19 +50,19 @@ def read_json_file(filepath):
 # Funzione per parsare la risposta di chatGPT e farla diventare un JSON
 def parseOutput(input_json_str):
     # Carica il JSON da una stringa
-    input_json_str = input_json_str.replace("'", '"')
     data = json.loads(input_json_str)
     
     # Mappa i valori "No" a "1" e "Yes" a "2"
-    mapping = {"no": "1", "yes": "2", "-1": "-1"}
+    mapping = {"no": "1", "yes": "2"}
     transformed_values = [mapping[value.lower()] for value in data.values()]
 
     # Crea la nuova stringa formattata
     transformed_str = "" + ";".join(transformed_values)
     
     # Costruisci il nuovo JSON
-    result = {"Q1.4": transformed_str}
+    result = {"Q1.1": transformed_str}
     
+    # Converti il risultato in una stringa JSON
     result_json_str = json.dumps(result)
     
     return result_json_str
@@ -165,7 +165,7 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
             })
 
             # Header personalizzato
-            custom_header = ['id', 'title', 'annotator','Q1.4']
+            custom_header = ['id', 'title', 'annotator','Q1.1']
 
             # Aggiunta delle colonne dal dizionario JSON
             for key, value in json_in_risposta.items():
