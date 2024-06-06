@@ -4,40 +4,34 @@ import numpy as np
 
 
 def parse1_1(row):
-    def sostituisci_1_2(stringa):
-        """Sostituisce tutti gli '1' con '2' (e viceversa) nella stringa data."""
-        stringa_nuova = stringa.replace("1", "2")  # Sostituisce tutti gli '1' con '2'
-        stringa_nuova = stringa_nuova.replace("2", "1")  # Sostituisce tutti i '2' con '1' (opzionale)
-        return stringa_nuova
-    def process_block(block, yes_condition, no_condition):
-        if yes_condition in block:
-            return "1"
-        elif no_condition in block:
-            return "2"
-        else:
-            return "2"
-    def build_output(blocks, yes_condition, no_condition):
-        output = ""
-        for block in blocks:
-            output += process_block(block, yes_condition, no_condition)
-        if len(output) == 1:
-            output = '1' + "2222"
-        return output
-    if row is None or str(row) == 'nan':
-        return row
-    row = str(row).replace('\n', ' ')
-    if "Step" in row:
-        blocks = row.split("Step")[1:]
-        output = build_output(blocks, "1", "2")
+    if not isinstance(row, float):
+        # Regular expression to match the step and the answer number
+        pattern = re.compile(r"Step (\d+) - (?:\d+: )?(\d+)")
+        matches = pattern.findall(row)
+        
+        # Convert matches to dictionary
+        step_dict = {int(step): int(answer) for step, answer in matches}
+        return  convert_dict(step_dict)
+    return ''
+
+
+# Function to convert values and fill in missing ones
+def convert_dict(d):
+    # Replace 2 with 1 and 1 with 2
+    converted = {k: (1 if v == 2 else 2) for k, v in d.items()}
+    
+    # Fill in missing values (2, 3, 4, 5, 6) with 1
+    for key in range(2, 7):
+        if key not in converted:
+            converted[key] = 1
+    
+    # Sort values by key
+    sorted_values = [str(converted[key]) for key in sorted(converted.keys())]
+    result = "".join(sorted_values)
+    if (result == "11111"):
+        return ""
     else:
-        blocks = row.split(".")[1:]
-        output = build_output(blocks, "Yes", "No")
-    if len(output) == 5:
-        return sostituisci_1_2(output)
-    else:
-        print('There are these problems for column 1.1: ')
-        print(row)
-        print(output)
+        return result
 
 
 #######################################################################
@@ -48,7 +42,9 @@ def parse1_2(row):
         match = re.search(r'Step 2.*?(\d)[\.\)]', row, re.DOTALL)
         if match:
             return int(match.group(1))
-    return None
+    return ''
+
+
 #######################################################################
 
 
@@ -110,6 +106,7 @@ def parse1_4(row):
             return 2
         else:
             raise ValueError(f"Non valid string for 1.4: {row}")
+    return ''
 
 #######################################################################
 
@@ -120,7 +117,7 @@ def parse1_5(row):
         match = pattern.search(row)
         if match:
             return int(match.group(1))
-    return None
+    return ''
 
 #######################################################################
 
@@ -131,7 +128,7 @@ def parse1_6(row):
         match = pattern.search(row)
         if match:
             return int(match.group(1))
-    return None
+    return ''
 
 #######################################################################
 

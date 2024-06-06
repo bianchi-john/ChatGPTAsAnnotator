@@ -8,6 +8,10 @@ output_path = 'Query/Output/'
 name = input(f"Provide a name for output file (Don't include the extension): ")
 output_file = output_path + name + '.csv' 
 
+
+# Ask the user for the prefix that the files should have
+substring = input("Enter the substring that the files should have: ")
+
 #############################################################
 #############################################################
 ######## Unique all individual files into one ###############
@@ -49,20 +53,22 @@ file_names = [file.split('.')[0] for file in file_names]  # Rimuovi l'estensione
 df = df[df['id'].isin(file_names)]
 
 # Get the list of CSV files in the "RawOutput" directory
-raw_output_files = os.listdir("Query/QueryCaller/RawOutput")
-csv_files = [f for f in raw_output_files if f.endswith('.csv')]
+folder = "Query/QueryCaller/RawOutput/"
 
 # Initialize an empty DataFrame to store the merged data
 merged_df = df.copy()
 
-# Iterate over the CSV files in the "RawOutput" directory
-for csv_file in csv_files:
-    # Read the current CSV file
-    current_data = pd.read_csv("Query/QueryCaller/RawOutput/" + csv_file)
+# List of files in the folder that match the prefix entered
+files_with_prefix = [file for file in os.listdir(folder) if substring in file]
+
+
+# For each file found, read the content
+for file in files_with_prefix:
+    current_data = pd.read_csv(os.path.join(folder, file))
 
     # Check if the current data has an 'id' column
     if not 'id' in current_data.columns:
-        print(f"Il file CSV '{csv_file}' non contiene una colonna 'id'.")
+        print(f"Il file CSV '{file}' non contiene una colonna 'id'.")
         continue
     # Remove annotator column if exist
     if 'annotator' in current_data.columns:
@@ -88,6 +94,9 @@ df['Q1.1'] = df['Q1.1'].apply(parse1_1)
 # ######################## Q1.2 ###############################
 
 df['Q1.2'] = df['Q1.2'].apply(parse1_2)
+# remove the ".0" from the column results
+df['Q1.2'] = df['Q1.2'].astype(str).apply(lambda x: x.replace('.0', '') if '.0' in x else x)
+
 
 # ######################## Q1.3 ###############################
 
@@ -104,10 +113,14 @@ df['Q1.4'] = df['Q1.4'].apply(parse1_4)
 # ######################## Q1.5 ###############################
 
 df['Q1.5'] = df['Q1.5'].apply(parse1_5)
+# remove the ".0" from the column results
+df['Q1.5'] = df['Q1.5'].astype(str).apply(lambda x: x.replace('.0', '') if '.0' in x else x)
 
 # ######################## Q1.6 ###############################
 
 df['Q1.6'] = df['Q1.6'].apply(parse1_6)
+# remove the ".0" from the column results
+df['Q1.6'] = df['Q1.6'].astype(str).apply(lambda x: x.replace('.0', '') if '.0' in x else x)
 
 # ######################## Q1.7 ###############################
 

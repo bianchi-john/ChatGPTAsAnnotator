@@ -11,17 +11,48 @@ import csv
 output_file = 'Query/QueryCaller/RawOutput/'
 limite = 9999999
 promptNumber = 0
+recoverMode = False
 
-# I ask the user to give a name for the output file.
-name = input(f"Provide a name for output file (Don't include the extension): ")
-output_file = output_file + name + '.csv' 
-
-
-# I ask the user if they would like to set a maximum limit of items to be annotated.
-confirm = input(f"Do you want a maximum file limit? (y/n): ")
+# Do you want to recover malformed answers?
+confirm = input(f"Do you want to recover malformed answers? (Responses that have been obtained but have not been parsed and are therefore empty)(y/n): ")
 if confirm.lower() == 'y':
-    limite = input(f"Set the number: ")
-    limite = int(limite)
+    recoverMode = True
+    print('List of dataframe with recoverable answers: ')
+    directory_path = 'Query/Output/' # Replace with your actual path
+    files = os.listdir(directory_path)
+    # Filter for only files (optional)
+    files = [f for f in files if os.path.isfile(os.path.join(directory_path, f))]
+    # Print each file
+    for file in files:
+        print('   - ' + file)
+    print('')
+    fileNameToRetrieveIDS = input(f"Please specify the filename to look to malformed answers (Include the extension): ")
+    dfToRetrieve= pd.read_csv('Query/Output/' + fileNameToRetrieveIDS)
+    print('List of dataframes with saved responses: ')
+    directory_path = 'Query/QueryCaller/RawOutput' # Replace with your actual path
+    files = os.listdir(directory_path)
+    # Filter for only files (optional)
+    files = [f for f in files if os.path.isfile(os.path.join(directory_path, f))]
+    # Print each file
+    for file in files:
+        print('   - ' + file)
+    print('')
+    fileNameToRecover = input(f"Please specify the filename in witch to save the answers (Include the extension): ")
+    fileToRecover= pd.read_csv('Query/QueryCaller/RawOutput/' + fileNameToRecover)
+    output_file = 'Query/QueryCaller/RawOutput/' + fileNameToRecover
+
+else:
+    # I ask the user to give a name for the output file.
+    name = input(f"Provide a name for output file (Don't include the extension) (If you enter the name of a file that already exists, the program will try to recover answers for ids that are not present in the file (answers not recovered), overwriting the file): ")
+    output_file = output_file + name + '.csv' 
+
+
+if (not recoverMode):
+    # I ask the user if they would like to set a maximum limit of items to be annotated.
+    confirm = input(f"Do you want a maximum file limit? (y/n): ")
+    if confirm.lower() == 'y':
+        limite = input(f"Set the number: ")
+        limite = int(limite)
 
 # I ask the user which prompt they want to use.
 promptDf = pd.read_csv('Query/QueryCaller/PromptFile/promptFile.csv')
@@ -61,6 +92,13 @@ def read_json_file(filepath):
 articles_dir = "Articles/articles" 
 
 counter = 0
+
+if(recoverMode):
+    outputDf = pd.read_csv(output_file)
+    empty_Q1_1_rows = dfToRetrieve[dfToRetrieve[headerName].isnull()]['id'].tolist()
+    outputDf = outputDf[~outputDf['id'].isin(empty_Q1_1_rows)]
+    outputDf.to_csv(output_file, index=False)
+
 
 # Read the CSV file and get the IDs to delete.
 try:
@@ -141,5 +179,5 @@ while filenames:  # Continue as long as there are still filenames to process.
                     print('Limit reached')
                     break
     
-    print('Data obtained for the article:' + str(article_id))
+    print('Data obtained for the ' + str(counter) + 'st article with id: ' + str(article_id))
     print('-------------------------------------------------')
