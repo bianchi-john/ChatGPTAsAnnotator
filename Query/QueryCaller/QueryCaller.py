@@ -8,27 +8,38 @@ import re
 import os
 import csv
 
-output_file = 'Query/QueryCaller/RawOutput'
+output_file = 'Query/QueryCaller/RawOutput/'
 limite = 9999999
 promptNumber = 0
 
-# Chiedo all'utente di indicare un nome per il file di output
-name = input(f"Provide a name for output file (remember to include csv extension): ")
-output_file = output_file + name
+# I ask the user to give a name for the output file.
+name = input(f"Provide a name for output file (Don't include the extension): ")
+output_file = output_file + name + '.csv' 
 
 
-# Chiedo all'utente se vuole stabilire un limite massimo di articoli da annotare
+# I ask the user if they would like to set a maximum limit of items to be annotated.
 confirm = input(f"Do you want a maximum file limit? (y/n): ")
 if confirm.lower() == 'y':
     limite = input(f"Set the number: ")
     limite = int(limite)
 
-# Chiedo all'utente con quale tipo di prompt vuole fare le domande a chatGPT
-promptNumber  = input(f"Wich prompt do you want to use? (provide a number of the line \"Query/prompt/prompt.txt\"): ")
+# I ask the user which prompt they want to use.
+promptDf = pd.read_csv('Query/QueryCaller/PromptFile/promptFile.csv')
+print('')
+print (promptDf)
+print('')
+promptIndex = input(f"Witch promt number do you want to use? ")
+row = promptDf[promptDf['Number'] == int(promptIndex)].iloc[0]
+description = row['Description']
+headerName = row['HeaderName']
+specific_prompt = row['Query']
+print('You selected the prompt described as:')
+print(description)
+
 
 print('Starting conversation ...')
 
-# Load environment variables if necessary (replace with your actual values)
+# Load environment variables, if necessary (replace with real values).
 load_dotenv()
 AZURE_OPENAI_KEY = os.getenv("AZURE_OPENAI_KEY")
 
@@ -38,7 +49,7 @@ client = AzureOpenAI(
     api_version="2024-02-15-preview",
 )
 
-# Leggo i file json degli articoli
+# I read the json files of the articles
 def read_json_file(filepath):
     try:
         with open(filepath, 'r') as file:
@@ -47,46 +58,11 @@ def read_json_file(filepath):
         print(f"Error reading JSON file '{filepath}': {e}")
         return None
 
-# Funzione per parsare la risposta di chatGPT e farla diventare un JSON
-def parseOutput(input_json_str):
-    # Carica il JSON da una stringa
-    data = json.loads(input_json_str)
-    
-    # Mappa i valori "No" a "1" e "Yes" a "2"
-    mapping = {"no": "1", "yes": "2"}
-    transformed_values = [mapping[value.lower()] for value in data.values()]
-
-    # Crea la nuova stringa formattata
-    transformed_str = "" + ";".join(transformed_values)
-    
-    # Costruisci il nuovo JSON
-    result = {"Q1.1": transformed_str}
-    
-    # Converti il risultato in una stringa JSON
-    result_json_str = json.dumps(result)
-    
-    return result_json_str
-
 articles_dir = "Articles/articles" 
 
 counter = 0
 
-# Leggo il file che contiene i prompt da dara a Chatgpt
-def read_phrases_file(filepath):
-    try:
-        with open(filepath, 'r') as file:
-            phrases = [line.strip() for line in file.readlines()]
-            return phrases
-    except FileNotFoundError as e:
-        print(f"Error reading phrases file '{filepath}': {e}")
-        return []
-
-# Esempio di utilizzo:
-phrases_file_path = 'Query/prompt/prompt.txt'
-phrases_list = read_phrases_file(phrases_file_path)
-
-
-# Leggi il file CSV e ottieni gli ID da eliminare
+# Read the CSV file and get the IDs to delete.
 try:
     ids_to_remove = set()
     with open(output_file, 'r', encoding='utf-8') as csvfile:
@@ -96,26 +72,22 @@ try:
 except:
     print('No previus csv file has been found')
 
-# Ottieni tutti i file nella directory
+# Get all the files in the directory
 filenames = os.listdir(articles_dir)
 
-# Rimuovo i file già presenti nel csv che ho indicato come output, ammesso che ce ne siano (questo serve per le possibili interruzioni)
+# I remove the files already in the csv that I indicated as output, assuming there are any (this is for possible interruptions).
 filenames = [filename for filename in filenames if filename.split('.')[0] not in ids_to_remove]
 
-while filenames:  # Continua finché ci sono ancora filenames da processare
-    filename = filenames[0]  # Prendi il primo filename della lista
+while filenames:  # Continue as long as there are still filenames to process.
+    filename = filenames[0]  # Get the first filename in the list
     filepath = os.path.join(articles_dir, filename)
     if os.path.isfile(filepath) and filename.endswith(".json"):
         article_content = read_json_file(filepath)
         if article_content:
-            specific_prompt_index = int(promptNumber)  # Indice della frase desiderata
-            specific_prompt = phrases_list[specific_prompt_index]
-            # Rimuovi i campi 'url' e 'id'
             article_id = article_content['id']
             article_url = article_content['url']
             article_content.pop('url', None)
             article_content.pop('id', None)
-            # Rinomina la chiave 'meta_title' in 'title'
             article_content['title'] = article_content.pop('meta_title')
             print('Sending request for: ' + str(article_id))
             messages = [
@@ -124,6 +96,7 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
                     "content": str(specific_prompt)
                 },
                 {
+                    # Creazione del dataframe con i dati
                     "role": "user",
                     "content": str(article_content)
                 }
@@ -131,65 +104,42 @@ while filenames:  # Continua finché ci sono ancora filenames da processare
             completion = client.chat.completions.create(
                 model="ChatGPT4AsAnnotator", # model = "deployment_name"
                 messages = messages,
-                # La tempertura è zero perché riguarda il grado di creatività dei messaggi ma i nostri output sono numeri quindi non ci serve, anzi aumentarla farebbe rischiare di far produrre un JSON non valido
+                 # The temperature is zero because it concerns the degree of creativity of the messages but our outputs are numbers so we don't need it, in fact increasing it would risk having an invalid JSON produced
                 temperature=0, 
-                # Maximum Length nemmeno perché i testi degli articoli variano
-                # Anche questo riguarda la creatività e a noi ci serve bassa quindo la butto al minimo
+                # Maximum Length either because the texts of the articles vary.
+                # This is also about creativity and we need it low so I'll throw it in at a minimum
                 top_p=0.01,
-                # frequence e presence servono per evitare le ripetizioni ma a noi non ce ne frega nulla quindi si lasciano in default a 0
+                # frequence and presence are used to avoid repetition but we don't care so they are left to default to 0
                 frequency_penalty=0,
                 presence_penalty=0,
-                # Stop Sequences non ne abbiamo bisogno perché non abbiamo una sequenza finale oltre la quale non deve generare quindi gli do "None"
+                # Stop Sequences we don't need it because we don't have an end sequence beyond which it should not generate so I give it “None”
                 stop=None
             )
             output = completion.choices[0].message.content
-            try:
-                output= parseOutput(output)
-                json_in_risposta = json.loads(output)
-            # Se l'output non è un JSON valido allora me lo salvo in una chiave speciale oltre che a fare il dump alla fine
-            except Exception as e:
-                print('The output returned is malformed. I Retry with the same item')
-                print (completion.choices[0].message.content)
-                continue
             # Extract relevant information from response
-            filenames.pop(0)  # Rimuovi il filename dalla lista dopo il successo
+            filenames.pop(0)   # Remove filename from the list after success.
             counter = counter + 1
             id = article_id
             title = article_content['title']
-            annotator = 'ChatGPT4AsAnnotator'  # Assuming annotator name is constant
-            # Creazione del dataframe con i dati
-            df = pd.DataFrame({
+            # Creating the dataframe with the data
+            df = {
                 'id': [id],
-                'title': [title],
-                'annotator': [annotator]
-            })
+            }
+            # Suddividere headerName se contiene spazi
+            header_parts = headerName.split()
+            for part in header_parts:
+                df[part] = [output]
 
-            # Header personalizzato
-            custom_header = ['id', 'title', 'annotator','Q1.1']
-
-            # Aggiunta delle colonne dal dizionario JSON
-            for key, value in json_in_risposta.items():
-                df[key] = str(value)
-
-            missing_columns = [col for col in custom_header if col not in df.columns]
-
-            # Imposto i valori delle colonne mancanti a -1
-            for col in missing_columns:
-                df[col] = -1
-
-            # Riorganizzo il DataFrame in base alle colonne personalizzate
-            df = df.reindex(columns=custom_header)  
+            df = pd.DataFrame(df)
 
             if os.path.isfile(output_file):
                 df.to_csv(output_file, index=False, header=False, mode='a')
             else:
-                df.to_csv(output_file, index=False, mode='a', columns=custom_header)
-
-
-
+                df.to_csv(output_file, index=False, mode='a')
             if (limite):               
                 if (counter >= limite):
-                    print('Limite raggiunto')
+                    print('Limit reached')
                     break
-    print('Dati ottenuti per l\'articolo: ' + str(article_id))
+    
+    print('Data obtained for the article:' + str(article_id))
     print('-------------------------------------------------')
