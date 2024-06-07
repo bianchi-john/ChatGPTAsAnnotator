@@ -38,9 +38,9 @@ def oneDotOne(value):
             value_str = value_str.replace("2", "1;2;1;1;1")
         elif '3' in value_str:
             value_str = value_str.replace("3", "1;1;2;1;1")
-        elif '3' in value_str:
+        elif '4' in value_str:
             value_str = value_str.replace("4", "1;1;1;2;1")
-        elif '3' in value_str:
+        elif '5' in value_str:
             value_str = value_str.replace("5", "1;1;2;1;2")
     return value_str
 
@@ -98,7 +98,7 @@ def cleanAndCast(df):
     # Faccio label encoder di (Q1.3, 1.7.1) e trasformo in one hot la 1.1 di annotatori
     ####################################################################################
         
-    #Pulisco prima di fare label encoder di (Q1.3, 1.7.1)
+    #Pulisco (Q1.3, 1.7.1)
     df['Q1.7.1'] = df['Q1.7.1'].apply(convert_values)
     df['Q1.3'] = df['Q1.3'].apply(convert_values)
     
@@ -107,17 +107,11 @@ def cleanAndCast(df):
     df['Q1.3']= df['Q1.3'].astype(str)
 
 
-    # Trasformo in one hot la 1.1 di annotatori
-    condition = df['annotator'] != 'ChatGPT4AsAnnotator'
-    if condition.any():  # Controlla se almeno un valore soddisfa la condizione
-        df['Q1.1'] = df['Q1.1'].apply(oneDotOne)
-        df['Q1.7.1'] = df['Q1.7.1'].apply(oneDotSevenDotOne)
-        # Sostituire le stringhe vuote con -1
-        df['Q1.7.1'] = df['Q1.7.1'].replace('', np.nan)
+    filtered_rows = df['annotator'].isin(['Manuel', 'Marinella', 'Angelo'])
 
-        # Sostituire tutti i NaN con -1
-        df['Q1.7.1'] = df['Q1.7.1'].fillna(-1)
-
+    # Applica le funzioni solo alle righe filtrate
+    df.loc[filtered_rows, 'Q1.1'] = df.loc[filtered_rows, 'Q1.1'].apply(oneDotOne)
+    df.loc[filtered_rows, 'Q1.7.1'] = df.loc[filtered_rows, 'Q1.7.1'].apply(oneDotSevenDotOne)
 
     # Label encoder
     # df['Q1.7.1']= label_encoder.fit_transform(df['Q1.7.1']) 

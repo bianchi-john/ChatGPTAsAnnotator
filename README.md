@@ -11,7 +11,4 @@
     - Use `Code/PrepareAnnotations.ipynb` to clean, cast, and combine the answers from both ChatGPT and annotators.
 
 3. **Run Comparison between Human Annotators**:
-    - Execute `Code/Comparison.ipynb` to compare the responses of human annotators.
-
-4. **Create an Excel File for Comparison**:
-    - Utilize `Code/CreateExcel.py` to generate an Excel file for visualizing the comparison results.
+    - Execute `Code/Comparison.ipynb` to compare the responses of human annotators and generate a csv with comparisons.
