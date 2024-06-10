@@ -31,7 +31,7 @@ id,title,annotator,Q1.1,Q1.2,Q1.3,Q1.3.1,Q1.4,Q1.5,Q1.6,Q1.7,Q1.7.1
 279a8766-5c62-4f9a-954d-6299fcae9702,Automobilisti italiani indisciplinati: bella novità,ChatGPT4AsAnnotator,2;1;2;1;1,4,5;9,-1,1,3,3,2,
 1439c512-874e-42ea-a605-572b9486c163,Scuola. «Il decreto Sostegni bis del governo Draghi deve guardare anche alla paritarie»,ChatGPT4AsAnnotator,2;1;1;1;1,3,1;3;4;5,2,2,3,3,1,6
 0d0e9904-1233-4184-bd15-3afe5af09208,Covid| Speranza: «I ragazzi dai 12 ai 15 anni saranno vaccinati dai pediatri. La terza dose? Probabile| la faranno i medici di base»,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;4,-1,2,4,4,2,
-0645f405-43c2-4333-ae0f-62bf766ac006,Sorso| Falloni confessa: «Mi ha preso in giro e l’ho ammazzata»,ChatGPT4AsAnnotator,,4,1;3;4;9,2,1,4,3,2,6
+0645f405-43c2-4333-ae0f-62bf766ac006,Sorso| Falloni confessa: «Mi ha preso in giro e l’ho ammazzata»,ChatGPT4AsAnnotator,2;1;1;1;1;1,4,1;3;4;9,2,1,4,3,2,6
 3c55c68b-f091-435a-98f1-ae6d93a8e939,Così i Querdenken possono destabilizzare la Germania,ChatGPT4AsAnnotator,2;1;1;1;1,3,1;9,-1,1,3,2,2,6
 3b309016-8a65-47b6-8d2b-91716ed04bc9,Potenza| strage di Covid in casa di riposo: morti oltre metà degli anziani. «Operatori al lavoro anche se positivi»,ChatGPT4AsAnnotator,2;1;2;1;1,4,1;3;4;9,2,2,4,3,2,6
 002cd3f1-a130-4f4e-8a9b-0c7923ee56ed,«Fare meno tamponi vuol dire rinunciare a tracciare il Covid»,ChatGPT4AsAnnotator,2;1;2;1;1,3,1;4;9,-1,2,3,3,2,6
@@ -71,7 +71,7 @@ a08bbd16-9b44-41ed-8f63-f7d7752bc841,Spie russe nel cuore d'Europa: l'oscuro gio
 77644ccb-2ba6-46db-abea-6d81e09ed5af,Matera| in casa marijuana e piante di canapa: arrestato,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;9,-1,2,4,3,2,6
 bf045e75-fc2d-40c8-8b3d-10d5b398cf78,Usini resta covid-free| successo per le vaccinazioni nel Meilogu,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;5,-1,2,4,4,1,6
 489cd5fe-c6c4-46a5-af3c-57bb040756bd,Cuneo: rifiutano di vaccinarsi| due operatrici di una Rsa in ferie forzate,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3,-1,2,4,4,1,6
-f9251202-ca0d-498e-a03b-4450350f5508,Biden e Harris minacciano di non fare prigionieri ma un sondaggio li gela: trumpismo più vivo che mai,ChatGPT4AsAnnotator,,2,1;5;9,-1,2,2,2,2,1;6
+f9251202-ca0d-498e-a03b-4450350f5508,Biden e Harris minacciano di non fare prigionieri ma un sondaggio li gela: trumpismo più vivo che mai,ChatGPT4AsAnnotator,2;2;2;2;2,2,1;5;9,-1,2,2,2,2,1;6
 663ddce0-6b5b-4372-8408-bafaf89b3642,Svuotamento diga di Boschi| schiuma e melma sui fondali. Enel: “Tutto nella norma”,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3;4;5;9,-1,1,3,2,2,6
 6120d8fb-cccc-46e2-bb91-b3c15c7a012a,Ddl Zan| Fedez attacca la Lega al concerto del Primo maggio: l'elenco delle frasi contro gli omosessuali,ChatGPT4AsAnnotator,1;2;1;1;1,,1;3,-1,2,4,,2,4;6
 efe3c13b-bb99-4cef-9ea2-0bf394b7549c,Covid| prosegue il trend positivo. Le mascherine al ristorante? Bassetti: «Ci copriamo di ridicolo»,ChatGPT4AsAnnotator,2;1;1;1;1,3,1;3;4;9,2,2,3,2,1,6
@@ -104,7 +104,7 @@ a3f9a888-0d57-44ee-a3d3-9b2008f41a5d,Abbiamo sottovalutato la sfida del Pnrr| ma
 5822cef8-98a9-426b-9286-c63f9bdbd890,Il catcalling dovrebbe essere reato,ChatGPT4AsAnnotator,1;2;1;1;1,4,,-1,2,4,4,2,6
 87671194-edf8-411a-9d28-3c49c4e1471c,Palestina| Letta nella bufera: «Troppo di parte| non ti voto più»,ChatGPT4AsAnnotator,1;2;1;1;1,4,1;4;9,2,1,3,2,2,6
 f35f6598-f230-4d0f-9c53-cb48a278f30a,Usa| i vaccinati possono tornare alla normale. Stop a distanziamento e mascherina,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;5;9,-1,2,4,4,1,
-89ca8966-8ade-49fd-a036-c528a1f7871c,Tutti i passi falsi di Davigo: dal caso Palamara ai verbali di Amara,ChatGPT4AsAnnotator,,4,1;9,-1,2,3,3,1,6
+89ca8966-8ade-49fd-a036-c528a1f7871c,Tutti i passi falsi di Davigo: dal caso Palamara ai verbali di Amara,ChatGPT4AsAnnotator,2;2;1;1;1;1,4,1;9,-1,2,3,3,1,6
 df86ebbe-1672-4c99-8895-b0fe742ed00c,CSM ED I VERBALI DI AMARA: I SEGRETI DELLA NUOVA STAGIONE DI VELENI,ChatGPT4AsAnnotator,2;1;1;1;1,3,1;3;5;9,-1,1,3,2,2,6
 679544ad-3238-4a0b-bba8-58cd8b6304d5,Smantellata banda dello spaccio a Cagliari: 14 misure di custodia cautelare dalla Direzione antimafia,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;5,-1,2,4,4,2,6
 f7e4de19-4f65-4e52-9aab-36afa0b96bdc,Vaccini in vacanza: dalla Toscana alla Sardegna| a che punto sono le regioni con più turisti estivi,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3,-1,2,4,3,1,6
@@ -143,7 +143,7 @@ b3e3d88a-0f40-4046-95a2-3a862e36c789,Covid a Napoli| è boom di contagi: la terz
 bb96531b-1419-4f45-a64e-9b74f3282836,Musica e schianti dell’universo,ChatGPT4AsAnnotator,1;1;2;1;1,4,,-1,1,4,3,1,6
 76f82d9f-6993-4e67-9835-68cb6b0bb43d,Reddito cittadinanza| operazione fiamme gialle-Inps nel vicentino anche in insediamenti nomadi,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;5;9,-1,2,4,4,2,3;6
 73a645b8-10b1-44a3-989a-935a37d66497,Firenze| Palazzo Strozzi svela l'arte americana dalla guerra in Vietnam all’11 settembre,ChatGPT4AsAnnotator,1;1;2;1;1,4,1,-1,2,4,4,1,6
-a425710b-96e3-4840-87be-75deea62775d,Quanto si preoccupa l'Ue per la Macron fatigue,ChatGPT4AsAnnotator,,3,1;2,-1,2,3,3,2,6
+a425710b-96e3-4840-87be-75deea62775d,Quanto si preoccupa l'Ue per la Macron fatigue,ChatGPT4AsAnnotator,2;2;1;1;1;1,3,1;2,-1,2,3,3,2,6
 bd28b2c7-8a69-48f1-b083-a15af296b704,Proteste anti-razzismo: Migros ritira il dolce che si chiama Moretto. L’incredibile trionfo del politicamente corretto,ChatGPT4AsAnnotator,1;2;1;1;1,4,1;3;5;9,-1,2,1,1,2,3;6
 d749e5ba-7228-4b94-8577-0a8da240ba73,Prof. Gervasoni: “D’ora in poi sarà vietato criticare Mattarella”,ChatGPT4AsAnnotator,1;2;1;1;1,4,1;4;9,-1,1,3,2,2,6
 db26964b-9da7-48fd-8d37-634bedb4155f,L'inno alla musica di Dodi| solista a 70 anni,ChatGPT4AsAnnotator,1;1;2;1;1,4,1,-1,2,4,4,2,6
@@ -162,15 +162,15 @@ b5067687-5dd2-4b72-9036-3bed2ab549a1,Carbonara| 46enne ucciso e abbandonato in u
 bbfbfaab-03d8-4fed-bc81-6fbcfb15fcd1,“Marketing mix”| marketing inclusivo| ciò che il marketing dovrebbe già essere,ChatGPT4AsAnnotator,1;1;2;1;1,4,,-1,1,4,4,1,6
 6dfb0d94-1760-4c87-a931-40e58d86ebb6,Allerta meteo in Campania| in arrivo gelo e nevicate: pronti i mezzi spargisale,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;5;9,-1,2,4,4,1,6
 f0fe9b95-3229-4107-927c-d616ceeb19e7,Fernando prenota e va a vaccinarsi a 100 anni. E' nato nel periodo della spagnola,ChatGPT4AsAnnotator,1;1;1;1;2,4,1;5,-1,2,4,4,1,6
-4c19e5e4-e137-407a-b698-096746a3a650,Ufo ecco cosa dovete sapere sui filmati dalla Marina americana desecretati dal Pentagono,ChatGPT4AsAnnotator,,4,1;9,-1,1,4,3,1,6
-9209bc9a-8a2b-4308-8d65-05ab453d308a,Il Papa: la meditazione ed ecco come incontrare Gesù,ChatGPT4AsAnnotator,,4,1,-1,1,4,4,1,6
+4c19e5e4-e137-407a-b698-096746a3a650,Ufo ecco cosa dovete sapere sui filmati dalla Marina americana desecretati dal Pentagono,ChatGPT4AsAnnotator,2;2;1;1;1;1,4,1;9,-1,1,4,3,1,6
+9209bc9a-8a2b-4308-8d65-05ab453d308a,Il Papa: la meditazione ed ecco come incontrare Gesù,ChatGPT4AsAnnotator,2;1;1;1;1;1,4,1,-1,1,4,4,1,6
 9162f68d-65b7-4880-b588-d0804ccae090,Un anno con poco sesso,ChatGPT4AsAnnotator,1;1;2;1;1,4,,-1,2,4,4,2,6
 67e8c429-9199-4a54-961d-0cbe62f62e1d,Ex polveriera di Cantone: partiti i lavori per realizzare il percorso naturalistico,ChatGPT4AsAnnotator,2;1;1;1;2,4,1,-1,1,4,4,2,
 7394a8e4-0fc9-4efc-a379-6b5e7efa0675,Ema autorizza il vaccino Pfizer per i 12-15enni. Ma si valutano casi di miocardite e pericardite,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3;5;9,-1,2,4,4,1,6
-cde09ec5-626d-474a-abba-529a593b7ade,Olbia| chiude il negozio a causa della pandemia: «Ma non mi arrendo»,ChatGPT4AsAnnotator,,4,1;4;9,2,2,4,4,2,6
+cde09ec5-626d-474a-abba-529a593b7ade,Olbia| chiude il negozio a causa della pandemia: «Ma non mi arrendo»,ChatGPT4AsAnnotator,2;2;1;1;1;1,4,1;4;9,2,2,4,4,2,6
 7c2985b4-d96e-442e-88a2-00811d796d16,Il privilegio di sedere al tavolo giusto,ChatGPT4AsAnnotator,1;2;1;1;1,4,,-1,2,2,2,2,5
 4ffee038-00a4-467a-9266-efdd4449502b,Israele| 2mila razzi lanciati finora da Gaza. Gaffe sull’attacco di terra,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;9,-1,2,3,3,2,6
-be7c2ae8-498c-4a86-a04a-a9149f60b175,"Elezioni comunali| Salvini in Montagnola: ""A Bologna servono discontinuità e coraggio""",ChatGPT4AsAnnotator,,3,1;3;4,2,2,3,3,1,6
+be7c2ae8-498c-4a86-a04a-a9149f60b175,"Elezioni comunali| Salvini in Montagnola: ""A Bologna servono discontinuità e coraggio""",ChatGPT4AsAnnotator,1;1;1;1;2,3,1;3;4,2,2,3,3,1,6
 ebd7a58a-a18e-4b3f-b6c8-46329dbfb66c,Reddito di cittadinanza| a febbraio importi inferiori per alcuni beneficiari: ecco perchè,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3;8,-1,2,4,4,1,
 7ae76290-b709-4305-a834-1b2da1994400,Coronavirus| medico 64enne muore il giorno dopo il vaccino: aveva gravi patologie,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3;9,-1,2,4,3,2,6
 f310ef8b-1f1a-4563-9a8a-2a1ddd2071a5,Soriano| il genio assoluto al servizio del “fútbol”,ChatGPT4AsAnnotator,1;1;2;1;1,4,1;5;9,-1,2,4,4,1,6
@@ -183,7 +183,7 @@ b0e8474a-3d81-4e6e-b9a7-8dcf5e2bccd9,Regno Unito| giornalista BBC muore a 44 ann
 6174d400-7808-4673-8222-ccb144138d6b,Indagato per molestie il capo del tribunale del caso Grillo junior,ChatGPT4AsAnnotator,2;1;1;1;1,3,1;5;9,-1,1,3,2,2,6
 a0f16e2b-cc17-4526-a990-772e5593cdcd,Report su Vaticano: investimento su fondo catastrofi e pandemie,ChatGPT4AsAnnotator,2;1;2;1;1,4,1;3;9,-1,2,4,3,1,6
 d4271fe2-7141-4158-88ff-47c78609f774,Il countdown: cosa accadrà tra poco a questi televisori,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;9,-1,2,4,4,1,
-60b38870-c6db-46b6-abe3-09635d4eabc7,Due italiani su 10 sono No vax: il livello più alto tra chi vota Lega e Fratelli d'Italia,ChatGPT4AsAnnotator,,3,1;5;9,-1,2,3,3,2,1
+60b38870-c6db-46b6-abe3-09635d4eabc7,Due italiani su 10 sono No vax: il livello più alto tra chi vota Lega e Fratelli d'Italia,ChatGPT4AsAnnotator,2;2;1;1;1;1,3,1;5;9,-1,2,3,3,2,1
 54904eb1-e7d0-4182-a166-bcaafe2068c2,Magalli-Volpe: lui la sbeffeggia per lo share| lei lo attacca. I retroscena di una lite infinita,ChatGPT4AsAnnotator,1;1;1;1;2,3,1;3;9,-1,2,3,2,2,6
 f449f8f5-f4d6-40f6-a573-89e9837cd6af,Il virus rallenta ancora. Tre regioni in zona bianca,ChatGPT4AsAnnotator,2;1;1;1;1,4,1,-1,2,4,3,1,6
 78d95e36-d05a-4cef-8939-85959a4541fc,Controllate 375 persone: 13 multe Centro gremito e autobus deviati,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;5;9,-1,1,4,4,1,
@@ -217,7 +217,7 @@ f46b51a5-037e-4bed-8460-a4eb2eefc264,Vaccini anti-Covid in azienda| Figliuolo: �
 dca167f5-de01-44dc-a636-e38c6f27f9e5,Un chirurgo cagliaritano trapianta due mani in Svezia,ChatGPT4AsAnnotator,2;1;1;1;1,4,1,-1,2,4,4,1,
 564d249d-d88b-48d4-a3a6-1e31c8ad3f57,La destra detta l’agenda| in Francia il clima si arroventa,ChatGPT4AsAnnotator,2;1;1;1;1,3,1;9,-1,2,3,2,1,6
 b1d2d7da-8eb7-4cef-8651-35929e2bd09e,Cosa fa lo spaziotempo quando si strappa?,ChatGPT4AsAnnotator,2;1;1;1;1,4,2,-1,2,4,3,1,6
-b291a485-7c6d-400e-ad80-3e07b20af10e,Eroina e cocaina da San Severo a Campodipietra pronte per lo spaccio: i dettagli del blitz della Polizia,ChatGPT4AsAnnotator,,4,1,-1,1,4,4,2,6
+b291a485-7c6d-400e-ad80-3e07b20af10e,Eroina e cocaina da San Severo a Campodipietra pronte per lo spaccio: i dettagli del blitz della Polizia,ChatGPT4AsAnnotator,2;1;1;1;1,4,1,-1,1,4,4,2,6
 59f724d8-d6f5-43dd-99d2-c706cd5ff61d,Francia| ucciso l’aggressore della poliziotta: era radicalizzato. La rabbia di Marine Le Pen,ChatGPT4AsAnnotator,2;1;1;1;1,3,1;9,-1,2,3,2,2,6
 f67f29e7-c812-478e-8e2a-f481d78029ee,Ponte aereo per ricollocare migranti Lampedusa in tutta Italia: Europa non pervenuta,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3;5;9,-1,2,2,2,2,
 b79a2e88-0e7d-4f9c-9309-4b5c2a0e837d,Giornata della terra? La spariamo grossa? Il cibo secondo il WWF,ChatGPT4AsAnnotator,1;2;1;1;1,4,1;2;3;9,-1,2,2,2,2,6
@@ -236,7 +236,7 @@ a6af4a60-7d73-43b4-9be9-3e5cc33b687a,"Firenze| cos'è ""La Ferita"": l'opera che
 f9c97907-d32c-4d29-88b4-757395ae3f98,Coronavirus| la variante Delta (per ora) non preoccupa l’Italia,ChatGPT4AsAnnotator,2;1;2;1;1,3,1;5;9,-1,2,3,3,1,6
 5a003463-0851-41e8-bd85-5327d86125cd,"Saman Abbas a Quarto Grado| la denuncia contro il padre prima di sparire: ""I miei documenti chiusi a chiave nell'armadio""",ChatGPT4AsAnnotator,2;1;1;1;1,3,1;3;4,2,2,3,2,2,2
 e8241b44-99dd-4ffa-8dc9-41378bbbfd93,La variante delta è stimata al 22|7% in Italia,ChatGPT4AsAnnotator,2;1;1;1;1,4,1,-1,2,4,4,1,6
-d08dae7f-640a-4909-ad84-71b008fa1a19,Raffaella Carrà| un’icona nazionalpopolare che ha portato l’Italia nel mondo. L’omaggio della Meloni,ChatGPT4AsAnnotator,,4,1;9,-1,2,4,4,1,6
+d08dae7f-640a-4909-ad84-71b008fa1a19,Raffaella Carrà| un’icona nazionalpopolare che ha portato l’Italia nel mondo. L’omaggio della Meloni,ChatGPT4AsAnnotator,2;2;1;1;1;1,4,1;9,-1,2,4,4,1,6
 3c5ccd2b-3db0-485d-b089-77c66cef2627,"VICINO ALLA CONDUZIONE DI SANREMO 2022 - PAOLA ANSUINI SOTTO ATTACCO: TUTTI VOGLIONO MARIO DRAGHI IN TV - PIERSILVIO BERLUSCONI DELUSO DA ALESSIA MARCUZZI PER L'ADDIO A MEDIASET (E CASCHETTO SI RITROVA SENZA ARTISTI NEL ""BISCIONE"") - MARIO GIORDANO VITTIMA DI SCHERZI A PARTE - IL NO DELLA ORLANDO AL ""GF VIP"" AGITA ADIANA VOLPE - SONIA BRUGANELLI VA IN TV MA NON C'E' LO ZAMPINO DI PRESTA - CLIMA TESISSIMO TRA UN GIORNALISTA| AMATO A DESTRA| E UN NOTO DIRETTORE.",ChatGPT4AsAnnotator,1;1;1;1;2,3,1;3;4;5;9,2,1,3,2,2,6
 b692dc2f-2ce6-482d-be3f-7720da861e52,Covid| Speranza: «Italia tutta bianca| primo venerdì da ottobre senza ordinanze»,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;4,-1,2,4,4,1,6
 b70d6d51-ef24-4bec-8d1a-593e9c11bfb5,Roma| Casapound contro gli Azzurri in ginocchio: murale in stile fascista|«Resta in piedi| Italia»,ChatGPT4AsAnnotator,1;2;1;1;1,4,1;3;4;5;9,2,1,3,2,2,6
@@ -285,7 +285,7 @@ a0fd77d4-a1e6-4881-ad83-4a9c7a3bf32c,Inghilterra| dal 19 luglio via tutte le res
 f964e254-d60e-4509-9a03-b62d8b5f2568,Covid| fake news di Montesano: «Il sangue dei vaccinati viene buttato via». La smentita del Cns: «Grave falsità| donare salva le vite»,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3;4;9,-1,2,4,3,2,
 89ab0d13-b200-474f-922f-e78cd70f7e40,Il ddl Zan serve per contrastare l’omotransfobia? Ecco la verità sui report dell’Il ddl Zan serve per contrastare l’omotransfobia? Ecco la verità sui report dell’Arcigay,ChatGPT4AsAnnotator,1;2;1;1;1,4,1;2;8,-1,2,2,2,2,3;4;6
 c8a0628f-2468-4461-9a7d-57a63d2d2717,"La ""carriera alias"" sbarca al liceo. Lo studente può cambiare genere",ChatGPT4AsAnnotator,1;1;2;1;1,4,1;4,2,2,4,4,1,6
-4cd87a98-b98f-4470-80a7-56d34ea1d993,Addio Raffaella Carrà: funerali e camera ardente. Ecco dove e quando saranno,ChatGPT4AsAnnotator,,4,1;5;8,-1,2,4,4,1,
+4cd87a98-b98f-4470-80a7-56d34ea1d993,Addio Raffaella Carrà: funerali e camera ardente. Ecco dove e quando saranno,ChatGPT4AsAnnotator,2;2;2;2;1;2,4,1;5;8,-1,2,4,4,1,
 297afd6a-8027-441f-ad81-28b6a734d245,Chi arriva in Italia dal Regno Unito dovrà trascorrere 5 giorni in quarantena a causa della diffusione della variante “delta”,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;4,-1,2,4,4,1,6
 712b46c0-ea5f-41d3-94fd-f78889ce79c4,La svolta sbagliata di Google Maps contro il cambiamento climatico,ChatGPT4AsAnnotator,1;2;1;1;1,1,1;9,-1,2,2,2,2,6
 3c2e2f67-fdc7-42b9-9562-0bb3c0f37f2f,Covid Italia 6 luglio: 907 nuovi casi e 24 morti,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;5,-1,2,4,4,1,6
@@ -299,14 +299,14 @@ e65f6342-2829-4565-8e90-97c1354ed011,Vaccini| «Pfizer e Moderna sicuri in gravi
 8b1f6eee-0ce2-4fa6-ad59-cf08abe4b612,Gli strappi di Beppe Grillo che non può accettare un Movimento «personale»,ChatGPT4AsAnnotator,1;1;2;1;1,3,1;4;9,-1,1,3,2,2,6
 90405269-7a8c-4479-a45e-ee097692f8ac,Ddl Zan| Letta nella morsa dei “due Matteo”: «Non hai più i numeri. O lo modifichi o lo affossi»,ChatGPT4AsAnnotator,1;2;1;1;1,3,1;4;9,2,2,3,2,2,6
 b59b7f92-329c-4002-a7bf-c2ebce4bde2f,"Morta Raffaella Carrà| manifesti funebri all'Argentario| ""Era una di noi""",ChatGPT4AsAnnotator,1;1;1;1;2,4,1;4;9,2,2,4,4,1,
-09b44a84-4eab-491e-b254-73a1b88d1b6f,"Doppia iniezione di AstraZeneca. ""Ma ha ancora pochi anticorpi""",ChatGPT4AsAnnotator,,,1;3;4;9,2,2,3,3,2,6
+09b44a84-4eab-491e-b254-73a1b88d1b6f,"Doppia iniezione di AstraZeneca. ""Ma ha ancora pochi anticorpi""",ChatGPT4AsAnnotator,2;2;1;1;1;1,,1;3;4;9,2,2,3,3,2,6
 70f25ccb-11ca-458e-8d4c-998264097691,"Locali da ballo| la protesta dei titolari: ""Vogliamo riaprire| dateci una data certa""",ChatGPT4AsAnnotator,2;1;1;1;1,4,1;4,2,2,4,3,1,
 1d134854-568a-4590-86b1-64912b3c3e4d,Nuove aggressioni omofobe a Milano: calci e pugni in centro a una coppia di giovani,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3;9,-1,2,4,3,2,4;6
 53d150f9-59a8-4ed9-a1ca-b6fceeddcccf,Terapie Covid| l'Oms aggiorna le linee guida: aggiunti due farmaci,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3,-1,2,4,4,1,6
 c466d573-c6d3-4665-a103-62ea4de370da,"Beppe Grillo| tam tam impazzito tra i Cinque Stelle vicini a Giuseppe Conte: ""E se ci ha fregati?""",ChatGPT4AsAnnotator,1;1;2;1;1,3,1;2;4;9,-1,1,3,2,2,6
 247b189a-71b7-4959-8e0d-dbc67bb52f6d,Oms su casi Covid-19 in Europa: “Aumentati del 10% e copertura vaccinale insufficiente”. Sugli Europei: “Migliorare monitoraggio”,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3;4,-1,2,4,3,1,6
 132835cc-8943-4601-bbfd-430e306dbd78,I timori di Draghi: «Non ripetiamo gli errori dell’estate»,ChatGPT4AsAnnotator,2;1;1;1;1,3,1;4,2,2,3,3,1,6
-a7beb535-abf9-413b-901c-511699ea3b74,"Malika e la raccolta fondi| GoFundMe: ""Controlli rigorosi. La finalità era chiara""",ChatGPT4AsAnnotator,,4,1;3;4,2,2,4,4,2,6
+a7beb535-abf9-413b-901c-511699ea3b74,"Malika e la raccolta fondi| GoFundMe: ""Controlli rigorosi. La finalità era chiara""",ChatGPT4AsAnnotator,1;1;2;1;1,4,1;3;4,2,2,4,4,2,6
 1249508d-5fb2-47c1-b931-d9f70070aebb,Istat: l’economia riparte ma l’Italia è più povera| meno longeva e stabilisce il record negativo delle nascite,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;9,-1,2,4,4,1,6
 ba2cea63-3765-4768-9143-6d3587b0ac9e,L’incubo Delta: «Un caso di Covid su quattro è di variante indiana»,ChatGPT4AsAnnotator,2;1;2;1;1,3,1;3;4;9,-1,2,3,2,2,6
 384307de-ed33-426f-8131-76cc518ac9a8,Papa Francesco rimarrà in ospedale almeno una settimana dopo un intervento chirurgico al colon| dice il Vaticano,ChatGPT4AsAnnotator,2;1;1;1;1,4,1,-1,2,4,4,1,
@@ -317,16 +317,16 @@ ba2cea63-3765-4768-9143-6d3587b0ac9e,L’incubo Delta: «Un caso di Covid su qua
 9c48d9ed-2b25-4701-8f88-1ff73ad25629,La variante Delta preoccupa il Regno Unito. E l'Italia?,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;2;9,-1,2,4,4,1,6
 38c347a7-7070-4837-8679-3a6b6e38d987,Vaccini| Ema: con due dosi protetti contro variante Delta,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;5,-1,2,4,4,1,6
 cb1f712a-ff8a-417e-994f-2f9e51673dd1,Presa a calci e trascinata per i capelli| divieto di avvicinamento per l'ex marito,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;9,-1,2,4,3,2,6
-f3e8082e-a2dd-4f93-9023-efd0a5a8f001,"Vaccino| generale Figliuolo durissimo contro le Regioni: ""Le dosi ci sono| 500mila somministrazioni al giorno. Viaggiare spediti""",ChatGPT4AsAnnotator,,,1;4;5;9,2,2,4,,2,6
+f3e8082e-a2dd-4f93-9023-efd0a5a8f001,"Vaccino| generale Figliuolo durissimo contro le Regioni: ""Le dosi ci sono| 500mila somministrazioni al giorno. Viaggiare spediti""",ChatGPT4AsAnnotator,2;2;1;1;1;1,,1;4;5;9,2,2,4,,2,6
 29280252-ccea-49c1-8ee1-aa7a5d970be3,Uccisa a martellate in casa a Livorno| in carcere per l'omicidio l'ex marito: «Progettava la fuga»,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3;4;9,2,1,4,4,1,6
 72ab85c4-04fa-44ed-b4ae-5f570db46aab,"Papa Francesco operato per ""stenosi diverticolare sintomatica del colon"": ""Il vero rischio è l'anestesia""",ChatGPT4AsAnnotator,2;1;1;1;1,4,1;3;4,2,2,4,4,2,
 7eb0acca-badf-4f30-bb1c-85308fa7f85f,Covid| nuova versione del vaccino di Oxford e Astrazeneca per test sulla variante Beta “che riesce a evadere l’immunità dei vaccini”,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;4;9,2,2,4,4,1,6
-ac830c44-746a-4868-adc6-ad99ad208112,Covid| il grido dei parenti delle vittime a Bergamo a Roma: “La politica deve pagare”,ChatGPT4AsAnnotator,,4,1;4;5;9,-1,2,3,2,2,1;2;3;4;5;6
+ac830c44-746a-4868-adc6-ad99ad208112,Covid| il grido dei parenti delle vittime a Bergamo a Roma: “La politica deve pagare”,ChatGPT4AsAnnotator,2;1;1;1;1;1,4,1;4;5;9,-1,2,3,2,2,1;2;3;4;5;6
 b75dbb31-f27b-4caf-8a66-b275e1134591,I ragazzi aspiranti neonazisti della Milano bene: giuramenti| armi e il raid già pianificato,ChatGPT4AsAnnotator,1;1;2;1;1,4,1;9,-1,1,4,3,2,1;2;3;4;5
 a1d6793c-b05e-4c0b-815a-6c4de3cb37d5,Fino al 12 agosto il certificato vaccinale può sostituire il Green pass,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;5,-1,2,4,4,1,
 63bc8574-66ef-4d3f-8272-c798fc17256d,Ripartire con il Green pass,ChatGPT4AsAnnotator,2;1;1;1;1,4,1,-1,2,4,4,1,6
 08348afe-dfa1-4182-bd3d-b3273fafb045,Draghi ha cambiato le cose con la Cina,ChatGPT4AsAnnotator,2;1;1;1;1,4,1,-1,2,4,4,1,6
-ecb2d74c-46dc-48fe-948e-a2090a2ffd2e,Caos M5S| Conte: “Se i parlamentari chiedono lo statuto glielo illustro”. E Crimi sfida Grillo: voto per il direttivo su Sky Vote,ChatGPT4AsAnnotator,,3,1;3;4;5;9,-1,1,3,2,2,6
+ecb2d74c-46dc-48fe-948e-a2090a2ffd2e,Caos M5S| Conte: “Se i parlamentari chiedono lo statuto glielo illustro”. E Crimi sfida Grillo: voto per il direttivo su Sky Vote,ChatGPT4AsAnnotator,2;2;1;1;1;1,3,1;3;4;5;9,-1,1,3,2,2,6
 6ede1205-d74f-4bb1-8c37-15fc5b4738ac,Il degrado di Milano oltre i limiti di guardia,ChatGPT4AsAnnotator,1;2;1;1;1,4,1;5;9,-1,1,1,1,2,1;3;5
 9c3b2cf3-bbd2-4d31-b200-4d7517067e0c,Lo sbandamento suAstrazeneca ci è costato 400.000 iniezioni,ChatGPT4AsAnnotator,1;2;1;1;1,2,1;9,-1,2,2,2,2,6
 0dc73a1c-4c03-4b2f-8344-f3c898900c01,Habemus Papam,ChatGPT4AsAnnotator,1;2;1;1;1,4,1;5,-1,2,1,1,2,4;6
@@ -341,6 +341,6 @@ cb932977-03e8-46fd-bd91-34e28dba01bd,Il Cts cambia idea suAstrazeneca.Ormai è c
 b11203bd-f942-429e-a9f5-de24de4092de,Tutti titolari tranne Alex Meret,ChatGPT4AsAnnotator,1;1;2;1;1,3,1,-1,1,3,2,2,6
 1a759bec-1fdf-4235-9b9d-215951d73b80,Così i sindacati hanno piegato Confindustria,ChatGPT4AsAnnotator,2;1;1;1;1,4,1;9,-1,2,3,3,1,6
 44ac5edd-4db4-45e6-ba35-5300bf509f5a,"Il successo dei Pro Gamer, i nuovi campioni",ChatGPT4AsAnnotator,2;1;2;1;1,4,1;9,-1,2,4,3,1,6
-ec3a0585-9da6-4732-bf58-c6e659d8e58e,La grande ondata di caldo nel Nord America,ChatGPT4AsAnnotator,,4,1,-1,2,4,3,1,6
+ec3a0585-9da6-4732-bf58-c6e659d8e58e,La grande ondata di caldo nel Nord America,ChatGPT4AsAnnotator,2;2;1;1;1;1,4,1,-1,2,4,3,1,6
 5b30e244-4aa2-4ad3-b24a-2022c1415df6,Cosa fare dei documenti della Stasi,ChatGPT4AsAnnotator,2;1;1;1;1,4,1,-1,2,4,3,1,6
 eab45a62-1d47-4216-a51d-e45ccbcc3810,"Strani dolori allo stomaco, dopo 6 mesi muore Luigi, l'artigiano che amava le moto",ChatGPT4AsAnnotator,1;1;1;1;2,4,1;5;9,-1,2,4,4,1,

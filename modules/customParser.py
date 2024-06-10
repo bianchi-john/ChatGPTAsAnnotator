@@ -4,16 +4,31 @@ import numpy as np
 
 
 def parse1_1(row):
-    
     if not isinstance(row, float):
-        # Regular expression to match the step and the answer number
-        pattern = re.compile(r"Step (\d+) - (?:\d+: )?(\d+)")
+        # Regular expression to match both formats
+        pattern = re.compile(r"(?:Step )?(\d+)[\.\s-]*[^\d\n]*?(\d+|Yes|No)\.?")
         matches = pattern.findall(row)
         
         # Convert matches to dictionary
-        step_dict = {int(step): int(answer) for step, answer in matches}
-        return  convert_dict(step_dict)
+        step_dict = {}
+        for step, answer in matches:
+            step = int(step)
+            # Convert "Yes" to 1 and "No" to 0
+            if answer == "Yes":
+                answer = 1
+            elif answer == "No":
+                answer = 0
+            else:
+                answer = int(answer)
+            step_dict[step] = answer
+
+        if len(step_dict) == 0:
+            print('stringa: "' + row + '"')
+        
+        return convert_dict(step_dict)
+    
     return ''
+
 
 
 # Function to convert values and fill in missing ones
