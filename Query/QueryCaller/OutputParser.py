@@ -1,4 +1,5 @@
 import os
+import numpy as np
 import pandas as pd
 import sys
 sys.path.append('modules')
@@ -138,11 +139,21 @@ new_order = ["id", "title", "annotator", "Q1.1", "Q1.2", "Q1.3", "Q1.3.1", "Q1.4
 # Reorder the dataframe columns
 df = df[new_order]
 
-df.to_csv(output_file)
+df.to_csv(output_file, index=None)
 
 print('')
 # Print the merged DataFrame
 print(df)
+print(df.dtypes)
+
+print('')
+# Sostituire le stringhe vuote con NaN
+df.replace('', np.nan, inplace=True)
+
+# Calcolare il numero di righe vuote per colonna
+empty_rows_per_column = df.isnull().sum()
+print('Empty cell per each column: ')
+print(empty_rows_per_column)
 print('')
 print('************')
 print('DONE')

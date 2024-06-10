@@ -6,7 +6,7 @@ import pandas as pd
 import re
 import numpy as np
 
-def noiseCleaner(df):
+def noiseDiscovery(df):
 
     def Q1_1(df, column):
         condition = df['annotator'] != 'ChatGPT4AsAnnotator'
@@ -21,6 +21,7 @@ def noiseCleaner(df):
         df[column] = df[column].str.replace('.0', '')
         valid_values = ['1', '2', '3', '4', '']
         df[column] = df[column].apply(lambda x: x if x in valid_values else print(str(column) +' \"'+  str(x)+'\"'))
+        return df[column]
 
     def Q1_3(df, column):
         # Funzione per controllare se un valore è conforme
@@ -52,7 +53,7 @@ def noiseCleaner(df):
         df[column] = df[column].astype(str)
         df[column] = df[column].str.replace('.0', '')
 
-        valid_values = ['1', '2', '']
+        valid_values = ['1', '2', '', '-1']
         df[column] = df[column].apply(lambda x: x if x in valid_values else print(str(column) +' \"'+  str(x)+'\"'))
 
     def Q1_4(df, column):

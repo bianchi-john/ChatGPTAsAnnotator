@@ -4,6 +4,7 @@ import numpy as np
 
 
 def parse1_1(row):
+    
     if not isinstance(row, float):
         # Regular expression to match the step and the answer number
         pattern = re.compile(r"Step (\d+) - (?:\d+: )?(\d+)")
@@ -27,8 +28,8 @@ def convert_dict(d):
     
     # Sort values by key
     sorted_values = [str(converted[key]) for key in sorted(converted.keys())]
-    result = "".join(sorted_values)
-    if (result == "11111"):
+    result = ";".join(sorted_values)
+    if (result == "1;1;1;1;1"):
         return ""
     else:
         return result
@@ -37,11 +38,14 @@ def convert_dict(d):
 #######################################################################
 
 def parse1_2(row):
+    valid_values = ['1', '2', '3', '4', '']
     if not isinstance(row, float):
         # Cerca il pattern con regex
         match = re.search(r'Step 2.*?(\d)[\.\)]', row, re.DOTALL)
         if match:
-            return int(match.group(1))
+            value = match.group(1)
+            if value in valid_values:
+                return value
     return ''
 
 
@@ -49,31 +53,37 @@ def parse1_2(row):
 
 
 def parse1_3(row):
-    def process_block(block):
-        try:
-            answerNumber = int(re.search(r'\d+', block).group() if re.search(r'\d+', block) else None) - 1
-        except:
+    try:
+
+        def process_block(block):
+            try:
+                answerNumber = int(re.search(r'\d+', block).group() if re.search(r'\d+', block) else None) - 1
+            except:
+                return ''
+            if answerNumber:
+                if "Yes" in block:
+                    return  ';' + str(answerNumber)
             return ''
-        if answerNumber:
-            if "Yes" in block:
-                return  ';' + str(answerNumber)
-        return ''
-    def build_output(blocks):
-        output = ""
-        for block in blocks:
-            output += process_block(block)
-        return output
-    if row is None or str(row) == 'nan':
-        return row
-    row = str(row).replace('\n', ' ')
-    if "Step" in row:
-        blocks = row.split("Step")[1:]
-        output = build_output(blocks)
-    else:
-        blocks = row.split(".")[1:]
-        output = build_output(blocks, "Yes", "No")
-    if len(output) > 0:
-        return (output[1:] if output.startswith(';') else output)
+        def build_output(blocks):
+            output = ""
+            for block in blocks:
+                output += process_block(block)
+            return output
+        if row is None or str(row) == 'nan':
+            return row
+        row = str(row).replace('\n', ' ')
+        if "Step" in row:
+            blocks = row.split("Step")[1:]
+            output = build_output(blocks)
+        else:
+            blocks = row.split(".")[1:]
+            output = build_output(blocks, "Yes", "No")
+        if len(output) > 0:
+            return (output[1:] if output.startswith(';') else output)
+    except Exception as e:
+        print(f"Error processing row: {row}")
+        print(f"Exception: {e}")
+        return ('')
 
 
 
@@ -81,11 +91,18 @@ def parse1_3(row):
 #######################################################################
 
 
+
 def parse1_3_1(row):
     answerNumber = ''
-    if not isinstance(row, float):
-        answerNumber = re.search(r'-?\d+', row).group() if re.search(r'-?\d+', row) else None
-    return(answerNumber)
+    try:
+        if not isinstance(row, float):
+            answerNumber = re.search(r'-?\d+', row).group() if re.search(r'-?\d+', row) else None
+    except Exception as e:
+        print(f"Error processing row: {row}")
+        print(f"Exception: {e}")
+        return ('')
+    return answerNumber
+
 
 #######################################################################
 
