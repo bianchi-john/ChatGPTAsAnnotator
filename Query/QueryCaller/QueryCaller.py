@@ -8,13 +8,22 @@ import re
 import os
 import csv
 
+green_text = "\033[92m"
+reset_text = "\033[0m"
+
+
+
 output_file = 'Query/QueryCaller/RawOutput/'
 limite = 9999999
 promptNumber = 0
 recoverMode = False
+print('')
 
 # Do you want to recover malformed answers?
-confirm = input(f"Do you want to recover malformed answers? (Responses that have been obtained but have not been parsed and are therefore empty)(y/n): ")
+confirm = input(
+    "Do you want to recover malformed answers? (y/n):\n"
+    "(These are responses that have been obtained but not parsed and are therefore empty)\n"
+)
 if confirm.lower() == 'y':
     recoverMode = True
     print('List of dataframe with recoverable answers: ')
@@ -26,7 +35,7 @@ if confirm.lower() == 'y':
     for file in files:
         print('   - ' + file)
     print('')
-    fileNameToRetrieveIDS = input(f"Please specify the filename to look to malformed answers (Include the extension): ")
+    fileNameToRetrieveIDS = input(f"{green_text}Please specify the filename to look to malformed answers (Include the extension):{reset_text}")
     dfToRetrieve= pd.read_csv('Query/Output/' + fileNameToRetrieveIDS)
     print('List of dataframes with saved responses: ')
     directory_path = 'Query/QueryCaller/RawOutput' # Replace with your actual path
@@ -43,7 +52,10 @@ if confirm.lower() == 'y':
 
 else:
     # I ask the user to give a name for the output file.
-    name = input(f"Provide a name for output file (Don't include the extension) (If you enter the name of a file that already exists, the program will try to recover answers for ids that are not present in the file (answers not recovered), overwriting the file): ")
+    name = input(
+        "Provide a name for the output file (Don't include the extension):\n"
+        "(If you enter the name of a file that already exists, the program will try to recover answers for IDs that are not present in the file, overwriting the file)\n"
+    )
     output_file = output_file + name + '.csv' 
 
 
