@@ -9,7 +9,7 @@ output_path = 'Query/Output/'
 name = input(f"Provide a name for output file (Don't include the extension): ")
 output_file = output_path + name + '.csv' 
 
-
+print('')
 # Ask the user for the prefix that the files should have
 substring = input("Enter the substring that the files should have: ")
 
